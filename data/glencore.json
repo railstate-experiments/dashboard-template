@@ -1,0 +1,61 @@
+{
+  "commodity": "glencore",
+  "display_name": "Glencore (Elk Valley Resources)",
+  "subtitle": "$GLEN · Steelmaking Coal · RailState Sensor Data vs. Glencore Production Reports",
+  "unit": "tonnes",
+  "gov_source_label": "Glencore Production Report",
+  "gov_lag_label": "Semi-Annual (>1 month lag)",
+  "last_updated": "2026-03-11",
+
+  "monthly": {
+    "description": "Monthly RailState sensor-observed tonnage for Glencore/EVR steelmaking coal movements.",
+    "columns": ["month", "railstate"],
+    "rows": [
+      ["2025-01", 2186520],
+      ["2025-02", 1739640],
+      ["2025-03", 2266320],
+      ["2025-04", 2250360],
+      ["2025-05", 2330160],
+      ["2025-06", 2026920],
+      ["2025-07", 2362080],
+      ["2025-08", 2186520],
+      ["2025-09", 1851360],
+      ["2025-10", 2202480],
+      ["2025-11", 1915200],
+      ["2025-12", 1979040],
+      ["2026-01", 1564080],
+      ["2026-02", 1532160],
+      ["2026-03", 430920]
+    ]
+  },
+
+  "glencore_reported": {
+    "description": "Glencore semi-annual reported tonnage in Mt. Published >1 month after period end.",
+    "entries": [
+      {
+        "period": "2025-H1",
+        "label": "H1 2025 (Jan–Jun)",
+        "value_mt": 12.7,
+        "value_tonnes": 12700000
+      },
+      {
+        "period": "2025-H2",
+        "label": "H2 2025 (Jul–Dec)",
+        "value_mt": 12.5,
+        "value_tonnes": 12500000
+      }
+    ]
+  },
+
+  "glencore_filing": {
+    "description": "Source image from Glencore public production report.",
+    "image": "images/glencore_production_report.png",
+    "caption": "Source: Glencore 2025 Production Report"
+  },
+
+  "daily": {
+    "description": "Daily sensor-observed tonnage. See data/glencore_daily.json for full daily dataset.",
+    "columns": ["date", "value"],
+    "rows": []
+  }
+}

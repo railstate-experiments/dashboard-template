@@ -1,0 +1,543 @@
+"""
+RailState Ethanol Canada - Daily Totals with Moving Averages (Hex Version)
+===========================================================================
+Pulls daily totals: car count, gallons, and barrels.
+Includes 7-day, 30-day, and 90-day moving averages.
+
+Date Range: January 1, 2025 to yesterday
+Reruns: Daily (adds previous day's data)
+
+CHANGES FROM PREVIOUS VERSION:
+- Removed Devlin, ON (not a border crossing)
+- Added Ste Anne, MB WESTBOUND (captures US exports heading west into Canada)
+- Excludes ALL UN1987 from Windsor Region
+
+SETUP:
+1. Set your API key below
+2. Run this script - it will fetch all data from Jan 1 2025 to yesterday
+3. Schedule to run each morning to add previous day
+
+OUTPUT DATAFRAME:
+- ethanol_daily: Daily totals with car counts, gallons, barrels, and moving averages
+"""
+
+import pandas as pd
+import requests
+from datetime import datetime, timedelta
+from typing import List, Dict, Optional, Tuple
+from urllib.parse import urljoin
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+API_BASE_URL = "https://api.railstate.com"
+
+# IMPORTANT: Set your API key here
+API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhcGkucmFpbHN0YXRlLmNvbSIsImlzcyI6InJhaWxzdGF0ZS5jb20iLCJ1aWQiOiJ5RWE5aTFSbjljTmhtbEFEQkNYd3BFR3h1eEczIiwidGlkIjoiRGFuIERldm9lIFRlc3RpbmcifQ.8YQJPJE3X2xomrgUCXo41tx0Vh0gCRWRZ2JbQKYpAXE'
+
+# Date configuration - January 1, 2025 start
+START_DATE = datetime(2025, 1, 1)
+
+# Ethanol UN placards
+ETHANOL_PLACARDS = {'UN1170', 'UN1987', 'UN3475'}
+
+# Volume calculations
+DEFAULT_GALLONS_PER_CAR = 30000
+GALLONS_PER_BARREL = 42
+
+# Unit train detection threshold
+UNIT_TRAIN_THRESHOLD = 0.70
+MIN_BLOCK_SIZE = 6
+
+# ============================================================================
+# CROSSING CONFIGURATION (9 border crossing points)
+# ============================================================================
+
+CROSSING_CONFIG = {
+    'Blaine_WA': {
+        'display_name': 'Blaine, WA',
+        'sensors': [{'name': 'Blaine, WA', 'direction': 'northbound'}],
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Ste_Anne_MB': {
+        'display_name': 'Ste Anne, MB',
+        'sensors': [{'name': 'Ste Anne, MB', 'direction': 'westbound'}],  # Westbound = into Canada
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Mcara_SK': {
+        'display_name': 'Mcara, SK',
+        'sensors': [{'name': 'Mcara, SK', 'direction': 'northbound'}],
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Kevin_Coalhurst': {
+        'display_name': 'Kevin, MT / Coalhurst, AB',
+        'sensors': [
+            {'name': 'Kevin, MT', 'direction': 'northbound'},
+            {'name': 'Coalhurst, AB', 'direction': 'westbound'},
+        ],
+        'extra_days': 1,
+        'exclude_un1987': False,
+    },
+    'Moyie_Springs_ID': {
+        'display_name': 'Moyie Springs, ID',
+        'sensors': [{'name': 'Moyie Springs, ID', 'direction': 'northbound'}],
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Letellier_MB': {
+        'display_name': 'Letellier, MB',
+        'sensors': [{'name': 'Letellier, MB', 'direction': 'northbound'}],
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Grande_Pointe_MB': {
+        'display_name': 'Grande Pointe, MB',
+        'sensors': [{'name': 'Grande Pointe, MB', 'direction': 'northbound'}],
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Port_Huron_London': {
+        'display_name': 'Port Huron, MI / London West, ON',
+        'sensors': [
+            {'name': 'Port Huron, MI', 'direction': 'eastbound'},
+            {'name': 'London West, ON', 'direction': 'eastbound'},
+        ],
+        'extra_days': 0,
+        'exclude_un1987': False,
+    },
+    'Windsor_Region': {
+        'display_name': 'Windsor / Komoka / Galt',
+        'sensors': [
+            {'name': 'Windsor TFR, ON', 'direction': 'eastbound'},
+            {'name': 'Komoka, ON', 'direction': 'eastbound'},
+            {'name': 'Galt, ON', 'direction': 'eastbound'},
+        ],
+        'extra_days': 0,
+        'exclude_un1987': True,  # Exclude ALL UN1987 from this crossing
+    },
+}
+
+# ============================================================================
+# API FUNCTIONS
+# ============================================================================
+
+class RailStateFetcher:
+    def __init__(self, api_key: str, base_url: str = API_BASE_URL):
+        self.api_key = api_key
+        self.base_url = base_url
+        self._sensor_cache = {}
+
+    def _request(self, url: str, params: dict = None) -> Tuple[dict, Optional[str]]:
+        try:
+            headers = {'Authorization': f'Bearer {self.api_key}', 'Accept': 'application/json'}
+            response = requests.get(url, params=params, headers=headers, timeout=120)
+            if response.status_code != 200:
+                return {}, f"HTTP {response.status_code}"
+            return response.json(), None
+        except requests.exceptions.Timeout:
+            return {}, "Timeout"
+        except Exception as e:
+            return {}, str(e)
+
+    def load_sensors(self) -> Dict[str, int]:
+        if self._sensor_cache:
+            return self._sensor_cache
+        url = urljoin(self.base_url, '/api/v3/sensors/overview')
+        data, error = self._request(url)
+        if error:
+            print(f"  Warning: Could not load sensors: {error}")
+            return {}
+        for sensor in data.get('sensors', []):
+            name, sid = sensor.get('name'), sensor.get('sensorId')
+            if name and sid:
+                self._sensor_cache[name] = sid
+        return self._sensor_cache
+
+    def get_sensor_id(self, name: str) -> Optional[int]:
+        if not self._sensor_cache:
+            self.load_sensors()
+        if name in self._sensor_cache:
+            return self._sensor_cache[name]
+        for n, sid in self._sensor_cache.items():
+            if n.lower() == name.lower():
+                return sid
+        return None
+
+    def fetch_sightings(self, sensor_id: int, start: datetime, end: datetime,
+                        direction: str = None) -> List[Dict]:
+        url = urljoin(self.base_url, '/api/v3/trains/full_sightings')
+        all_sightings = []
+        params = {
+            'sensors': str(sensor_id),
+            'detection_time_from': start.strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'detection_time_to': end.strftime('%Y-%m-%dT%H:%M:%SZ'),
+            'response_size': 500
+        }
+
+        while True:
+            data, error = self._request(url, params)
+            if error:
+                break
+            sightings = data.get('sightings', [])
+            if not sightings:
+                break
+            if direction:
+                sightings = [s for s in sightings if s.get('direction', '').lower() == direction.lower()]
+            all_sightings.extend(sightings)
+            next_link = data.get('nextRequestLink')
+            if not next_link:
+                break
+            url, params = next_link, None
+
+        return all_sightings
+
+
+# ============================================================================
+# CAR PROCESSING FUNCTIONS
+# ============================================================================
+
+def is_tank_car(car: dict) -> bool:
+    return car.get('type', '') == 'Tank Car'
+
+def get_placard(car: dict) -> Optional[str]:
+    hazmats = car.get('hazmats') or []
+    for hazmat in hazmats:
+        placard = hazmat.get('placardType')
+        if placard and placard != 'EMPTY':
+            return placard
+    return None
+
+def is_ethanol_car(car: dict) -> bool:
+    placard = get_placard(car)
+    return placard in ETHANOL_PLACARDS if placard else False
+
+def get_car_capacity(car: dict) -> float:
+    try:
+        params = car.get('equipmentParameters') or {}
+        dims = params.get('dimensions') or {}
+        capacity = dims.get('gallonageCapacity')
+        if capacity and capacity > 0:
+            return float(capacity)
+    except:
+        pass
+    return DEFAULT_GALLONS_PER_CAR
+
+def classify_train(cars: List[dict]) -> Tuple[str, Optional[str]]:
+    if not cars:
+        return 'manifest', None
+    tank_cars = [c for c in cars if is_tank_car(c)]
+    if not tank_cars:
+        return 'manifest', None
+
+    ethanol_cars = [c for c in tank_cars if is_ethanol_car(c)]
+    has_other_placards = any(get_placard(c) and get_placard(c) not in ETHANOL_PLACARDS for c in tank_cars)
+
+    if has_other_placards:
+        return 'manifest', None
+
+    if len(tank_cars) > 0:
+        ethanol_ratio = len(ethanol_cars) / len(tank_cars)
+        if ethanol_ratio >= UNIT_TRAIN_THRESHOLD:
+            placard_counts = {}
+            for car in ethanol_cars:
+                p = get_placard(car)
+                if p:
+                    placard_counts[p] = placard_counts.get(p, 0) + 1
+            dominant_placard = max(placard_counts, key=placard_counts.get) if placard_counts else 'UN1170'
+            return 'unit', dominant_placard
+
+    return 'manifest', None
+
+def fill_unit_train_placards(cars: List[dict], dominant_placard: str) -> List[dict]:
+    filled_cars = []
+    for car in cars:
+        car_copy = car.copy()
+        if is_tank_car(car) and not get_placard(car):
+            car_copy['_filled_placard'] = dominant_placard
+        filled_cars.append(car_copy)
+    return filled_cars
+
+def fill_manifest_train_placards(cars: List[dict]) -> List[dict]:
+    filled_cars = [c.copy() for c in cars]
+    i = 0
+    while i < len(filled_cars):
+        if not is_tank_car(filled_cars[i]):
+            i += 1
+            continue
+        block_start = i
+        block_end = i
+        while block_end < len(filled_cars) and is_tank_car(filled_cars[block_end]):
+            block_end += 1
+        block_size = block_end - block_start
+
+        if block_size >= MIN_BLOCK_SIZE:
+            first_placard = get_placard(filled_cars[block_start])
+            last_placard = get_placard(filled_cars[block_end - 1])
+            if first_placard in ETHANOL_PLACARDS and last_placard in ETHANOL_PLACARDS:
+                has_other = any(get_placard(filled_cars[j]) and get_placard(filled_cars[j]) not in ETHANOL_PLACARDS
+                               for j in range(block_start, block_end))
+                if not has_other:
+                    ethanol_count = sum(1 for j in range(block_start, block_end) if is_ethanol_car(filled_cars[j]))
+                    if ethanol_count / block_size >= 0.5:
+                        for j in range(block_start, block_end):
+                            if is_tank_car(filled_cars[j]) and not get_placard(filled_cars[j]):
+                                filled_cars[j]['_filled_placard'] = first_placard
+        i = block_end
+    return filled_cars
+
+def process_train_cars(sighting: dict) -> Tuple[List[dict], str, Optional[str]]:
+    cars = sighting.get('cars', [])
+    if not cars:
+        return [], 'manifest', None
+    train_type, dominant_placard = classify_train(cars)
+    if train_type == 'unit':
+        filled_cars = fill_unit_train_placards(cars, dominant_placard or 'UN1170')
+    else:
+        filled_cars = fill_manifest_train_placards(cars)
+    for car in filled_cars:
+        car['_train_type'] = train_type
+        car['_dominant_placard'] = dominant_placard
+        car['_sighting_id'] = sighting.get('sightingId')
+        car['_detection_time'] = sighting.get('detectionTimeUTC')
+    return filled_cars, train_type, dominant_placard
+
+
+# ============================================================================
+# DATA EXTRACTION
+# ============================================================================
+
+def extract_ethanol_cars(sightings: List[dict], sensor_name: str, crossing: str, exclude_un1987: bool) -> List[dict]:
+    ethanol_records = []
+    for sighting in sightings:
+        cars, train_type, dominant_placard = process_train_cars(sighting)
+        for car in cars:
+            original_placard = get_placard(car)
+            filled_placard = car.get('_filled_placard')
+            is_original_ethanol = original_placard in ETHANOL_PLACARDS if original_placard else False
+            is_filled_ethanol = filled_placard in ETHANOL_PLACARDS if filled_placard else False
+
+            if is_original_ethanol or is_filled_ethanol:
+                placard = original_placard if is_original_ethanol else filled_placard
+                un_code = placard[2:] if placard.startswith('UN') else placard
+
+                # Skip UN1987 from Windsor Region
+                if exclude_un1987 and un_code == '1987':
+                    continue
+
+                ethanol_records.append({
+                    'car_id': car.get('carId', ''),
+                    'un_code': un_code,
+                    'placard': placard,
+                    'detection_time': car.get('_detection_time'),
+                    'sensor_name': sensor_name,
+                    'crossing': crossing,
+                    'capacity_gallons': get_car_capacity(car),
+                })
+    return ethanol_records
+
+def fetch_crossing_data(fetcher: RailStateFetcher, crossing_key: str,
+                        config: dict, start: datetime, end: datetime) -> pd.DataFrame:
+    all_records = []
+    extra_days = config.get('extra_days', 0)
+    exclude_un1987 = config.get('exclude_un1987', False)
+    extended_end = end + timedelta(days=extra_days)
+
+    for sensor_cfg in config.get('sensors', []):
+        sensor_name = sensor_cfg['name']
+        direction = sensor_cfg.get('direction')
+        sensor_id = fetcher.get_sensor_id(sensor_name)
+
+        if not sensor_id:
+            print(f"    Warning: Sensor not found: {sensor_name}")
+            continue
+
+        print(f"    Fetching {sensor_name} ({direction})...")
+        sightings = fetcher.fetch_sightings(sensor_id, start, extended_end, direction)
+
+        if sightings:
+            records = extract_ethanol_cars(sightings, sensor_name, crossing_key, exclude_un1987)
+            all_records.extend(records)
+            print(f"      {len(sightings):,} sightings -> {len(records):,} ethanol cars")
+        else:
+            print(f"      No sightings found")
+
+    return pd.DataFrame(all_records) if all_records else pd.DataFrame()
+
+
+# ============================================================================
+# AGGREGATION
+# ============================================================================
+
+def calculate_daily_totals(df: pd.DataFrame) -> pd.DataFrame:
+    """Calculate daily totals with car count, gallons, barrels."""
+    if df.empty:
+        return pd.DataFrame()
+
+    df = df.copy()
+    df['detection_time'] = pd.to_datetime(df['detection_time'], format='ISO8601', utc=True)
+    df['date'] = df['detection_time'].dt.date
+
+    # Deduplicate by car_id and date
+    df = df.drop_duplicates(subset=['car_id', 'date'], keep='first')
+
+    df['date'] = pd.to_datetime(df['date'])
+
+    daily = df.groupby(['date']).agg(
+        car_count=('car_id', 'count'),
+        total_gallons=('capacity_gallons', 'sum'),
+    ).reset_index()
+
+    # Calculate barrels
+    daily['total_barrels'] = (daily['total_gallons'] / GALLONS_PER_BARREL).round(2)
+
+    return daily
+
+
+def add_moving_averages(df: pd.DataFrame) -> pd.DataFrame:
+    """Add 7-day, 30-day, and 90-day moving averages."""
+    if df.empty:
+        return df
+
+    df = df.copy()
+    df = df.sort_values('date')
+
+    # Fill in missing dates with zeros for proper moving averages
+    date_range = pd.date_range(start=df['date'].min(), end=df['date'].max(), freq='D')
+    df = df.set_index('date').reindex(date_range, fill_value=0).reset_index()
+    df = df.rename(columns={'index': 'date'})
+
+    # Calculate moving averages
+    for col in ['car_count', 'total_gallons', 'total_barrels']:
+        df[f'{col}_7d_ma'] = df[col].rolling(window=7, min_periods=1).mean().round(2)
+        df[f'{col}_30d_ma'] = df[col].rolling(window=30, min_periods=1).mean().round(2)
+        df[f'{col}_90d_ma'] = df[col].rolling(window=90, min_periods=1).mean().round(2)
+
+    # Reorder columns for clarity
+    df = df[[
+        'date',
+        'car_count', 'car_count_7d_ma', 'car_count_30d_ma', 'car_count_90d_ma',
+        'total_gallons', 'total_gallons_7d_ma', 'total_gallons_30d_ma', 'total_gallons_90d_ma',
+        'total_barrels', 'total_barrels_7d_ma', 'total_barrels_30d_ma', 'total_barrels_90d_ma',
+    ]]
+
+    return df
+
+
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+print("="*70)
+print("ETHANOL CANADA DAILY TOTALS WITH MOVING AVERAGES")
+print(f"Run Time: {datetime.utcnow().isoformat()}")
+print("="*70)
+
+# Calculate date range: Jan 1 2025 to yesterday
+yesterday = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=1)
+END_DATE = yesterday.replace(hour=23, minute=59, second=59)
+
+print(f"\nDate Range: {START_DATE.date()} to {END_DATE.date()}")
+print("Moving Averages: 7-day, 30-day, 90-day")
+print("UN1987 excluded from Windsor Region")
+
+# Initialize fetcher
+fetcher = RailStateFetcher(API_KEY)
+fetcher.load_sensors()
+print(f"Loaded {len(fetcher._sensor_cache)} sensors")
+
+# Fetch all data
+print("\n" + "="*70)
+print("FETCHING DATA")
+print("="*70)
+
+all_data = []
+for crossing_key, config in CROSSING_CONFIG.items():
+    display_name = config.get('display_name', crossing_key)
+    print(f"\n{display_name}:")
+    df = fetch_crossing_data(fetcher, crossing_key, config, START_DATE, END_DATE)
+    if not df.empty:
+        all_data.append(df)
+        print(f"  Total: {len(df):,} records")
+
+if not all_data:
+    print("\nNo data found!")
+    ethanol_daily = pd.DataFrame()
+else:
+    combined_df = pd.concat(all_data, ignore_index=True)
+    print(f"\nTotal raw records: {len(combined_df):,}")
+
+    # Calculate daily totals
+    print("\n" + "="*70)
+    print("CALCULATING DAILY TOTALS")
+    print("="*70)
+
+    ethanol_daily = calculate_daily_totals(combined_df)
+    print(f"Daily totals calculated: {len(ethanol_daily)} days")
+
+    # Add moving averages
+    print("\nAdding moving averages (7-day, 30-day, 90-day)...")
+    ethanol_daily = add_moving_averages(ethanol_daily)
+    print("Moving averages calculated")
+
+# ============================================================================
+# OUTPUT
+# ============================================================================
+
+print("\n" + "="*70)
+print("DAILY SUMMARY")
+print("="*70)
+
+if not ethanol_daily.empty:
+    print(f"\nDate range: {ethanol_daily['date'].min().date()} to {ethanol_daily['date'].max().date()}")
+    print(f"Total days: {len(ethanol_daily)}")
+
+    # Show last 14 days
+    print("\n" + "-"*90)
+    print(f"{'Date':<12} {'Cars':>6} {'7d MA':>8} {'30d MA':>8} {'90d MA':>8} {'Barrels':>10} {'7d MA':>10} {'30d MA':>10}")
+    print("-"*90)
+
+    for _, row in ethanol_daily.tail(14).iterrows():
+        date_str = row['date'].strftime('%Y-%m-%d')
+        print(f"{date_str:<12} {row['car_count']:>6,.0f} {row['car_count_7d_ma']:>8,.1f} {row['car_count_30d_ma']:>8,.1f} {row['car_count_90d_ma']:>8,.1f} {row['total_barrels']:>10,.0f} {row['total_barrels_7d_ma']:>10,.0f} {row['total_barrels_30d_ma']:>10,.0f}")
+
+    print("-"*90)
+
+    # Summary statistics
+    print("\n" + "-"*70)
+    print("SUMMARY STATISTICS (Full Period)")
+    print("-"*70)
+    print(f"Total days: {len(ethanol_daily)}")
+    print(f"Total cars: {ethanol_daily['car_count'].sum():,.0f}")
+    print(f"Total barrels: {ethanol_daily['total_barrels'].sum():,.0f}")
+    print(f"Average cars/day: {ethanol_daily['car_count'].mean():,.1f}")
+    print(f"Average barrels/day: {ethanol_daily['total_barrels'].mean():,.0f}")
+
+    print("\nMost Recent 30-Day Moving Averages:")
+    last_row = ethanol_daily.iloc[-1]
+    print(f"  Cars/day (30d MA): {last_row['car_count_30d_ma']:,.1f}")
+    print(f"  Gallons/day (30d MA): {last_row['total_gallons_30d_ma']:,.0f}")
+    print(f"  Barrels/day (30d MA): {last_row['total_barrels_30d_ma']:,.0f}")
+
+    print("\nMost Recent 90-Day Moving Averages:")
+    print(f"  Cars/day (90d MA): {last_row['car_count_90d_ma']:,.1f}")
+    print(f"  Gallons/day (90d MA): {last_row['total_gallons_90d_ma']:,.0f}")
+    print(f"  Barrels/day (90d MA): {last_row['total_barrels_90d_ma']:,.0f}")
+
+print("\n" + "="*70)
+print("OUTPUT DATAFRAME: ethanol_daily")
+print("="*70)
+print("\nColumns:")
+print("  date: Date")
+print("  car_count: Daily car count")
+print("  car_count_7d_ma, car_count_30d_ma, car_count_90d_ma: Car count moving averages")
+print("  total_gallons: Daily gallons")
+print("  total_gallons_7d_ma, total_gallons_30d_ma, total_gallons_90d_ma: Gallons moving averages")
+print("  total_barrels: Daily barrels")
+print("  total_barrels_7d_ma, total_barrels_30d_ma, total_barrels_90d_ma: Barrels moving averages")
+
+# Display the dataframe
+ethanol_daily

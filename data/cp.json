@@ -1,0 +1,54 @@
+{
+  "commodity": "cpkc_grain",
+  "display_name": "CPKC Grain",
+  "subtitle": "Canada Grain by Rail · RailState Sensor Data vs. CPKC Public Grain Reports",
+  "unit": "carloads",
+  "gov_source_label": "CPKC Grain Report",
+  "gov_lag_label": "Monthly (limited)",
+  "last_updated": "2026-03-11",
+
+  "monthly": {
+    "description": "Monthly totals. RailState = sensor-observed Canada grain. CPKC = publicly reported grain figures (only Jan & Feb 2026 available).",
+    "columns": ["month", "railstate", "cpkc_reported"],
+    "rows": [
+      ["2025-01", 23442, null],
+      ["2025-02", 20688, null],
+      ["2025-03", 23457, null],
+      ["2025-04", 24463, null],
+      ["2025-05", 25084, null],
+      ["2025-06", 19351, null],
+      ["2025-07", 19806, null],
+      ["2025-08", 17569, null],
+      ["2025-09", 21367, null],
+      ["2025-10", 23351, null],
+      ["2025-11", 23171, null],
+      ["2025-12", 24027, null],
+      ["2026-01", 24840, 24688],
+      ["2026-02", 22510, 23088]
+    ]
+  },
+
+  "cpkc_filings": {
+    "description": "Source images from CPKC public grain reports used for comparison values.",
+    "entries": [
+      {
+        "period": "2026-01",
+        "label": "January 2026",
+        "image": "images/cpkc_grain_jan_2026.png",
+        "caption": "Source: CPKC January 2026 Grain Report"
+      },
+      {
+        "period": "2026-02",
+        "label": "February 2026",
+        "image": "images/cpkc_grain_feb_2026.png",
+        "caption": "Source: CPKC February 2026 Grain Report"
+      }
+    ]
+  },
+
+  "daily": {
+    "description": "Daily sensor-observed Canada grain volume. Past 90 days. Updated via API script.",
+    "columns": ["date", "value"],
+    "rows": []
+  }
+}

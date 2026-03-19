@@ -1,0 +1,17 @@
+{
+  "commodity": "ethanol_ny_harbor",
+  "display_name": "Ethanol — NY Harbor",
+  "subtitle": "Ethanol Deliveries into NY Harbor Region",
+  "unit": "gallons (k)",
+  "gov_source_label": "EIA Weekly Ethanol",
+  "gov_lag_label": "4–6 wks",
+  "last_updated": "2026-03-11",
+  "monthly": {
+    "columns": ["month", "railstate", "gov"],
+    "rows": []
+  },
+  "daily": {
+    "columns": ["date", "value"],
+    "rows": []
+  }
+}

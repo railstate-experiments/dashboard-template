@@ -1,0 +1,17 @@
+{
+  "commodity": "diesel_cross_border",
+  "display_name": "Diesel Cross-Border",
+  "subtitle": "US ↔ Canada · Ultra-Low Sulfur Diesel · Tank Car Movement",
+  "unit": "barrels (k)",
+  "gov_source_label": "EIA / CER",
+  "gov_lag_label": "5–7 wks",
+  "last_updated": "2026-03-11",
+  "monthly": {
+    "columns": ["month", "railstate", "gov"],
+    "rows": []
+  },
+  "daily": {
+    "columns": ["date", "value"],
+    "rows": []
+  }
+}

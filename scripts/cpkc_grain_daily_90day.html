@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPKC Canadian Grain - Daily Monitoring Dashboard</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #2c3e50;
+        background: #fff;
+        line-height: 1.5;
+        font-size: 13px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px 30px; }
+    .header {
+        background: #1a2744;
+        color: #fff;
+        padding: 28px 40px;
+        margin-bottom: 0;
+    }
+    .header h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+    .header .subtitle { font-size: 13px; color: #8fa4c4; margin-bottom: 2px; }
+    .header .date { font-size: 12px; color: #6b83a8; }
+    .section {
+        margin-bottom: 28px;
+        page-break-inside: avoid;
+    }
+    .section h2 {
+        font-size: 16px;
+        color: #1a2744;
+        border-bottom: 2px solid #1a2744;
+        padding-bottom: 5px;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+    .summary-cards {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+    .card {
+        background: #f7f9fc;
+        border: 1px solid #d5dde8;
+        border-radius: 6px;
+        padding: 14px 18px;
+        flex: 1;
+        min-width: 160px;
+    }
+    .card .label { font-size: 11px; color: #6b83a8; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card .value { font-size: 22px; font-weight: 700; color: #1a2744; margin-top: 2px; }
+    .card .sub { font-size: 11px; color: #7f8c8d; margin-top: 2px; }
+    .chart-container {
+        background: #fafbfd;
+        border: 1px solid #e0e5ec;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 18px;
+        overflow-x: auto;
+    }
+    .chart-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1a2744;
+        margin-bottom: 12px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 14px;
+        font-size: 12px;
+    }
+    th {
+        background: #1a2744;
+        color: #fff;
+        padding: 7px 10px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    th.num, td.num { text-align: right; }
+    td {
+        padding: 6px 10px;
+        border-bottom: 1px solid #e8ecf1;
+    }
+    tr:nth-child(even) { background: #f9fafb; }
+    tr:hover { background: #eef2f7; }
+    .legend {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .legend-swatch {
+        width: 14px;
+        height: 3px;
+        border-radius: 1px;
+    }
+    .footer {
+        margin-top: 30px;
+        padding-top: 14px;
+        border-top: 1px solid #d5dde8;
+        font-size: 11px;
+        color: #95a5a6;
+    }
+    @media print {
+        .container { padding: 10px; }
+        .header { padding: 20px; }
+        body { font-size: 11px; }
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>CPKC Canadian Grain &mdash; Daily Monitoring Dashboard</h1>
+    <div class="subtitle">V9.4 Methodology &mdash; V8 Car-Level Exclusions + Trip-Level Rescue</div>
+    <div class="date">Last updated: 2026-03-16 12:19</div>
+</div>
+
+<div class="container">
+
+<div class="section">
+    <h2>Summary Statistics</h2>
+    <div class="summary-cards">
+        <div class="card">
+            <div class="label">90-Day Total</div>
+            <div class="value">69,823</div>
+            <div class="sub">6,703,008 tonnes</div>
+        </div>
+        <div class="card">
+            <div class="label">7-Day Average</div>
+            <div class="value">676</div>
+            <div class="sub">carloads/day</div>
+        </div>
+        <div class="card">
+            <div class="label">30-Day Average</div>
+            <div class="value">588</div>
+            <div class="sub">carloads/day</div>
+        </div>
+        <div class="card">
+            <div class="label">Yesterday (2026-03-16)</div>
+            <div class="value">257</div>
+            <div class="sub">carloads</div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Daily 90-Day Rolling</h2>
+    <div class="chart-container">
+        <div class="chart-title">Daily Carloads with Moving Averages</div>
+        <div class="legend">
+            <div class="legend-item"><div class="legend-swatch" style="background:#a8c4e0;height:12px;width:12px;"></div> Daily carloads</div>
+            <div class="legend-item"><div class="legend-swatch" style="background:#2166ac;"></div> 7-day moving average</div>
+            <div class="legend-item"><div class="legend-swatch" style="background:#c0392b;"></div> 30-day moving average</div>
+        </div>
+        <svg width="900" height="310" xmlns="http://www.w3.org/2000/svg">
+            <line x1="55" y1="240.0" x2="880" y2="240.0" stroke="#e0e5ec" stroke-width="0.5"/>
+            <text x="50" y="244.0" text-anchor="end" font-size="10" fill="#888">0</text>
+            <line x1="55" y1="196.0" x2="880" y2="196.0" stroke="#e0e5ec" stroke-width="0.5"/>
+            <text x="50" y="200.0" text-anchor="end" font-size="10" fill="#888">248</text>
+            <line x1="55" y1="152.0" x2="880" y2="152.0" stroke="#e0e5ec" stroke-width="0.5"/>
+            <text x="50" y="156.0" text-anchor="end" font-size="10" fill="#888">497</text>
+            <line x1="55" y1="108.0" x2="880" y2="108.0" stroke="#e0e5ec" stroke-width="0.5"/>
+            <text x="50" y="112.0" text-anchor="end" font-size="10" fill="#888">745</text>
+            <line x1="55" y1="64.0" x2="880" y2="64.0" stroke="#e0e5ec" stroke-width="0.5"/>
+            <text x="50" y="68.0" text-anchor="end" font-size="10" fill="#888">994</text>
+            <line x1="55" y1="20.0" x2="880" y2="20.0" stroke="#e0e5ec" stroke-width="0.5"/>
+            <text x="50" y="24.0" text-anchor="end" font-size="10" fill="#888">1,243</text>
+            <rect x="56.0" y="40.0" width="4.8" height="200.0" fill="#a8c4e0" rx="1"/>
+            <rect x="62.8" y="82.8" width="4.8" height="157.2" fill="#a8c4e0" rx="1"/>
+            <rect x="69.7" y="145.0" width="4.8" height="95.0" fill="#a8c4e0" rx="1"/>
+            <rect x="76.5" y="113.5" width="4.8" height="126.5" fill="#a8c4e0" rx="1"/>
+            <rect x="83.3" y="152.9" width="4.8" height="87.1" fill="#a8c4e0" rx="1"/>
+            <rect x="90.1" y="154.5" width="4.8" height="85.5" fill="#a8c4e0" rx="1"/>
+            <rect x="96.9" y="82.5" width="4.8" height="157.5" fill="#a8c4e0" rx="1"/>
+            <rect x="103.7" y="131.0" width="4.8" height="109.0" fill="#a8c4e0" rx="1"/>
+            <rect x="110.6" y="133.5" width="4.8" height="106.5" fill="#a8c4e0" rx="1"/>
+            <rect x="117.4" y="131.9" width="4.8" height="108.1" fill="#a8c4e0" rx="1"/>
+            <rect x="124.2" y="170.8" width="4.8" height="69.2" fill="#a8c4e0" rx="1"/>
+            <rect x="131.0" y="166.9" width="4.8" height="73.1" fill="#a8c4e0" rx="1"/>
+            <rect x="137.8" y="132.7" width="4.8" height="107.3" fill="#a8c4e0" rx="1"/>
+            <rect x="144.7" y="78.4" width="4.8" height="161.6" fill="#a8c4e0" rx="1"/>
+            <rect x="151.5" y="178.1" width="4.8" height="61.9" fill="#a8c4e0" rx="1"/>
+            <rect x="158.3" y="138.1" width="4.8" height="101.9" fill="#a8c4e0" rx="1"/>
+            <rect x="165.1" y="197.7" width="4.8" height="42.3" fill="#a8c4e0" rx="1"/>
+            <rect x="171.9" y="157.0" width="4.8" height="83.0" fill="#a8c4e0" rx="1"/>
+            <rect x="178.8" y="134.7" width="4.8" height="105.3" fill="#a8c4e0" rx="1"/>
+            <rect x="185.6" y="92.6" width="4.8" height="147.4" fill="#a8c4e0" rx="1"/>
+            <rect x="192.4" y="169.9" width="4.8" height="70.1" fill="#a8c4e0" rx="1"/>
+            <rect x="199.2" y="176.1" width="4.8" height="63.9" fill="#a8c4e0" rx="1"/>
+            <rect x="206.0" y="172.4" width="4.8" height="67.6" fill="#a8c4e0" rx="1"/>
+            <rect x="212.8" y="166.0" width="4.8" height="74.0" fill="#a8c4e0" rx="1"/>
+            <rect x="219.7" y="145.1" width="4.8" height="94.9" fill="#a8c4e0" rx="1"/>
+            <rect x="226.5" y="151.9" width="4.8" height="88.1" fill="#a8c4e0" rx="1"/>
+            <rect x="233.3" y="146.7" width="4.8" height="93.3" fill="#a8c4e0" rx="1"/>
+            <rect x="240.1" y="177.9" width="4.8" height="62.1" fill="#a8c4e0" rx="1"/>
+            <rect x="246.9" y="152.4" width="4.8" height="87.6" fill="#a8c4e0" rx="1"/>
+            <rect x="253.8" y="182.7" width="4.8" height="57.3" fill="#a8c4e0" rx="1"/>
+            <rect x="260.6" y="129.0" width="4.8" height="111.0" fill="#a8c4e0" rx="1"/>
+            <rect x="267.4" y="184.4" width="4.8" height="55.6" fill="#a8c4e0" rx="1"/>
+            <rect x="274.2" y="85.0" width="4.8" height="155.0" fill="#a8c4e0" rx="1"/>
+            <rect x="281.0" y="124.2" width="4.8" height="115.8" fill="#a8c4e0" rx="1"/>
+            <rect x="287.8" y="120.7" width="4.8" height="119.3" fill="#a8c4e0" rx="1"/>
+            <rect x="294.7" y="148.1" width="4.8" height="91.9" fill="#a8c4e0" rx="1"/>
+            <rect x="301.5" y="167.8" width="4.8" height="72.2" fill="#a8c4e0" rx="1"/>
+            <rect x="308.3" y="158.6" width="4.8" height="81.4" fill="#a8c4e0" rx="1"/>
+            <rect x="315.1" y="150.8" width="4.8" height="89.2" fill="#a8c4e0" rx="1"/>
+            <rect x="321.9" y="135.2" width="4.8" height="104.8" fill="#a8c4e0" rx="1"/>
+            <rect x="328.8" y="192.0" width="4.8" height="48.0" fill="#a8c4e0" rx="1"/>
+            <rect x="335.6" y="155.4" width="4.8" height="84.6" fill="#a8c4e0" rx="1"/>
+            <rect x="342.4" y="122.7" width="4.8" height="117.3" fill="#a8c4e0" rx="1"/>
+            <rect x="349.2" y="132.7" width="4.8" height="107.3" fill="#a8c4e0" rx="1"/>
+            <rect x="356.0" y="131.7" width="4.8" height="108.3" fill="#a8c4e0" rx="1"/>
+            <rect x="362.8" y="163.0" width="4.8" height="77.0" fill="#a8c4e0" rx="1"/>
+            <rect x="369.7" y="148.3" width="4.8" height="91.7" fill="#a8c4e0" rx="1"/>
+            <rect x="376.5" y="98.9" width="4.8" height="141.1" fill="#a8c4e0" rx="1"/>
+            <rect x="383.3" y="118.4" width="4.8" height="121.6" fill="#a8c4e0" rx="1"/>
+            <rect x="390.1" y="186.5" width="4.8" height="53.5" fill="#a8c4e0" rx="1"/>
+            <rect x="396.9" y="123.7" width="4.8" height="116.3" fill="#a8c4e0" rx="1"/>
+            <rect x="403.8" y="173.6" width="4.8" height="66.4" fill="#a8c4e0" rx="1"/>
+            <rect x="410.6" y="133.3" width="4.8" height="106.7" fill="#a8c4e0" rx="1"/>
+            <rect x="417.4" y="147.8" width="4.8" height="92.2" fill="#a8c4e0" rx="1"/>
+            <rect x="424.2" y="109.4" width="4.8" height="130.6" fill="#a8c4e0" rx="1"/>
+            <rect x="431.0" y="96.1" width="4.8" height="143.9" fill="#a8c4e0" rx="1"/>
+            <rect x="437.8" y="168.7" width="4.8" height="71.3" fill="#a8c4e0" rx="1"/>
+            <rect x="444.7" y="134.5" width="4.8" height="105.5" fill="#a8c4e0" rx="1"/>
+            <rect x="451.5" y="105.3" width="4.8" height="134.7" fill="#a8c4e0" rx="1"/>
+            <rect x="458.3" y="142.7" width="4.8" height="97.3" fill="#a8c4e0" rx="1"/>
+            <rect x="465.1" y="132.9" width="4.8" height="107.1" fill="#a8c4e0" rx="1"/>
+            <rect x="471.9" y="140.4" width="4.8" height="99.6" fill="#a8c4e0" rx="1"/>
+            <rect x="478.8" y="65.8" width="4.8" height="174.2" fill="#a8c4e0" rx="1"/>
+            <rect x="485.6" y="187.8" width="4.8" height="52.2" fill="#a8c4e0" rx="1"/>
+            <rect x="492.4" y="133.6" width="4.8" height="106.4" fill="#a8c4e0" rx="1"/>
+            <rect x="499.2" y="53.8" width="4.8" height="186.2" fill="#a8c4e0" rx="1"/>
+            <rect x="506.0" y="187.1" width="4.8" height="52.9" fill="#a8c4e0" rx="1"/>
+            <rect x="512.8" y="140.5" width="4.8" height="99.5" fill="#a8c4e0" rx="1"/>
+            <rect x="519.7" y="107.6" width="4.8" height="132.4" fill="#a8c4e0" rx="1"/>
+            <rect x="526.5" y="212.2" width="4.8" height="27.8" fill="#a8c4e0" rx="1"/>
+            <rect x="533.3" y="143.7" width="4.8" height="96.3" fill="#a8c4e0" rx="1"/>
+            <rect x="540.1" y="174.5" width="4.8" height="65.5" fill="#a8c4e0" rx="1"/>
+            <rect x="546.9" y="147.6" width="4.8" height="92.4" fill="#a8c4e0" rx="1"/>
+            <rect x="553.8" y="135.8" width="4.8" height="104.2" fill="#a8c4e0" rx="1"/>
+            <rect x="560.6" y="115.2" width="4.8" height="124.8" fill="#a8c4e0" rx="1"/>
+            <rect x="567.4" y="109.2" width="4.8" height="130.8" fill="#a8c4e0" rx="1"/>
+            <rect x="574.2" y="140.4" width="4.8" height="99.6" fill="#a8c4e0" rx="1"/>
+            <rect x="581.0" y="106.0" width="4.8" height="134.0" fill="#a8c4e0" rx="1"/>
+            <rect x="587.8" y="140.0" width="4.8" height="100.0" fill="#a8c4e0" rx="1"/>
+            <rect x="594.7" y="108.7" width="4.8" height="131.3" fill="#a8c4e0" rx="1"/>
+            <rect x="601.5" y="155.9" width="4.8" height="84.1" fill="#a8c4e0" rx="1"/>
+            <rect x="608.3" y="88.7" width="4.8" height="151.3" fill="#a8c4e0" rx="1"/>
+            <rect x="615.1" y="134.3" width="4.8" height="105.7" fill="#a8c4e0" rx="1"/>
+            <rect x="621.9" y="183.2" width="4.8" height="56.8" fill="#a8c4e0" rx="1"/>
+            <rect x="628.8" y="121.6" width="4.8" height="118.4" fill="#a8c4e0" rx="1"/>
+            <rect x="635.6" y="65.0" width="4.8" height="175.0" fill="#a8c4e0" rx="1"/>
+            <rect x="642.4" y="188.8" width="4.8" height="51.2" fill="#a8c4e0" rx="1"/>
+            <rect x="649.2" y="98.8" width="4.8" height="141.2" fill="#a8c4e0" rx="1"/>
+            <rect x="656.0" y="151.2" width="4.8" height="88.8" fill="#a8c4e0" rx="1"/>
+            <rect x="662.8" y="137.7" width="4.8" height="102.3" fill="#a8c4e0" rx="1"/>
+            <rect x="669.7" y="151.2" width="4.8" height="88.8" fill="#a8c4e0" rx="1"/>
+            <rect x="676.5" y="141.4" width="4.8" height="98.6" fill="#a8c4e0" rx="1"/>
+            <rect x="683.3" y="150.3" width="4.8" height="89.7" fill="#a8c4e0" rx="1"/>
+            <rect x="690.1" y="129.4" width="4.8" height="110.6" fill="#a8c4e0" rx="1"/>
+            <rect x="696.9" y="148.1" width="4.8" height="91.9" fill="#a8c4e0" rx="1"/>
+            <rect x="703.8" y="189.0" width="4.8" height="51.0" fill="#a8c4e0" rx="1"/>
+            <rect x="710.6" y="115.9" width="4.8" height="124.1" fill="#a8c4e0" rx="1"/>
+            <rect x="717.4" y="193.6" width="4.8" height="46.4" fill="#a8c4e0" rx="1"/>
+            <rect x="724.2" y="141.2" width="4.8" height="98.8" fill="#a8c4e0" rx="1"/>
+            <rect x="731.0" y="128.0" width="4.8" height="112.0" fill="#a8c4e0" rx="1"/>
+            <rect x="737.8" y="135.0" width="4.8" height="105.0" fill="#a8c4e0" rx="1"/>
+            <rect x="744.7" y="151.5" width="4.8" height="88.5" fill="#a8c4e0" rx="1"/>
+            <rect x="751.5" y="141.9" width="4.8" height="98.1" fill="#a8c4e0" rx="1"/>
+            <rect x="758.3" y="47.8" width="4.8" height="192.2" fill="#a8c4e0" rx="1"/>
+            <rect x="765.1" y="171.0" width="4.8" height="69.0" fill="#a8c4e0" rx="1"/>
+            <rect x="771.9" y="164.8" width="4.8" height="75.2" fill="#a8c4e0" rx="1"/>
+            <rect x="778.8" y="152.6" width="4.8" height="87.4" fill="#a8c4e0" rx="1"/>
+            <rect x="785.6" y="118.1" width="4.8" height="121.9" fill="#a8c4e0" rx="1"/>
+            <rect x="792.4" y="123.2" width="4.8" height="116.8" fill="#a8c4e0" rx="1"/>
+            <rect x="799.2" y="126.5" width="4.8" height="113.5" fill="#a8c4e0" rx="1"/>
+            <rect x="806.0" y="110.4" width="4.8" height="129.6" fill="#a8c4e0" rx="1"/>
+            <rect x="812.8" y="153.5" width="4.8" height="86.5" fill="#a8c4e0" rx="1"/>
+            <rect x="819.7" y="145.1" width="4.8" height="94.9" fill="#a8c4e0" rx="1"/>
+            <rect x="826.5" y="157.9" width="4.8" height="82.1" fill="#a8c4e0" rx="1"/>
+            <rect x="833.3" y="104.2" width="4.8" height="135.8" fill="#a8c4e0" rx="1"/>
+            <rect x="840.1" y="118.9" width="4.8" height="121.1" fill="#a8c4e0" rx="1"/>
+            <rect x="846.9" y="140.4" width="4.8" height="99.6" fill="#a8c4e0" rx="1"/>
+            <rect x="853.8" y="99.5" width="4.8" height="140.5" fill="#a8c4e0" rx="1"/>
+            <rect x="860.6" y="114.0" width="4.8" height="126.0" fill="#a8c4e0" rx="1"/>
+            <rect x="867.4" y="71.0" width="4.8" height="169.0" fill="#a8c4e0" rx="1"/>
+            <rect x="874.2" y="194.5" width="4.8" height="45.5" fill="#a8c4e0" rx="1"/>
+            <polyline points="58.4,40.0 65.2,61.4 72.0,89.3 78.9,95.3 85.7,106.8 92.5,114.8 99.3,110.2 106.1,123.2 113.0,130.4 119.8,128.5 126.6,136.7 133.4,138.7 140.2,135.6 147.0,135.0 153.9,141.7 160.7,142.4 167.5,151.8 174.3,149.8 181.1,145.2 188.0,139.5 194.8,152.6 201.6,152.3 208.4,157.2 215.2,152.7 222.0,151.0 228.9,153.4 235.7,161.2 242.5,162.3 249.3,158.9 256.1,160.4 263.0,155.1 269.8,160.7 276.6,151.2 283.4,147.9 290.2,139.8 297.0,139.2 303.9,137.0 310.7,141.3 317.5,136.5 324.3,143.6 331.1,153.3 338.0,158.3 344.8,154.6 351.6,149.6 358.4,145.8 365.2,147.5 372.0,149.4 378.9,136.1 385.7,130.8 392.5,139.9 399.3,138.7 406.1,144.7 413.0,140.4 419.8,140.3 426.6,141.8 433.4,138.6 440.2,136.1 447.0,137.6 453.9,127.9 460.7,129.2 467.5,127.1 474.3,131.5 481.1,127.2 488.0,129.9 494.8,129.8 501.6,122.4 508.4,128.8 515.2,129.9 522.0,125.2 528.9,146.1 535.7,139.8 542.5,145.6 549.3,159.0 556.1,151.7 563.0,148.1 569.8,148.3 576.6,138.1 583.4,132.7 590.2,127.7 597.0,122.2 603.9,125.1 610.7,121.3 617.5,124.9 624.3,131.0 631.1,133.2 638.0,122.5 644.8,133.9 651.6,125.8 658.4,134.7 665.2,135.2 672.0,130.6 678.9,133.4 685.7,145.6 692.5,137.1 699.3,144.2 706.1,149.6 713.0,146.5 719.8,152.5 726.6,152.5 733.4,149.3 740.2,150.1 747.0,150.6 753.9,143.9 760.7,134.2 767.5,130.9 774.3,134.3 781.1,137.8 788.0,135.4 794.8,131.3 801.6,129.1 808.4,138.1 815.2,135.6 822.0,132.8 828.9,133.5 835.7,131.6 842.5,130.9 849.3,132.9 856.1,131.4 863.0,125.7 869.8,115.1 876.6,120.4" fill="none" stroke="#2166ac" stroke-width="2" stroke-linejoin="round"/>
+            <polyline points="58.4,40.0 65.2,61.4 72.0,89.3 78.9,95.3 85.7,106.8 92.5,114.8 99.3,110.2 106.1,112.8 113.0,115.1 119.8,116.7 126.6,121.7 133.4,125.4 140.2,126.0 147.0,122.6 153.9,126.3 160.7,127.0 167.5,131.2 174.3,132.6 181.1,132.7 188.0,130.7 194.8,132.6 201.6,134.6 208.4,136.2 215.2,137.4 222.0,137.8 228.9,138.3 235.7,138.6 242.5,140.0 249.3,140.4 256.1,141.8 263.0,144.8 269.8,148.2 276.6,146.2 283.4,146.6 290.2,145.5 297.0,145.3 303.9,148.1 310.7,149.0 317.5,149.6 324.3,149.7 331.1,150.4 338.0,150.1 344.8,149.7 351.6,151.5 358.4,150.0 365.2,150.8 372.0,149.2 378.9,147.2 385.7,146.7 392.5,149.8 399.3,148.3 406.1,148.2 413.0,146.9 419.8,146.3 426.6,145.1 433.4,143.2 440.2,144.0 447.0,142.5 453.9,141.0 460.7,139.6 467.5,139.8 474.3,138.3 481.1,137.6 488.0,139.8 494.8,140.2 501.6,137.1 508.4,137.7 515.2,137.1 522.0,135.7 528.9,138.2 535.7,136.6 542.5,137.2 549.3,138.1 556.1,138.2 563.0,137.6 569.8,135.8 576.6,135.6 583.4,135.8 590.2,136.5 597.0,133.9 603.9,135.0 610.7,132.2 617.5,132.2 624.3,133.4 631.1,133.8 638.0,132.8 644.8,133.4 651.6,132.2 658.4,133.8 665.2,133.6 672.0,134.2 678.9,134.2 685.7,137.1 692.5,135.1 699.3,135.6 706.1,140.1 713.0,137.7 719.8,139.5 726.6,140.6 733.4,137.8 740.2,137.5 747.0,136.8 753.9,136.6 760.7,133.6 767.5,135.5 774.3,137.3 781.1,137.8 788.0,138.2 794.8,137.6 801.6,138.2 808.4,136.7 815.2,138.8 822.0,139.2 828.9,138.3 835.7,137.8 842.5,139.6 849.3,138.0 856.1,138.0 863.0,136.7 869.8,134.5 876.6,136.0" fill="none" stroke="#c0392b" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6,3"/>
+            <text x="58.4" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 58.4 255.0)">11/16</text>
+            <text x="126.6" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 126.6 255.0)">11/26</text>
+            <text x="194.8" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 194.8 255.0)">12/06</text>
+            <text x="263.0" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 263.0 255.0)">12/16</text>
+            <text x="331.1" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 331.1 255.0)">12/26</text>
+            <text x="399.3" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 399.3 255.0)">01/05</text>
+            <text x="467.5" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 467.5 255.0)">01/15</text>
+            <text x="535.7" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 535.7 255.0)">01/25</text>
+            <text x="603.9" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 603.9 255.0)">02/04</text>
+            <text x="672.0" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 672.0 255.0)">02/14</text>
+            <text x="740.2" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 740.2 255.0)">02/24</text>
+            <text x="808.4" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 808.4 255.0)">03/06</text>
+            <text x="876.6" y="255.0" text-anchor="middle" font-size="9" fill="#888" transform="rotate(-45 876.6 255.0)">03/16</text>
+            <line x1="55" y1="20" x2="55" y2="240" stroke="#2c3e50" stroke-width="1"/>
+            <line x1="55" y1="240" x2="880" y2="240" stroke="#2c3e50" stroke-width="1"/>
+        </svg>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Daily Data Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th class="num">Carloads</th>
+                <th class="num">Tonnes</th>
+                <th class="num">7-Day MA</th>
+                <th class="num">30-Day MA</th>
+                <th class="num">Vancouver</th>
+                <th class="num">Portland</th>
+                <th class="num">Thunder Bay</th>
+                <th class="num">US Mcara</th>
+                <th class="num">US Kevin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2026-03-16</td>
+                <td class="num">257</td>
+                <td class="num">24,672</td>
+                <td class="num">676</td>
+                <td class="num">588</td>
+                <td class="num">48</td>
+                <td class="num">188</td>
+                <td class="num">8</td>
+                <td class="num">2</td>
+                <td class="num">11</td>
+            </tr>
+            <tr>
+                <td>2026-03-15</td>
+                <td class="num">955</td>
+                <td class="num">91,680</td>
+                <td class="num">706</td>
+                <td class="num">596</td>
+                <td class="num">321</td>
+                <td class="num">180</td>
+                <td class="num">128</td>
+                <td class="num">326</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-03-14</td>
+                <td class="num">712</td>
+                <td class="num">68,352</td>
+                <td class="num">646</td>
+                <td class="num">583</td>
+                <td class="num">213</td>
+                <td class="num">81</td>
+                <td class="num">64</td>
+                <td class="num">317</td>
+                <td class="num">37</td>
+            </tr>
+            <tr>
+                <td>2026-03-13</td>
+                <td class="num">794</td>
+                <td class="num">76,224</td>
+                <td class="num">614</td>
+                <td class="num">576</td>
+                <td class="num">238</td>
+                <td class="num">90</td>
+                <td class="num">18</td>
+                <td class="num">401</td>
+                <td class="num">47</td>
+            </tr>
+            <tr>
+                <td>2026-03-12</td>
+                <td class="num">563</td>
+                <td class="num">54,048</td>
+                <td class="num">605</td>
+                <td class="num">577</td>
+                <td class="num">79</td>
+                <td class="num">335</td>
+                <td class="num">22</td>
+                <td class="num">77</td>
+                <td class="num">50</td>
+            </tr>
+            <tr>
+                <td>2026-03-11</td>
+                <td class="num">684</td>
+                <td class="num">65,664</td>
+                <td class="num">616</td>
+                <td class="num">567</td>
+                <td class="num">312</td>
+                <td class="num">88</td>
+                <td class="num">79</td>
+                <td class="num">160</td>
+                <td class="num">45</td>
+            </tr>
+            <tr>
+                <td>2026-03-10</td>
+                <td class="num">767</td>
+                <td class="num">73,632</td>
+                <td class="num">613</td>
+                <td class="num">578</td>
+                <td class="num">356</td>
+                <td class="num">145</td>
+                <td class="num">37</td>
+                <td class="num">209</td>
+                <td class="num">20</td>
+            </tr>
+            <tr>
+                <td>2026-03-09</td>
+                <td class="num">464</td>
+                <td class="num">44,544</td>
+                <td class="num">602</td>
+                <td class="num">574</td>
+                <td class="num">257</td>
+                <td class="num">59</td>
+                <td class="num">49</td>
+                <td class="num">99</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-03-08</td>
+                <td class="num">536</td>
+                <td class="num">51,456</td>
+                <td class="num">606</td>
+                <td class="num">570</td>
+                <td class="num">59</td>
+                <td class="num">108</td>
+                <td class="num">254</td>
+                <td class="num">61</td>
+                <td class="num">54</td>
+            </tr>
+            <tr>
+                <td>2026-03-07</td>
+                <td class="num">489</td>
+                <td class="num">46,944</td>
+                <td class="num">590</td>
+                <td class="num">572</td>
+                <td class="num">120</td>
+                <td class="num">238</td>
+                <td class="num">30</td>
+                <td class="num">97</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2026-03-06</td>
+                <td class="num">732</td>
+                <td class="num">70,272</td>
+                <td class="num">576</td>
+                <td class="num">584</td>
+                <td class="num">440</td>
+                <td class="num">122</td>
+                <td class="num">64</td>
+                <td class="num">41</td>
+                <td class="num">65</td>
+            </tr>
+            <tr>
+                <td>2026-03-05</td>
+                <td class="num">641</td>
+                <td class="num">61,536</td>
+                <td class="num">626</td>
+                <td class="num">575</td>
+                <td class="num">290</td>
+                <td class="num">123</td>
+                <td class="num">29</td>
+                <td class="num">84</td>
+                <td class="num">115</td>
+            </tr>
+            <tr>
+                <td>2026-03-04</td>
+                <td class="num">660</td>
+                <td class="num">63,360</td>
+                <td class="num">614</td>
+                <td class="num">579</td>
+                <td class="num">522</td>
+                <td class="num">22</td>
+                <td class="num">44</td>
+                <td class="num">65</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>2026-03-03</td>
+                <td class="num">689</td>
+                <td class="num">66,144</td>
+                <td class="num">591</td>
+                <td class="num">575</td>
+                <td class="num">353</td>
+                <td class="num">159</td>
+                <td class="num">34</td>
+                <td class="num">142</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-03-02</td>
+                <td class="num">494</td>
+                <td class="num">47,424</td>
+                <td class="num">577</td>
+                <td class="num">578</td>
+                <td class="num">121</td>
+                <td class="num">54</td>
+                <td class="num">22</td>
+                <td class="num">293</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2026-03-01</td>
+                <td class="num">425</td>
+                <td class="num">40,800</td>
+                <td class="num">597</td>
+                <td class="num">580</td>
+                <td class="num">63</td>
+                <td class="num">113</td>
+                <td class="num">102</td>
+                <td class="num">109</td>
+                <td class="num">38</td>
+            </tr>
+            <tr>
+                <td>2026-02-28</td>
+                <td class="num">390</td>
+                <td class="num">37,440</td>
+                <td class="num">616</td>
+                <td class="num">590</td>
+                <td class="num">85</td>
+                <td class="num">133</td>
+                <td class="num">68</td>
+                <td class="num">104</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-02-27</td>
+                <td class="num">1,086</td>
+                <td class="num">104,256</td>
+                <td class="num">598</td>
+                <td class="num">601</td>
+                <td class="num">548</td>
+                <td class="num">214</td>
+                <td class="num">131</td>
+                <td class="num">185</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2026-02-26</td>
+                <td class="num">554</td>
+                <td class="num">53,184</td>
+                <td class="num">543</td>
+                <td class="num">584</td>
+                <td class="num">354</td>
+                <td class="num">45</td>
+                <td class="num">70</td>
+                <td class="num">73</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+                <td>2026-02-25</td>
+                <td class="num">500</td>
+                <td class="num">48,000</td>
+                <td class="num">505</td>
+                <td class="num">583</td>
+                <td class="num">276</td>
+                <td class="num">60</td>
+                <td class="num">12</td>
+                <td class="num">150</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2026-02-24</td>
+                <td class="num">593</td>
+                <td class="num">56,928</td>
+                <td class="num">508</td>
+                <td class="num">579</td>
+                <td class="num">391</td>
+                <td class="num">16</td>
+                <td class="num">2</td>
+                <td class="num">178</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2026-02-23</td>
+                <td class="num">633</td>
+                <td class="num">60,768</td>
+                <td class="num">512</td>
+                <td class="num">577</td>
+                <td class="num">428</td>
+                <td class="num">59</td>
+                <td class="num">34</td>
+                <td class="num">110</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2026-02-22</td>
+                <td class="num">558</td>
+                <td class="num">53,568</td>
+                <td class="num">494</td>
+                <td class="num">562</td>
+                <td class="num">308</td>
+                <td class="num">120</td>
+                <td class="num">52</td>
+                <td class="num">77</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-02-21</td>
+                <td class="num">262</td>
+                <td class="num">25,152</td>
+                <td class="num">494</td>
+                <td class="num">568</td>
+                <td class="num">183</td>
+                <td class="num">35</td>
+                <td class="num">0</td>
+                <td class="num">36</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2026-02-20</td>
+                <td class="num">701</td>
+                <td class="num">67,296</td>
+                <td class="num">528</td>
+                <td class="num">578</td>
+                <td class="num">376</td>
+                <td class="num">112</td>
+                <td class="num">40</td>
+                <td class="num">128</td>
+                <td class="num">45</td>
+            </tr>
+            <tr>
+                <td>2026-02-19</td>
+                <td class="num">288</td>
+                <td class="num">27,648</td>
+                <td class="num">511</td>
+                <td class="num">564</td>
+                <td class="num">95</td>
+                <td class="num">26</td>
+                <td class="num">42</td>
+                <td class="num">122</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-02-18</td>
+                <td class="num">519</td>
+                <td class="num">49,824</td>
+                <td class="num">541</td>
+                <td class="num">590</td>
+                <td class="num">270</td>
+                <td class="num">125</td>
+                <td class="num">9</td>
+                <td class="num">112</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-02-17</td>
+                <td class="num">625</td>
+                <td class="num">60,000</td>
+                <td class="num">581</td>
+                <td class="num">593</td>
+                <td class="num">314</td>
+                <td class="num">21</td>
+                <td class="num">59</td>
+                <td class="num">228</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-02-16</td>
+                <td class="num">507</td>
+                <td class="num">48,672</td>
+                <td class="num">533</td>
+                <td class="num">582</td>
+                <td class="num">253</td>
+                <td class="num">35</td>
+                <td class="num">145</td>
+                <td class="num">69</td>
+                <td class="num">5</td>
+            </tr>
+            <tr>
+                <td>2026-02-15</td>
+                <td class="num">557</td>
+                <td class="num">53,472</td>
+                <td class="num">602</td>
+                <td class="num">598</td>
+                <td class="num">199</td>
+                <td class="num">122</td>
+                <td class="num">16</td>
+                <td class="num">219</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-02-14</td>
+                <td class="num">502</td>
+                <td class="num">48,192</td>
+                <td class="num">618</td>
+                <td class="num">598</td>
+                <td class="num">249</td>
+                <td class="num">137</td>
+                <td class="num">26</td>
+                <td class="num">84</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2026-02-13</td>
+                <td class="num">578</td>
+                <td class="num">55,488</td>
+                <td class="num">592</td>
+                <td class="num">601</td>
+                <td class="num">254</td>
+                <td class="num">132</td>
+                <td class="num">46</td>
+                <td class="num">69</td>
+                <td class="num">77</td>
+            </tr>
+            <tr>
+                <td>2026-02-12</td>
+                <td class="num">502</td>
+                <td class="num">48,192</td>
+                <td class="num">595</td>
+                <td class="num">600</td>
+                <td class="num">271</td>
+                <td class="num">38</td>
+                <td class="num">104</td>
+                <td class="num">85</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2026-02-11</td>
+                <td class="num">798</td>
+                <td class="num">76,608</td>
+                <td class="num">645</td>
+                <td class="num">609</td>
+                <td class="num">492</td>
+                <td class="num">101</td>
+                <td class="num">14</td>
+                <td class="num">191</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-02-10</td>
+                <td class="num">289</td>
+                <td class="num">27,744</td>
+                <td class="num">599</td>
+                <td class="num">602</td>
+                <td class="num">136</td>
+                <td class="num">10</td>
+                <td class="num">21</td>
+                <td class="num">98</td>
+                <td class="num">24</td>
+            </tr>
+            <tr>
+                <td>2026-02-09</td>
+                <td class="num">989</td>
+                <td class="num">94,944</td>
+                <td class="num">664</td>
+                <td class="num">606</td>
+                <td class="num">508</td>
+                <td class="num">156</td>
+                <td class="num">159</td>
+                <td class="num">163</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-02-08</td>
+                <td class="num">669</td>
+                <td class="num">64,224</td>
+                <td class="num">603</td>
+                <td class="num">600</td>
+                <td class="num">283</td>
+                <td class="num">227</td>
+                <td class="num">19</td>
+                <td class="num">137</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-02-07</td>
+                <td class="num">321</td>
+                <td class="num">30,816</td>
+                <td class="num">616</td>
+                <td class="num">602</td>
+                <td class="num">86</td>
+                <td class="num">120</td>
+                <td class="num">55</td>
+                <td class="num">60</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-02-06</td>
+                <td class="num">597</td>
+                <td class="num">57,312</td>
+                <td class="num">651</td>
+                <td class="num">609</td>
+                <td class="num">222</td>
+                <td class="num">26</td>
+                <td class="num">21</td>
+                <td class="num">322</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2026-02-05</td>
+                <td class="num">855</td>
+                <td class="num">82,080</td>
+                <td class="num">671</td>
+                <td class="num">609</td>
+                <td class="num">551</td>
+                <td class="num">123</td>
+                <td class="num">14</td>
+                <td class="num">155</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+                <td>2026-02-04</td>
+                <td class="num">475</td>
+                <td class="num">45,600</td>
+                <td class="num">649</td>
+                <td class="num">593</td>
+                <td class="num">357</td>
+                <td class="num">18</td>
+                <td class="num">13</td>
+                <td class="num">87</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-02-03</td>
+                <td class="num">742</td>
+                <td class="num">71,232</td>
+                <td class="num">666</td>
+                <td class="num">599</td>
+                <td class="num">350</td>
+                <td class="num">117</td>
+                <td class="num">29</td>
+                <td class="num">246</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-02-02</td>
+                <td class="num">565</td>
+                <td class="num">54,240</td>
+                <td class="num">634</td>
+                <td class="num">585</td>
+                <td class="num">173</td>
+                <td class="num">206</td>
+                <td class="num">18</td>
+                <td class="num">101</td>
+                <td class="num">67</td>
+            </tr>
+            <tr>
+                <td>2026-02-01</td>
+                <td class="num">757</td>
+                <td class="num">72,672</td>
+                <td class="num">606</td>
+                <td class="num">589</td>
+                <td class="num">367</td>
+                <td class="num">112</td>
+                <td class="num">12</td>
+                <td class="num">261</td>
+                <td class="num">5</td>
+            </tr>
+            <tr>
+                <td>2026-01-31</td>
+                <td class="num">563</td>
+                <td class="num">54,048</td>
+                <td class="num">576</td>
+                <td class="num">590</td>
+                <td class="num">378</td>
+                <td class="num">128</td>
+                <td class="num">14</td>
+                <td class="num">40</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-01-30</td>
+                <td class="num">739</td>
+                <td class="num">70,944</td>
+                <td class="num">518</td>
+                <td class="num">589</td>
+                <td class="num">605</td>
+                <td class="num">27</td>
+                <td class="num">10</td>
+                <td class="num">95</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2026-01-29</td>
+                <td class="num">705</td>
+                <td class="num">67,680</td>
+                <td class="num">519</td>
+                <td class="num">578</td>
+                <td class="num">478</td>
+                <td class="num">16</td>
+                <td class="num">6</td>
+                <td class="num">204</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-28</td>
+                <td class="num">589</td>
+                <td class="num">56,544</td>
+                <td class="num">499</td>
+                <td class="num">575</td>
+                <td class="num">294</td>
+                <td class="num">163</td>
+                <td class="num">19</td>
+                <td class="num">113</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-01-27</td>
+                <td class="num">522</td>
+                <td class="num">50,112</td>
+                <td class="num">457</td>
+                <td class="num">576</td>
+                <td class="num">250</td>
+                <td class="num">131</td>
+                <td class="num">13</td>
+                <td class="num">126</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2026-01-26</td>
+                <td class="num">370</td>
+                <td class="num">35,520</td>
+                <td class="num">533</td>
+                <td class="num">581</td>
+                <td class="num">124</td>
+                <td class="num">4</td>
+                <td class="num">150</td>
+                <td class="num">89</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-01-25</td>
+                <td class="num">544</td>
+                <td class="num">52,224</td>
+                <td class="num">566</td>
+                <td class="num">584</td>
+                <td class="num">310</td>
+                <td class="num">25</td>
+                <td class="num">142</td>
+                <td class="num">64</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-01-24</td>
+                <td class="num">157</td>
+                <td class="num">15,072</td>
+                <td class="num">531</td>
+                <td class="num">575</td>
+                <td class="num">109</td>
+                <td class="num">14</td>
+                <td class="num">21</td>
+                <td class="num">12</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-23</td>
+                <td class="num">748</td>
+                <td class="num">71,808</td>
+                <td class="num">649</td>
+                <td class="num">590</td>
+                <td class="num">432</td>
+                <td class="num">157</td>
+                <td class="num">18</td>
+                <td class="num">38</td>
+                <td class="num">103</td>
+            </tr>
+            <tr>
+                <td>2026-01-22</td>
+                <td class="num">562</td>
+                <td class="num">53,952</td>
+                <td class="num">622</td>
+                <td class="num">581</td>
+                <td class="num">427</td>
+                <td class="num">56</td>
+                <td class="num">17</td>
+                <td class="num">61</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-21</td>
+                <td class="num">299</td>
+                <td class="num">28,704</td>
+                <td class="num">628</td>
+                <td class="num">578</td>
+                <td class="num">197</td>
+                <td class="num">13</td>
+                <td class="num">23</td>
+                <td class="num">62</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2026-01-20</td>
+                <td class="num">1,052</td>
+                <td class="num">100,992</td>
+                <td class="num">664</td>
+                <td class="num">582</td>
+                <td class="num">726</td>
+                <td class="num">67</td>
+                <td class="num">23</td>
+                <td class="num">231</td>
+                <td class="num">5</td>
+            </tr>
+            <tr>
+                <td>2026-01-19</td>
+                <td class="num">601</td>
+                <td class="num">57,696</td>
+                <td class="num">623</td>
+                <td class="num">564</td>
+                <td class="num">207</td>
+                <td class="num">161</td>
+                <td class="num">119</td>
+                <td class="num">113</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-18</td>
+                <td class="num">295</td>
+                <td class="num">28,320</td>
+                <td class="num">622</td>
+                <td class="num">566</td>
+                <td class="num">190</td>
+                <td class="num">19</td>
+                <td class="num">0</td>
+                <td class="num">39</td>
+                <td class="num">47</td>
+            </tr>
+            <tr>
+                <td>2026-01-17</td>
+                <td class="num">984</td>
+                <td class="num">94,464</td>
+                <td class="num">637</td>
+                <td class="num">578</td>
+                <td class="num">624</td>
+                <td class="num">134</td>
+                <td class="num">154</td>
+                <td class="num">66</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2026-01-16</td>
+                <td class="num">563</td>
+                <td class="num">54,048</td>
+                <td class="num">613</td>
+                <td class="num">575</td>
+                <td class="num">320</td>
+                <td class="num">137</td>
+                <td class="num">29</td>
+                <td class="num">75</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2026-01-15</td>
+                <td class="num">605</td>
+                <td class="num">58,080</td>
+                <td class="num">638</td>
+                <td class="num">566</td>
+                <td class="num">439</td>
+                <td class="num">86</td>
+                <td class="num">3</td>
+                <td class="num">70</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>2026-01-14</td>
+                <td class="num">550</td>
+                <td class="num">52,800</td>
+                <td class="num">626</td>
+                <td class="num">567</td>
+                <td class="num">373</td>
+                <td class="num">62</td>
+                <td class="num">20</td>
+                <td class="num">84</td>
+                <td class="num">11</td>
+            </tr>
+            <tr>
+                <td>2026-01-13</td>
+                <td class="num">761</td>
+                <td class="num">73,056</td>
+                <td class="num">634</td>
+                <td class="num">560</td>
+                <td class="num">427</td>
+                <td class="num">175</td>
+                <td class="num">38</td>
+                <td class="num">106</td>
+                <td class="num">15</td>
+            </tr>
+            <tr>
+                <td>2026-01-12</td>
+                <td class="num">596</td>
+                <td class="num">57,216</td>
+                <td class="num">578</td>
+                <td class="num">551</td>
+                <td class="num">363</td>
+                <td class="num">151</td>
+                <td class="num">12</td>
+                <td class="num">69</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-11</td>
+                <td class="num">403</td>
+                <td class="num">38,688</td>
+                <td class="num">587</td>
+                <td class="num">543</td>
+                <td class="num">118</td>
+                <td class="num">154</td>
+                <td class="num">22</td>
+                <td class="num">109</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-01-10</td>
+                <td class="num">813</td>
+                <td class="num">78,048</td>
+                <td class="num">573</td>
+                <td class="num">547</td>
+                <td class="num">519</td>
+                <td class="num">7</td>
+                <td class="num">57</td>
+                <td class="num">171</td>
+                <td class="num">59</td>
+            </tr>
+            <tr>
+                <td>2026-01-09</td>
+                <td class="num">738</td>
+                <td class="num">70,848</td>
+                <td class="num">555</td>
+                <td class="num">536</td>
+                <td class="num">378</td>
+                <td class="num">136</td>
+                <td class="num">80</td>
+                <td class="num">143</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-08</td>
+                <td class="num">521</td>
+                <td class="num">50,016</td>
+                <td class="num">563</td>
+                <td class="num">529</td>
+                <td class="num">391</td>
+                <td class="num">73</td>
+                <td class="num">10</td>
+                <td class="num">38</td>
+                <td class="num">9</td>
+            </tr>
+            <tr>
+                <td>2026-01-07</td>
+                <td class="num">603</td>
+                <td class="num">57,888</td>
+                <td class="num">563</td>
+                <td class="num">526</td>
+                <td class="num">383</td>
+                <td class="num">129</td>
+                <td class="num">34</td>
+                <td class="num">52</td>
+                <td class="num">5</td>
+            </tr>
+            <tr>
+                <td>2026-01-06</td>
+                <td class="num">375</td>
+                <td class="num">36,000</td>
+                <td class="num">539</td>
+                <td class="num">519</td>
+                <td class="num">278</td>
+                <td class="num">17</td>
+                <td class="num">18</td>
+                <td class="num">61</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2026-01-05</td>
+                <td class="num">657</td>
+                <td class="num">63,072</td>
+                <td class="num">573</td>
+                <td class="num">518</td>
+                <td class="num">378</td>
+                <td class="num">135</td>
+                <td class="num">129</td>
+                <td class="num">15</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2026-01-04</td>
+                <td class="num">302</td>
+                <td class="num">28,992</td>
+                <td class="num">565</td>
+                <td class="num">510</td>
+                <td class="num">150</td>
+                <td class="num">54</td>
+                <td class="num">13</td>
+                <td class="num">44</td>
+                <td class="num">41</td>
+            </tr>
+            <tr>
+                <td>2026-01-03</td>
+                <td class="num">687</td>
+                <td class="num">65,952</td>
+                <td class="num">617</td>
+                <td class="num">527</td>
+                <td class="num">381</td>
+                <td class="num">121</td>
+                <td class="num">57</td>
+                <td class="num">125</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2026-01-02</td>
+                <td class="num">797</td>
+                <td class="num">76,512</td>
+                <td class="num">587</td>
+                <td class="num">524</td>
+                <td class="num">545</td>
+                <td class="num">95</td>
+                <td class="num">17</td>
+                <td class="num">132</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2026-01-01</td>
+                <td class="num">518</td>
+                <td class="num">49,728</td>
+                <td class="num">512</td>
+                <td class="num">513</td>
+                <td class="num">410</td>
+                <td class="num">39</td>
+                <td class="num">16</td>
+                <td class="num">51</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-31</td>
+                <td class="num">435</td>
+                <td class="num">41,760</td>
+                <td class="num">522</td>
+                <td class="num">504</td>
+                <td class="num">246</td>
+                <td class="num">8</td>
+                <td class="num">22</td>
+                <td class="num">158</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2025-12-30</td>
+                <td class="num">612</td>
+                <td class="num">58,752</td>
+                <td class="num">532</td>
+                <td class="num">509</td>
+                <td class="num">375</td>
+                <td class="num">61</td>
+                <td class="num">46</td>
+                <td class="num">127</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2025-12-29</td>
+                <td class="num">606</td>
+                <td class="num">58,176</td>
+                <td class="num">511</td>
+                <td class="num">500</td>
+                <td class="num">402</td>
+                <td class="num">130</td>
+                <td class="num">8</td>
+                <td class="num">64</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-28</td>
+                <td class="num">663</td>
+                <td class="num">63,648</td>
+                <td class="num">482</td>
+                <td class="num">510</td>
+                <td class="num">410</td>
+                <td class="num">127</td>
+                <td class="num">89</td>
+                <td class="num">32</td>
+                <td class="num">5</td>
+            </tr>
+            <tr>
+                <td>2025-12-27</td>
+                <td class="num">478</td>
+                <td class="num">45,888</td>
+                <td class="num">462</td>
+                <td class="num">508</td>
+                <td class="num">327</td>
+                <td class="num">48</td>
+                <td class="num">19</td>
+                <td class="num">84</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2025-12-26</td>
+                <td class="num">271</td>
+                <td class="num">26,016</td>
+                <td class="num">490</td>
+                <td class="num">506</td>
+                <td class="num">164</td>
+                <td class="num">33</td>
+                <td class="num">37</td>
+                <td class="num">37</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2025-12-25</td>
+                <td class="num">592</td>
+                <td class="num">56,832</td>
+                <td class="num">544</td>
+                <td class="num">510</td>
+                <td class="num">97</td>
+                <td class="num">225</td>
+                <td class="num">159</td>
+                <td class="num">109</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-24</td>
+                <td class="num">504</td>
+                <td class="num">48,384</td>
+                <td class="num">585</td>
+                <td class="num">511</td>
+                <td class="num">188</td>
+                <td class="num">140</td>
+                <td class="num">70</td>
+                <td class="num">98</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2025-12-23</td>
+                <td class="num">460</td>
+                <td class="num">44,160</td>
+                <td class="num">558</td>
+                <td class="num">514</td>
+                <td class="num">180</td>
+                <td class="num">132</td>
+                <td class="num">86</td>
+                <td class="num">58</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2025-12-22</td>
+                <td class="num">408</td>
+                <td class="num">39,168</td>
+                <td class="num">582</td>
+                <td class="num">519</td>
+                <td class="num">74</td>
+                <td class="num">42</td>
+                <td class="num">74</td>
+                <td class="num">210</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2025-12-21</td>
+                <td class="num">519</td>
+                <td class="num">49,824</td>
+                <td class="num">570</td>
+                <td class="num">535</td>
+                <td class="num">354</td>
+                <td class="num">17</td>
+                <td class="num">35</td>
+                <td class="num">106</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>2025-12-20</td>
+                <td class="num">674</td>
+                <td class="num">64,704</td>
+                <td class="num">566</td>
+                <td class="num">534</td>
+                <td class="num">577</td>
+                <td class="num">50</td>
+                <td class="num">2</td>
+                <td class="num">42</td>
+                <td class="num">3</td>
+            </tr>
+            <tr>
+                <td>2025-12-19</td>
+                <td class="num">654</td>
+                <td class="num">62,784</td>
+                <td class="num">520</td>
+                <td class="num">528</td>
+                <td class="num">332</td>
+                <td class="num">142</td>
+                <td class="num">21</td>
+                <td class="num">157</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-18</td>
+                <td class="num">876</td>
+                <td class="num">84,096</td>
+                <td class="num">502</td>
+                <td class="num">530</td>
+                <td class="num">820</td>
+                <td class="num">15</td>
+                <td class="num">19</td>
+                <td class="num">21</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2025-12-17</td>
+                <td class="num">314</td>
+                <td class="num">30,144</td>
+                <td class="num">448</td>
+                <td class="num">519</td>
+                <td class="num">71</td>
+                <td class="num">28</td>
+                <td class="num">127</td>
+                <td class="num">87</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2025-12-16</td>
+                <td class="num">627</td>
+                <td class="num">60,192</td>
+                <td class="num">480</td>
+                <td class="num">538</td>
+                <td class="num">286</td>
+                <td class="num">133</td>
+                <td class="num">95</td>
+                <td class="num">105</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2025-12-15</td>
+                <td class="num">324</td>
+                <td class="num">31,104</td>
+                <td class="num">450</td>
+                <td class="num">555</td>
+                <td class="num">115</td>
+                <td class="num">15</td>
+                <td class="num">72</td>
+                <td class="num">120</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-14</td>
+                <td class="num">495</td>
+                <td class="num">47,520</td>
+                <td class="num">458</td>
+                <td class="num">563</td>
+                <td class="num">292</td>
+                <td class="num">119</td>
+                <td class="num">51</td>
+                <td class="num">32</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2025-12-13</td>
+                <td class="num">351</td>
+                <td class="num">33,696</td>
+                <td class="num">439</td>
+                <td class="num">565</td>
+                <td class="num">140</td>
+                <td class="num">31</td>
+                <td class="num">95</td>
+                <td class="num">83</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-12</td>
+                <td class="num">527</td>
+                <td class="num">50,592</td>
+                <td class="num">445</td>
+                <td class="num">573</td>
+                <td class="num">344</td>
+                <td class="num">10</td>
+                <td class="num">95</td>
+                <td class="num">74</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2025-12-11</td>
+                <td class="num">498</td>
+                <td class="num">47,808</td>
+                <td class="num">489</td>
+                <td class="num">575</td>
+                <td class="num">125</td>
+                <td class="num">225</td>
+                <td class="num">7</td>
+                <td class="num">74</td>
+                <td class="num">67</td>
+            </tr>
+            <tr>
+                <td>2025-12-10</td>
+                <td class="num">536</td>
+                <td class="num">51,456</td>
+                <td class="num">503</td>
+                <td class="num">578</td>
+                <td class="num">357</td>
+                <td class="num">109</td>
+                <td class="num">42</td>
+                <td class="num">24</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2025-12-09</td>
+                <td class="num">418</td>
+                <td class="num">40,128</td>
+                <td class="num">493</td>
+                <td class="num">579</td>
+                <td class="num">121</td>
+                <td class="num">103</td>
+                <td class="num">148</td>
+                <td class="num">42</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2025-12-08</td>
+                <td class="num">382</td>
+                <td class="num">36,672</td>
+                <td class="num">468</td>
+                <td class="num">586</td>
+                <td class="num">177</td>
+                <td class="num">104</td>
+                <td class="num">34</td>
+                <td class="num">63</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2025-12-07</td>
+                <td class="num">361</td>
+                <td class="num">34,656</td>
+                <td class="num">496</td>
+                <td class="num">596</td>
+                <td class="num">272</td>
+                <td class="num">48</td>
+                <td class="num">14</td>
+                <td class="num">20</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>2025-12-06</td>
+                <td class="num">396</td>
+                <td class="num">38,016</td>
+                <td class="num">494</td>
+                <td class="num">607</td>
+                <td class="num">261</td>
+                <td class="num">5</td>
+                <td class="num">78</td>
+                <td class="num">51</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2025-12-05</td>
+                <td class="num">833</td>
+                <td class="num">79,968</td>
+                <td class="num">568</td>
+                <td class="num">617</td>
+                <td class="num">369</td>
+                <td class="num">218</td>
+                <td class="num">116</td>
+                <td class="num">128</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-12-04</td>
+                <td class="num">595</td>
+                <td class="num">57,120</td>
+                <td class="num">535</td>
+                <td class="num">606</td>
+                <td class="num">381</td>
+                <td class="num">49</td>
+                <td class="num">123</td>
+                <td class="num">38</td>
+                <td class="num">4</td>
+            </tr>
+            <tr>
+                <td>2025-12-03</td>
+                <td class="num">469</td>
+                <td class="num">45,024</td>
+                <td class="num">509</td>
+                <td class="num">607</td>
+                <td class="num">284</td>
+                <td class="num">101</td>
+                <td class="num">44</td>
+                <td class="num">29</td>
+                <td class="num">11</td>
+            </tr>
+            <tr>
+                <td>2025-12-02</td>
+                <td class="num">239</td>
+                <td class="num">22,944</td>
+                <td class="num">498</td>
+                <td class="num">615</td>
+                <td class="num">114</td>
+                <td class="num">33</td>
+                <td class="num">28</td>
+                <td class="num">52</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+                <td>2025-12-01</td>
+                <td class="num">576</td>
+                <td class="num">55,296</td>
+                <td class="num">551</td>
+                <td class="num">638</td>
+                <td class="num">376</td>
+                <td class="num">143</td>
+                <td class="num">34</td>
+                <td class="num">17</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2025-11-30</td>
+                <td class="num">350</td>
+                <td class="num">33,600</td>
+                <td class="num">555</td>
+                <td class="num">642</td>
+                <td class="num">213</td>
+                <td class="num">9</td>
+                <td class="num">10</td>
+                <td class="num">117</td>
+                <td class="num">1</td>
+            </tr>
+            <tr>
+                <td>2025-11-29</td>
+                <td class="num">913</td>
+                <td class="num">87,648</td>
+                <td class="num">593</td>
+                <td class="num">663</td>
+                <td class="num">386</td>
+                <td class="num">198</td>
+                <td class="num">168</td>
+                <td class="num">154</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>2025-11-28</td>
+                <td class="num">606</td>
+                <td class="num">58,176</td>
+                <td class="num">590</td>
+                <td class="num">644</td>
+                <td class="num">357</td>
+                <td class="num">14</td>
+                <td class="num">75</td>
+                <td class="num">160</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2025-11-27</td>
+                <td class="num">413</td>
+                <td class="num">39,648</td>
+                <td class="num">572</td>
+                <td class="num">647</td>
+                <td class="num">241</td>
+                <td class="num">121</td>
+                <td class="num">24</td>
+                <td class="num">15</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+                <td>2025-11-26</td>
+                <td class="num">391</td>
+                <td class="num">37,536</td>
+                <td class="num">584</td>
+                <td class="num">669</td>
+                <td class="num">230</td>
+                <td class="num">24</td>
+                <td class="num">41</td>
+                <td class="num">88</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>2025-11-25</td>
+                <td class="num">611</td>
+                <td class="num">58,656</td>
+                <td class="num">630</td>
+                <td class="num">696</td>
+                <td class="num">138</td>
+                <td class="num">326</td>
+                <td class="num">74</td>
+                <td class="num">67</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2025-11-24</td>
+                <td class="num">602</td>
+                <td class="num">57,792</td>
+                <td class="num">619</td>
+                <td class="num">706</td>
+                <td class="num">415</td>
+                <td class="num">88</td>
+                <td class="num">46</td>
+                <td class="num">44</td>
+                <td class="num">9</td>
+            </tr>
+            <tr>
+                <td>2025-11-23</td>
+                <td class="num">616</td>
+                <td class="num">59,136</td>
+                <td class="num">660</td>
+                <td class="num">719</td>
+                <td class="num">105</td>
+                <td class="num">130</td>
+                <td class="num">224</td>
+                <td class="num">157</td>
+                <td class="num">0</td>
+            </tr>
+            <tr>
+                <td>2025-11-22</td>
+                <td class="num">890</td>
+                <td class="num">85,440</td>
+                <td class="num">734</td>
+                <td class="num">734</td>
+                <td class="num">485</td>
+                <td class="num">313</td>
+                <td class="num">33</td>
+                <td class="num">53</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2025-11-21</td>
+                <td class="num">483</td>
+                <td class="num">46,368</td>
+                <td class="num">708</td>
+                <td class="num">708</td>
+                <td class="num">333</td>
+                <td class="num">35</td>
+                <td class="num">91</td>
+                <td class="num">18</td>
+                <td class="num">6</td>
+            </tr>
+            <tr>
+                <td>2025-11-20</td>
+                <td class="num">492</td>
+                <td class="num">47,232</td>
+                <td class="num">752</td>
+                <td class="num">752</td>
+                <td class="num">243</td>
+                <td class="num">122</td>
+                <td class="num">40</td>
+                <td class="num">85</td>
+                <td class="num">2</td>
+            </tr>
+            <tr>
+                <td>2025-11-19</td>
+                <td class="num">715</td>
+                <td class="num">68,640</td>
+                <td class="num">818</td>
+                <td class="num">818</td>
+                <td class="num">323</td>
+                <td class="num">137</td>
+                <td class="num">76</td>
+                <td class="num">172</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>2025-11-18</td>
+                <td class="num">537</td>
+                <td class="num">51,552</td>
+                <td class="num">852</td>
+                <td class="num">852</td>
+                <td class="num">376</td>
+                <td class="num">54</td>
+                <td class="num">54</td>
+                <td class="num">34</td>
+                <td class="num">19</td>
+            </tr>
+            <tr>
+                <td>2025-11-17</td>
+                <td class="num">888</td>
+                <td class="num">85,248</td>
+                <td class="num">1,009</td>
+                <td class="num">1,009</td>
+                <td class="num">559</td>
+                <td class="num">133</td>
+                <td class="num">55</td>
+                <td class="num">132</td>
+                <td class="num">9</td>
+            </tr>
+            <tr>
+                <td>2025-11-16</td>
+                <td class="num">1,130</td>
+                <td class="num">108,480</td>
+                <td class="num">1,130</td>
+                <td class="num">1,130</td>
+                <td class="num">928</td>
+                <td class="num">15</td>
+                <td class="num">19</td>
+                <td class="num">139</td>
+                <td class="num">29</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer">
+    <p>Generated by CPKC Canadian Grain Daily Monitor (V9.4) on 2026-03-16 12:19.</p>
+    <p>Data source: RailState API. Methodology: V9.4 Hybrid (V8 car-level exclusions + trip-level rescue).</p>
+    <p>Rolling window: 120 days. Trip gap threshold: 7 days. Tonnage: 96 tonnes/carload.</p>
+</div>
+
+</div>
+</body>
+</html>

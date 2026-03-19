@@ -1,0 +1,95 @@
+{
+  "commodity": "lpg_cross_border",
+  "title": "LPG Cross-Border Rail Exports: Canada → US",
+  "version": "1.0",
+  "last_updated": "2026-03-15",
+
+  "overview": "Measures Canadian propane and butane (UN1075 hazmat placard) exports to the US by rail using RailState wayside sensor data at 11 border crossing points. Compared against Canada Energy Regulator (CER) published Railway export volumes.",
+
+  "data_sources": {
+    "railstate": {
+      "description": "RailState wayside sensor network detecting tank cars with UN1075 (LPG) hazmat placards crossing the US-Canada border",
+      "api": "api/v3/trains/full_sightings",
+      "coverage": "January 2024 – present",
+      "update_frequency": "Daily",
+      "sensors": [
+        {"name": "Blaine, WA", "direction": "southbound", "railroad": "BNSF", "lat": 48.99, "lng": -122.75},
+        {"name": "Port Huron, MI", "direction": "westbound", "railroad": "CN", "lat": 42.97, "lng": -82.43},
+        {"name": "Ste Anne, MB", "direction": "eastbound", "railroad": "CN", "lat": 49.64, "lng": -96.57, "fallback": "Devlin, ON eastbound"},
+        {"name": "Moyie Springs, ID", "direction": "southbound", "railroad": "CPKC", "lat": 48.73, "lng": -116.18},
+        {"name": "Mcara, SK", "direction": "southbound", "railroad": "CPKC", "lat": 49.00, "lng": -102.14},
+        {"name": "Kevin, MT", "direction": "southbound", "railroad": "BNSF", "lat": 48.75, "lng": -111.98, "fallback": "Coalhurst, AB eastbound"},
+        {"name": "Letellier, MB", "direction": "southbound", "railroad": "BNSF", "lat": 49.07, "lng": -97.25},
+        {"name": "Rouses Point, NY", "direction": "southbound", "railroad": "CPKC", "lat": 44.99, "lng": -73.37},
+        {"name": "Massena, NY", "direction": "westbound", "railroad": "CSX", "lat": 44.93, "lng": -74.89},
+        {"name": "Island Pond, VT", "direction": "eastbound", "railroad": "CN", "lat": 44.81, "lng": -71.88},
+        {"name": "Windsor TFR, ON", "direction": "westbound", "railroad": "CN/CPKC", "lat": 42.31, "lng": -83.04, "fallback": "Komoka, ON westbound"}
+      ]
+    },
+    "government": {
+      "description": "Canada Energy Regulator (CER) monthly Railway export volumes for Propane and Butanes",
+      "coverage": "January 2024 – December 2025 (published with ~8-10 week lag)",
+      "key_assumption": "100% of CER Railway export volumes are US-bound — Canada has no direct rail connection to any other country",
+      "unit": "barrels at 15°C"
+    }
+  },
+
+  "methodology": {
+    "car_identification": {
+      "description": "Tank cars identified by UN1075 hazmat placard detected by wayside sensors",
+      "criteria": "Car type contains 'tank' AND hazmats[].placardType == 'UN1075' (excluding 'None' and 'EMPTY')"
+    },
+
+    "volume_conversion": {
+      "description": "Converting car counts to barrel equivalents using actual measured tank car dimensions",
+      "method": "Weighted BBL — each car's gallonageCapacity from API equipment data × 87.5% fill ÷ 42 gal/BBL",
+      "fleet_average": {
+        "avg_capacity_gal": 33637,
+        "fill_ratio": 0.875,
+        "avg_bbl_per_car": 700.8,
+        "pct_with_capacity_data": 90.0,
+        "fallback_for_missing": "Fleet average of 700.8 BBL/car applied to cars without capacity data (10%)"
+      },
+      "fill_ratio_basis": "DOT 49 CFR 173.314 filling density limits: propane 42.5%, butane 51% by weight → approximately 86-87% volume fill. 87.5% used as conservative midpoint.",
+      "fleet_composition": "92.1% of cars are 33,001-34,000 gallons. 86.2% are DOT-112J340W spec. Remainder includes older 29,000-31,000 gal cars and DOT-105/117 specs."
+    },
+
+    "transit_removal": {
+      "description": "Excluding Canada-to-Canada transit movements that route through the US (e.g., CN routing through Michigan between Ontario and Manitoba)",
+      "patterns": [
+        "EB transit: Car seen eastbound at Ste Anne/Devlin, then eastbound at Port Huron within 7 days → western-to-eastern Canada transit",
+        "WB transit: Car seen westbound at Port Huron, then westbound at Ste Anne/Devlin within 7 days → eastern-to-western Canada transit"
+      ],
+      "matching": "Car IDs matched across sensors within 7-day window. 85.6% of matched transits arrive within 1-3 days, consistent with rail transit time.",
+      "impact": "~11.5% of raw car count removed. Ste Anne EB: 19.1% transit. Port Huron WB: 31.7% transit."
+    },
+
+    "gap_filling": {
+      "description": "Conservative gap-filling for tank cars with unreadable placards that are likely UN1075",
+      "rule": "Unknown-placard tank cars positioned between 2+ confirmed UN1075 cars on each side, with max 3-car gap",
+      "impact": "~3.9% of total car count (9,099 of 232,356 raw detections)"
+    },
+
+    "fallback_sensors": {
+      "description": "When primary border sensor uptime falls below 95%, upstream fallback sensor data is used",
+      "pairs": [
+        "Ste Anne, MB → Devlin, ON (eastbound)",
+        "Kevin, MT → Coalhurst, AB (eastbound)",
+        "Windsor TFR, ON → Komoka, ON (westbound)"
+      ],
+      "note": "Moyie Springs, ID had 7-month outage (Jun 2024 - Jan 2025) with no fallback sensor available"
+    }
+  },
+
+  "validation": {
+    "overall_ratio": "RS/CER weighted BBL ratio: ~97.7% over Jan 2024 – Dec 2025 (24 months)",
+    "interpretation": "Slight undershoot vs CER likely reflects: sensor outages (esp. Moyie Springs), empty placarded cars counted by RS but not by CER, and minor timing differences between physical border crossing and CER reporting periods",
+    "false_positive_analysis": "Only 1.7% of counted cars appear in trains with ≤2 UN1075 cars. 88.3% of 1-car trains are manifest trains (expected stray placard readings). Massena, NY is the only outlier at 22.6%."
+  },
+
+  "output_files": {
+    "lpg_cross_border.json": "Monthly RS weighted BBL vs CER BBL (thousands)",
+    "lpg_xb_daily.json": "Daily car counts and BBL for the last 180 days",
+    "lpg_sensor_volumes.json": "Sensor-level monthly car counts with coordinates for map"
+  }
+}

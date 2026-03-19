@@ -1,0 +1,17 @@
+{
+  "commodity": "ethanol_cross_border",
+  "display_name": "Ethanol — Cross-Border",
+  "subtitle": "US ↔ Canada · Ethanol · Unit Trains & Manifest",
+  "unit": "gallons (k)",
+  "gov_source_label": "EIA Border Data",
+  "gov_lag_label": "4–6 wks",
+  "last_updated": "2026-03-11",
+  "monthly": {
+    "columns": ["month", "railstate", "gov"],
+    "rows": []
+  },
+  "daily": {
+    "columns": ["date", "value"],
+    "rows": []
+  }
+}

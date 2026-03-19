@@ -1,0 +1,1319 @@
+{
+  "last_updated": "2026-03-17",
+  "days": {
+    "2025-11-24": {
+      "carloads": 602,
+      "tonnes": 57792.0,
+      "by_destination": {
+        "Portland": 88,
+        "Thunder_Bay": 46,
+        "Vancouver": 415,
+        "US_Kevin": 9,
+        "US_Mcara": 44
+      }
+    },
+    "2025-11-29": {
+      "carloads": 913,
+      "tonnes": 87648.0,
+      "by_destination": {
+        "Vancouver": 386,
+        "Thunder_Bay": 168,
+        "US_Mcara": 154,
+        "Portland": 198,
+        "US_Kevin": 7
+      }
+    },
+    "2025-12-07": {
+      "carloads": 361,
+      "tonnes": 34656.0,
+      "by_destination": {
+        "Vancouver": 272,
+        "Portland": 48,
+        "Thunder_Bay": 14,
+        "US_Mcara": 20,
+        "US_Kevin": 7
+      }
+    },
+    "2026-01-02": {
+      "carloads": 797,
+      "tonnes": 76512.0,
+      "by_destination": {
+        "US_Mcara": 132,
+        "Thunder_Bay": 17,
+        "Vancouver": 545,
+        "Portland": 95,
+        "US_Kevin": 8
+      }
+    },
+    "2026-02-14": {
+      "carloads": 502,
+      "tonnes": 48192.0,
+      "by_destination": {
+        "Portland": 137,
+        "Vancouver": 249,
+        "US_Mcara": 84,
+        "Thunder_Bay": 26,
+        "US_Kevin": 6
+      }
+    },
+    "2025-11-25": {
+      "carloads": 611,
+      "tonnes": 58656.0,
+      "by_destination": {
+        "Thunder_Bay": 74,
+        "US_Mcara": 67,
+        "Vancouver": 138,
+        "Portland": 326,
+        "US_Kevin": 6
+      }
+    },
+    "2026-01-20": {
+      "carloads": 1052,
+      "tonnes": 100992.0,
+      "by_destination": {
+        "US_Mcara": 231,
+        "Portland": 67,
+        "Thunder_Bay": 23,
+        "Vancouver": 726,
+        "US_Kevin": 5
+      }
+    },
+    "2026-02-08": {
+      "carloads": 669,
+      "tonnes": 64224.0,
+      "by_destination": {
+        "Vancouver": 283,
+        "US_Mcara": 137,
+        "Portland": 227,
+        "Thunder_Bay": 19,
+        "US_Kevin": 3
+      }
+    },
+    "2026-02-21": {
+      "carloads": 262,
+      "tonnes": 25152.0,
+      "by_destination": {
+        "Vancouver": 183,
+        "Portland": 35,
+        "US_Mcara": 36,
+        "US_Kevin": 8
+      }
+    },
+    "2026-03-01": {
+      "carloads": 425,
+      "tonnes": 40800.0,
+      "by_destination": {
+        "Vancouver": 63,
+        "US_Mcara": 109,
+        "Portland": 113,
+        "US_Kevin": 38,
+        "Thunder_Bay": 102
+      }
+    },
+    "2026-03-11": {
+      "carloads": 684,
+      "tonnes": 65664.0,
+      "by_destination": {
+        "Portland": 88,
+        "Vancouver": 312,
+        "US_Kevin": 45,
+        "US_Mcara": 160,
+        "Thunder_Bay": 79
+      }
+    },
+    "2025-12-20": {
+      "carloads": 674,
+      "tonnes": 64704.0,
+      "by_destination": {
+        "Vancouver": 577,
+        "Portland": 50,
+        "US_Mcara": 42,
+        "Thunder_Bay": 2,
+        "US_Kevin": 3
+      }
+    },
+    "2026-02-09": {
+      "carloads": 989,
+      "tonnes": 94944.0,
+      "by_destination": {
+        "Vancouver": 508,
+        "US_Mcara": 163,
+        "Thunder_Bay": 159,
+        "US_Kevin": 3,
+        "Portland": 156
+      }
+    },
+    "2026-02-18": {
+      "carloads": 519,
+      "tonnes": 49824.0,
+      "by_destination": {
+        "Vancouver": 270,
+        "Portland": 125,
+        "US_Mcara": 112,
+        "Thunder_Bay": 9,
+        "US_Kevin": 3
+      }
+    },
+    "2026-02-28": {
+      "carloads": 390,
+      "tonnes": 37440.0,
+      "by_destination": {
+        "Vancouver": 85,
+        "US_Mcara": 104,
+        "Portland": 133,
+        "Thunder_Bay": 68
+      }
+    },
+    "2026-03-10": {
+      "carloads": 767,
+      "tonnes": 73632.0,
+      "by_destination": {
+        "Vancouver": 356,
+        "US_Mcara": 209,
+        "Thunder_Bay": 37,
+        "US_Kevin": 20,
+        "Portland": 145
+      }
+    },
+    "2025-11-22": {
+      "carloads": 890,
+      "tonnes": 85440.0,
+      "by_destination": {
+        "Vancouver": 485,
+        "US_Mcara": 53,
+        "Thunder_Bay": 33,
+        "Portland": 313,
+        "US_Kevin": 6
+      }
+    },
+    "2025-12-01": {
+      "carloads": 576,
+      "tonnes": 55296.0,
+      "by_destination": {
+        "Vancouver": 376,
+        "US_Kevin": 6,
+        "US_Mcara": 17,
+        "Thunder_Bay": 34,
+        "Portland": 143
+      }
+    },
+    "2025-12-09": {
+      "carloads": 418,
+      "tonnes": 40128.0,
+      "by_destination": {
+        "Vancouver": 121,
+        "Portland": 103,
+        "Thunder_Bay": 148,
+        "US_Kevin": 4,
+        "US_Mcara": 42
+      }
+    },
+    "2025-12-17": {
+      "carloads": 314,
+      "tonnes": 30144.0,
+      "by_destination": {
+        "Vancouver": 71,
+        "Thunder_Bay": 127,
+        "US_Mcara": 87,
+        "US_Kevin": 1,
+        "Portland": 28
+      }
+    },
+    "2025-12-28": {
+      "carloads": 663,
+      "tonnes": 63648.0,
+      "by_destination": {
+        "Vancouver": 410,
+        "US_Mcara": 32,
+        "Thunder_Bay": 89,
+        "Portland": 127,
+        "US_Kevin": 5
+      }
+    },
+    "2026-01-08": {
+      "carloads": 521,
+      "tonnes": 50016.0,
+      "by_destination": {
+        "Vancouver": 391,
+        "US_Mcara": 38,
+        "US_Kevin": 9,
+        "Thunder_Bay": 10,
+        "Portland": 73
+      }
+    },
+    "2026-01-18": {
+      "carloads": 295,
+      "tonnes": 28320.0,
+      "by_destination": {
+        "Portland": 19,
+        "US_Mcara": 39,
+        "Vancouver": 190,
+        "US_Kevin": 47
+      }
+    },
+    "2026-01-28": {
+      "carloads": 589,
+      "tonnes": 56544.0,
+      "by_destination": {
+        "Vancouver": 294,
+        "US_Mcara": 113,
+        "Thunder_Bay": 19,
+        "Portland": 163
+      }
+    },
+    "2026-02-07": {
+      "carloads": 321,
+      "tonnes": 30816.0,
+      "by_destination": {
+        "Vancouver": 86,
+        "US_Mcara": 60,
+        "Portland": 120,
+        "Thunder_Bay": 55
+      }
+    },
+    "2026-02-16": {
+      "carloads": 507,
+      "tonnes": 48672.0,
+      "by_destination": {
+        "Vancouver": 253,
+        "Portland": 35,
+        "Thunder_Bay": 145,
+        "US_Mcara": 69,
+        "US_Kevin": 5
+      }
+    },
+    "2025-12-14": {
+      "carloads": 495,
+      "tonnes": 47520.0,
+      "by_destination": {
+        "Vancouver": 292,
+        "US_Mcara": 32,
+        "Thunder_Bay": 51,
+        "Portland": 119,
+        "US_Kevin": 1
+      }
+    },
+    "2025-12-22": {
+      "carloads": 408,
+      "tonnes": 39168.0,
+      "by_destination": {
+        "Vancouver": 74,
+        "Portland": 42,
+        "Thunder_Bay": 74,
+        "US_Mcara": 210,
+        "US_Kevin": 8
+      }
+    },
+    "2026-01-07": {
+      "carloads": 603,
+      "tonnes": 57888.0,
+      "by_destination": {
+        "Vancouver": 383,
+        "US_Mcara": 52,
+        "US_Kevin": 5,
+        "Thunder_Bay": 34,
+        "Portland": 129
+      }
+    },
+    "2026-01-19": {
+      "carloads": 601,
+      "tonnes": 57696.0,
+      "by_destination": {
+        "Vancouver": 207,
+        "Thunder_Bay": 119,
+        "US_Mcara": 113,
+        "Portland": 161,
+        "US_Kevin": 1
+      }
+    },
+    "2025-11-26": {
+      "carloads": 391,
+      "tonnes": 37536.0,
+      "by_destination": {
+        "Thunder_Bay": 41,
+        "US_Mcara": 88,
+        "Vancouver": 230,
+        "Portland": 24,
+        "US_Kevin": 8
+      }
+    },
+    "2026-01-06": {
+      "carloads": 375,
+      "tonnes": 36000.0,
+      "by_destination": {
+        "Thunder_Bay": 18,
+        "Vancouver": 278,
+        "US_Mcara": 61,
+        "Portland": 17,
+        "US_Kevin": 1
+      }
+    },
+    "2025-11-27": {
+      "carloads": 413,
+      "tonnes": 39648.0,
+      "by_destination": {
+        "Vancouver": 241,
+        "Thunder_Bay": 24,
+        "US_Mcara": 15,
+        "Portland": 121,
+        "US_Kevin": 12
+      }
+    },
+    "2025-11-19": {
+      "carloads": 715,
+      "tonnes": 68640.0,
+      "by_destination": {
+        "Vancouver": 323,
+        "US_Mcara": 172,
+        "Thunder_Bay": 76,
+        "US_Kevin": 7,
+        "Portland": 137
+      }
+    },
+    "2026-02-03": {
+      "carloads": 742,
+      "tonnes": 71232.0,
+      "by_destination": {
+        "Portland": 117,
+        "US_Mcara": 246,
+        "Thunder_Bay": 29,
+        "Vancouver": 350
+      }
+    },
+    "2026-02-23": {
+      "carloads": 633,
+      "tonnes": 60768.0,
+      "by_destination": {
+        "Thunder_Bay": 34,
+        "US_Mcara": 110,
+        "Vancouver": 428,
+        "US_Kevin": 2,
+        "Portland": 59
+      }
+    },
+    "2025-11-17": {
+      "carloads": 888,
+      "tonnes": 85248.0,
+      "by_destination": {
+        "Thunder_Bay": 55,
+        "Vancouver": 559,
+        "US_Mcara": 132,
+        "US_Kevin": 9,
+        "Portland": 133
+      }
+    },
+    "2026-02-15": {
+      "carloads": 557,
+      "tonnes": 53472.0,
+      "by_destination": {
+        "Vancouver": 199,
+        "US_Mcara": 219,
+        "Thunder_Bay": 16,
+        "US_Kevin": 1,
+        "Portland": 122
+      }
+    },
+    "2026-02-24": {
+      "carloads": 593,
+      "tonnes": 56928.0,
+      "by_destination": {
+        "Vancouver": 391,
+        "Portland": 16,
+        "US_Mcara": 178,
+        "Thunder_Bay": 2,
+        "US_Kevin": 6
+      }
+    },
+    "2025-12-03": {
+      "carloads": 469,
+      "tonnes": 45024.0,
+      "by_destination": {
+        "Vancouver": 284,
+        "US_Kevin": 11,
+        "Thunder_Bay": 44,
+        "US_Mcara": 29,
+        "Portland": 101
+      }
+    },
+    "2025-12-27": {
+      "carloads": 478,
+      "tonnes": 45888.0,
+      "by_destination": {
+        "Thunder_Bay": 19,
+        "US_Mcara": 84,
+        "Vancouver": 327,
+        "Portland": 48
+      }
+    },
+    "2026-01-29": {
+      "carloads": 705,
+      "tonnes": 67680.0,
+      "by_destination": {
+        "Thunder_Bay": 6,
+        "Portland": 16,
+        "Vancouver": 478,
+        "US_Mcara": 204,
+        "US_Kevin": 1
+      }
+    },
+    "2025-12-06": {
+      "carloads": 396,
+      "tonnes": 38016.0,
+      "by_destination": {
+        "Vancouver": 261,
+        "Thunder_Bay": 78,
+        "US_Mcara": 51,
+        "Portland": 5,
+        "US_Kevin": 1
+      }
+    },
+    "2025-12-15": {
+      "carloads": 324,
+      "tonnes": 31104.0,
+      "by_destination": {
+        "Vancouver": 115,
+        "US_Mcara": 120,
+        "Portland": 15,
+        "Thunder_Bay": 72,
+        "US_Kevin": 2
+      }
+    },
+    "2026-01-05": {
+      "carloads": 657,
+      "tonnes": 63072.0,
+      "by_destination": {
+        "Vancouver": 378,
+        "Thunder_Bay": 129,
+        "US_Mcara": 15,
+        "Portland": 135
+      }
+    },
+    "2025-12-31": {
+      "carloads": 435,
+      "tonnes": 41760.0,
+      "by_destination": {
+        "US_Mcara": 158,
+        "Vancouver": 246,
+        "Thunder_Bay": 22,
+        "Portland": 8,
+        "US_Kevin": 1
+      }
+    },
+    "2025-12-05": {
+      "carloads": 833,
+      "tonnes": 79968.0,
+      "by_destination": {
+        "US_Mcara": 128,
+        "Vancouver": 369,
+        "US_Kevin": 2,
+        "Thunder_Bay": 116,
+        "Portland": 218
+      }
+    },
+    "2025-12-23": {
+      "carloads": 460,
+      "tonnes": 44160.0,
+      "by_destination": {
+        "US_Mcara": 58,
+        "Vancouver": 180,
+        "Thunder_Bay": 86,
+        "Portland": 132,
+        "US_Kevin": 4
+      }
+    },
+    "2025-11-28": {
+      "carloads": 606,
+      "tonnes": 58176.0,
+      "by_destination": {
+        "US_Mcara": 160,
+        "Thunder_Bay": 75,
+        "Vancouver": 357,
+        "Portland": 14
+      }
+    },
+    "2026-01-09": {
+      "carloads": 738,
+      "tonnes": 70848.0,
+      "by_destination": {
+        "US_Mcara": 143,
+        "Vancouver": 378,
+        "Thunder_Bay": 80,
+        "US_Kevin": 1,
+        "Portland": 136
+      }
+    },
+    "2026-01-31": {
+      "carloads": 563,
+      "tonnes": 54048.0,
+      "by_destination": {
+        "US_Mcara": 40,
+        "Vancouver": 378,
+        "Thunder_Bay": 14,
+        "Portland": 128,
+        "US_Kevin": 3
+      }
+    },
+    "2025-12-19": {
+      "carloads": 654,
+      "tonnes": 62784.0,
+      "by_destination": {
+        "US_Mcara": 157,
+        "Vancouver": 332,
+        "Thunder_Bay": 21,
+        "US_Kevin": 2,
+        "Portland": 142
+      }
+    },
+    "2026-01-15": {
+      "carloads": 605,
+      "tonnes": 58080.0,
+      "by_destination": {
+        "Vancouver": 439,
+        "US_Mcara": 70,
+        "Portland": 86,
+        "US_Kevin": 7,
+        "Thunder_Bay": 3
+      }
+    },
+    "2025-12-12": {
+      "carloads": 527,
+      "tonnes": 50592.0,
+      "by_destination": {
+        "US_Mcara": 74,
+        "Vancouver": 344,
+        "Thunder_Bay": 95,
+        "US_Kevin": 4,
+        "Portland": 10
+      }
+    },
+    "2026-01-13": {
+      "carloads": 761,
+      "tonnes": 73056.0,
+      "by_destination": {
+        "US_Mcara": 106,
+        "Portland": 175,
+        "Vancouver": 427,
+        "Thunder_Bay": 38,
+        "US_Kevin": 15
+      }
+    },
+    "2026-03-05": {
+      "carloads": 641,
+      "tonnes": 61536.0,
+      "by_destination": {
+        "US_Mcara": 84,
+        "Vancouver": 290,
+        "US_Kevin": 115,
+        "Portland": 123,
+        "Thunder_Bay": 29
+      }
+    },
+    "2025-11-20": {
+      "carloads": 492,
+      "tonnes": 47232.0,
+      "by_destination": {
+        "US_Mcara": 85,
+        "Thunder_Bay": 40,
+        "Portland": 122,
+        "Vancouver": 243,
+        "US_Kevin": 2
+      }
+    },
+    "2025-12-11": {
+      "carloads": 498,
+      "tonnes": 47808.0,
+      "by_destination": {
+        "Vancouver": 125,
+        "US_Mcara": 74,
+        "Portland": 225,
+        "US_Kevin": 67,
+        "Thunder_Bay": 7
+      }
+    },
+    "2026-02-01": {
+      "carloads": 757,
+      "tonnes": 72672.0,
+      "by_destination": {
+        "US_Mcara": 261,
+        "Portland": 112,
+        "Vancouver": 367,
+        "Thunder_Bay": 12,
+        "US_Kevin": 5
+      }
+    },
+    "2025-12-30": {
+      "carloads": 612,
+      "tonnes": 58752.0,
+      "by_destination": {
+        "US_Mcara": 127,
+        "Portland": 61,
+        "US_Kevin": 3,
+        "Vancouver": 375,
+        "Thunder_Bay": 46
+      }
+    },
+    "2026-01-12": {
+      "carloads": 596,
+      "tonnes": 57216.0,
+      "by_destination": {
+        "US_Mcara": 69,
+        "Vancouver": 363,
+        "Thunder_Bay": 12,
+        "Portland": 151,
+        "US_Kevin": 1
+      }
+    },
+    "2026-01-26": {
+      "carloads": 370,
+      "tonnes": 35520.0,
+      "by_destination": {
+        "US_Mcara": 89,
+        "Thunder_Bay": 150,
+        "Vancouver": 124,
+        "Portland": 4,
+        "US_Kevin": 3
+      }
+    },
+    "2026-02-27": {
+      "carloads": 1086,
+      "tonnes": 104256.0,
+      "by_destination": {
+        "US_Mcara": 185,
+        "Thunder_Bay": 131,
+        "Vancouver": 548,
+        "US_Kevin": 8,
+        "Portland": 214
+      }
+    },
+    "2025-12-21": {
+      "carloads": 519,
+      "tonnes": 49824.0,
+      "by_destination": {
+        "US_Mcara": 106,
+        "US_Kevin": 7,
+        "Vancouver": 354,
+        "Portland": 17,
+        "Thunder_Bay": 35
+      }
+    },
+    "2026-01-03": {
+      "carloads": 687,
+      "tonnes": 65952.0,
+      "by_destination": {
+        "US_Mcara": 125,
+        "Vancouver": 381,
+        "US_Kevin": 3,
+        "Thunder_Bay": 57,
+        "Portland": 121
+      }
+    },
+    "2026-02-06": {
+      "carloads": 597,
+      "tonnes": 57312.0,
+      "by_destination": {
+        "US_Mcara": 322,
+        "Thunder_Bay": 21,
+        "Vancouver": 222,
+        "US_Kevin": 6,
+        "Portland": 26
+      }
+    },
+    "2026-01-10": {
+      "carloads": 813,
+      "tonnes": 78048.0,
+      "by_destination": {
+        "US_Mcara": 171,
+        "Thunder_Bay": 57,
+        "Vancouver": 519,
+        "US_Kevin": 59,
+        "Portland": 7
+      }
+    },
+    "2026-01-04": {
+      "carloads": 302,
+      "tonnes": 28992.0,
+      "by_destination": {
+        "Vancouver": 150,
+        "US_Mcara": 44,
+        "Thunder_Bay": 13,
+        "Portland": 54,
+        "US_Kevin": 41
+      }
+    },
+    "2026-03-08": {
+      "carloads": 536,
+      "tonnes": 51456.0,
+      "by_destination": {
+        "US_Mcara": 61,
+        "Portland": 108,
+        "Thunder_Bay": 254,
+        "US_Kevin": 54,
+        "Vancouver": 59
+      }
+    },
+    "2026-03-07": {
+      "carloads": 489,
+      "tonnes": 46944.0,
+      "by_destination": {
+        "US_Mcara": 97,
+        "Portland": 238,
+        "US_Kevin": 4,
+        "Vancouver": 120,
+        "Thunder_Bay": 30
+      }
+    },
+    "2026-03-06": {
+      "carloads": 732,
+      "tonnes": 70272.0,
+      "by_destination": {
+        "US_Mcara": 41,
+        "Vancouver": 440,
+        "Portland": 122,
+        "US_Kevin": 65,
+        "Thunder_Bay": 64
+      }
+    },
+    "2025-12-24": {
+      "carloads": 504,
+      "tonnes": 48384.0,
+      "by_destination": {
+        "US_Mcara": 98,
+        "Portland": 140,
+        "Thunder_Bay": 70,
+        "Vancouver": 188,
+        "US_Kevin": 8
+      }
+    },
+    "2025-12-26": {
+      "carloads": 271,
+      "tonnes": 26016.0,
+      "by_destination": {
+        "US_Mcara": 37,
+        "Vancouver": 164,
+        "Thunder_Bay": 37,
+        "Portland": 33
+      }
+    },
+    "2026-01-24": {
+      "carloads": 157,
+      "tonnes": 15072.0,
+      "by_destination": {
+        "US_Mcara": 12,
+        "Vancouver": 109,
+        "Thunder_Bay": 21,
+        "US_Kevin": 1,
+        "Portland": 14
+      }
+    },
+    "2025-11-18": {
+      "carloads": 537,
+      "tonnes": 51552.0,
+      "by_destination": {
+        "US_Kevin": 19,
+        "Vancouver": 376,
+        "Portland": 54,
+        "Thunder_Bay": 54,
+        "US_Mcara": 34
+      }
+    },
+    "2026-01-11": {
+      "carloads": 403,
+      "tonnes": 38688.0,
+      "by_destination": {
+        "US_Mcara": 109,
+        "Vancouver": 118,
+        "Thunder_Bay": 22,
+        "Portland": 154
+      }
+    },
+    "2025-12-08": {
+      "carloads": 382,
+      "tonnes": 36672.0,
+      "by_destination": {
+        "Vancouver": 177,
+        "Thunder_Bay": 34,
+        "US_Mcara": 63,
+        "US_Kevin": 4,
+        "Portland": 104
+      }
+    },
+    "2025-12-13": {
+      "carloads": 351,
+      "tonnes": 33696.0,
+      "by_destination": {
+        "US_Mcara": 83,
+        "Thunder_Bay": 95,
+        "Vancouver": 140,
+        "US_Kevin": 2,
+        "Portland": 31
+      }
+    },
+    "2025-11-21": {
+      "carloads": 483,
+      "tonnes": 46368.0,
+      "by_destination": {
+        "US_Mcara": 18,
+        "Vancouver": 333,
+        "Thunder_Bay": 91,
+        "US_Kevin": 6,
+        "Portland": 35
+      }
+    },
+    "2026-03-02": {
+      "carloads": 494,
+      "tonnes": 47424.0,
+      "by_destination": {
+        "US_Mcara": 293,
+        "Thunder_Bay": 22,
+        "Vancouver": 121,
+        "Portland": 54,
+        "US_Kevin": 4
+      }
+    },
+    "2026-03-12": {
+      "carloads": 563,
+      "tonnes": 54048.0,
+      "by_destination": {
+        "US_Mcara": 77,
+        "Vancouver": 79,
+        "US_Kevin": 50,
+        "Portland": 335,
+        "Thunder_Bay": 22
+      }
+    },
+    "2026-02-10": {
+      "carloads": 289,
+      "tonnes": 27744.0,
+      "by_destination": {
+        "Portland": 10,
+        "Vancouver": 136,
+        "US_Kevin": 24,
+        "US_Mcara": 98,
+        "Thunder_Bay": 21
+      }
+    },
+    "2026-01-30": {
+      "carloads": 739,
+      "tonnes": 70944.0,
+      "by_destination": {
+        "Thunder_Bay": 10,
+        "Vancouver": 605,
+        "US_Mcara": 95,
+        "Portland": 27,
+        "US_Kevin": 2
+      }
+    },
+    "2026-03-04": {
+      "carloads": 660,
+      "tonnes": 63360.0,
+      "by_destination": {
+        "US_Mcara": 65,
+        "US_Kevin": 7,
+        "Vancouver": 522,
+        "Thunder_Bay": 44,
+        "Portland": 22
+      }
+    },
+    "2025-11-30": {
+      "carloads": 350,
+      "tonnes": 33600.0,
+      "by_destination": {
+        "Portland": 9,
+        "US_Mcara": 117,
+        "Vancouver": 213,
+        "Thunder_Bay": 10,
+        "US_Kevin": 1
+      }
+    },
+    "2026-02-22": {
+      "carloads": 558,
+      "tonnes": 53568.0,
+      "by_destination": {
+        "Portland": 120,
+        "Thunder_Bay": 52,
+        "Vancouver": 308,
+        "US_Mcara": 77,
+        "US_Kevin": 1
+      }
+    },
+    "2026-02-13": {
+      "carloads": 578,
+      "tonnes": 55488.0,
+      "by_destination": {
+        "Vancouver": 254,
+        "Thunder_Bay": 46,
+        "US_Kevin": 77,
+        "Portland": 132,
+        "US_Mcara": 69
+      }
+    },
+    "2025-11-23": {
+      "carloads": 616,
+      "tonnes": 59136.0,
+      "by_destination": {
+        "Thunder_Bay": 224,
+        "Portland": 130,
+        "Vancouver": 105,
+        "US_Mcara": 157
+      }
+    },
+    "2026-01-23": {
+      "carloads": 748,
+      "tonnes": 71808.0,
+      "by_destination": {
+        "Portland": 157,
+        "Vancouver": 432,
+        "Thunder_Bay": 18,
+        "US_Mcara": 38,
+        "US_Kevin": 103
+      }
+    },
+    "2026-03-03": {
+      "carloads": 689,
+      "tonnes": 66144.0,
+      "by_destination": {
+        "Vancouver": 353,
+        "US_Mcara": 142,
+        "Thunder_Bay": 34,
+        "Portland": 159,
+        "US_Kevin": 1
+      }
+    },
+    "2026-02-20": {
+      "carloads": 701,
+      "tonnes": 67296.0,
+      "by_destination": {
+        "Thunder_Bay": 40,
+        "Portland": 112,
+        "US_Mcara": 128,
+        "Vancouver": 376,
+        "US_Kevin": 45
+      }
+    },
+    "2026-03-09": {
+      "carloads": 464,
+      "tonnes": 44544.0,
+      "by_destination": {
+        "Thunder_Bay": 49,
+        "US_Mcara": 99,
+        "Vancouver": 257,
+        "Portland": 59
+      }
+    },
+    "2026-01-27": {
+      "carloads": 522,
+      "tonnes": 50112.0,
+      "by_destination": {
+        "Vancouver": 250,
+        "Portland": 131,
+        "US_Mcara": 126,
+        "Thunder_Bay": 13,
+        "US_Kevin": 2
+      }
+    },
+    "2026-02-26": {
+      "carloads": 554,
+      "tonnes": 53184.0,
+      "by_destination": {
+        "Thunder_Bay": 70,
+        "Portland": 45,
+        "Vancouver": 354,
+        "US_Mcara": 73,
+        "US_Kevin": 12
+      }
+    },
+    "2026-01-14": {
+      "carloads": 550,
+      "tonnes": 52800.0,
+      "by_destination": {
+        "Thunder_Bay": 20,
+        "US_Kevin": 11,
+        "Vancouver": 373,
+        "US_Mcara": 84,
+        "Portland": 62
+      }
+    },
+    "2025-12-29": {
+      "carloads": 606,
+      "tonnes": 58176.0,
+      "by_destination": {
+        "Vancouver": 402,
+        "US_Mcara": 64,
+        "US_Kevin": 2,
+        "Thunder_Bay": 8,
+        "Portland": 130
+      }
+    },
+    "2025-12-10": {
+      "carloads": 536,
+      "tonnes": 51456.0,
+      "by_destination": {
+        "Thunder_Bay": 42,
+        "Vancouver": 357,
+        "US_Kevin": 4,
+        "Portland": 109,
+        "US_Mcara": 24
+      }
+    },
+    "2026-02-12": {
+      "carloads": 502,
+      "tonnes": 48192.0,
+      "by_destination": {
+        "Vancouver": 271,
+        "Thunder_Bay": 104,
+        "US_Mcara": 85,
+        "US_Kevin": 4,
+        "Portland": 38
+      }
+    },
+    "2026-02-19": {
+      "carloads": 288,
+      "tonnes": 27648.0,
+      "by_destination": {
+        "Thunder_Bay": 42,
+        "Vancouver": 95,
+        "Portland": 26,
+        "US_Mcara": 122,
+        "US_Kevin": 3
+      }
+    },
+    "2026-02-17": {
+      "carloads": 625,
+      "tonnes": 60000.0,
+      "by_destination": {
+        "Thunder_Bay": 59,
+        "US_Mcara": 228,
+        "US_Kevin": 3,
+        "Vancouver": 314,
+        "Portland": 21
+      }
+    },
+    "2026-01-16": {
+      "carloads": 563,
+      "tonnes": 54048.0,
+      "by_destination": {
+        "Thunder_Bay": 29,
+        "Vancouver": 320,
+        "US_Mcara": 75,
+        "US_Kevin": 2,
+        "Portland": 137
+      }
+    },
+    "2026-01-21": {
+      "carloads": 299,
+      "tonnes": 28704.0,
+      "by_destination": {
+        "Thunder_Bay": 23,
+        "US_Mcara": 62,
+        "Vancouver": 197,
+        "US_Kevin": 4,
+        "Portland": 13
+      }
+    },
+    "2026-02-05": {
+      "carloads": 855,
+      "tonnes": 82080.0,
+      "by_destination": {
+        "Vancouver": 551,
+        "Thunder_Bay": 14,
+        "US_Mcara": 155,
+        "US_Kevin": 12,
+        "Portland": 123
+      }
+    },
+    "2025-12-02": {
+      "carloads": 239,
+      "tonnes": 22944.0,
+      "by_destination": {
+        "Portland": 33,
+        "US_Mcara": 52,
+        "Thunder_Bay": 28,
+        "Vancouver": 114,
+        "US_Kevin": 12
+      }
+    },
+    "2026-01-17": {
+      "carloads": 984,
+      "tonnes": 94464.0,
+      "by_destination": {
+        "Thunder_Bay": 154,
+        "Vancouver": 624,
+        "US_Mcara": 66,
+        "US_Kevin": 6,
+        "Portland": 134
+      }
+    },
+    "2026-02-02": {
+      "carloads": 565,
+      "tonnes": 54240.0,
+      "by_destination": {
+        "US_Mcara": 101,
+        "Vancouver": 173,
+        "Thunder_Bay": 18,
+        "US_Kevin": 67,
+        "Portland": 206
+      }
+    },
+    "2026-01-25": {
+      "carloads": 544,
+      "tonnes": 52224.0,
+      "by_destination": {
+        "US_Mcara": 64,
+        "Thunder_Bay": 142,
+        "Vancouver": 310,
+        "Portland": 25,
+        "US_Kevin": 3
+      }
+    },
+    "2026-02-04": {
+      "carloads": 475,
+      "tonnes": 45600.0,
+      "by_destination": {
+        "US_Mcara": 87,
+        "Vancouver": 357,
+        "Thunder_Bay": 13,
+        "Portland": 18
+      }
+    },
+    "2026-01-22": {
+      "carloads": 562,
+      "tonnes": 53952.0,
+      "by_destination": {
+        "Vancouver": 427,
+        "Thunder_Bay": 17,
+        "US_Mcara": 61,
+        "Portland": 56,
+        "US_Kevin": 1
+      }
+    },
+    "2025-12-25": {
+      "carloads": 592,
+      "tonnes": 56832.0,
+      "by_destination": {
+        "Thunder_Bay": 159,
+        "US_Mcara": 109,
+        "Vancouver": 97,
+        "Portland": 225,
+        "US_Kevin": 2
+      }
+    },
+    "2026-02-11": {
+      "carloads": 798,
+      "tonnes": 76608.0,
+      "by_destination": {
+        "US_Mcara": 191,
+        "Vancouver": 492,
+        "Thunder_Bay": 14,
+        "Portland": 101
+      }
+    },
+    "2025-12-18": {
+      "carloads": 876,
+      "tonnes": 84096.0,
+      "by_destination": {
+        "Vancouver": 820,
+        "Thunder_Bay": 19,
+        "US_Mcara": 21,
+        "Portland": 15,
+        "US_Kevin": 1
+      }
+    },
+    "2026-02-25": {
+      "carloads": 500,
+      "tonnes": 48000.0,
+      "by_destination": {
+        "Vancouver": 276,
+        "US_Mcara": 150,
+        "Thunder_Bay": 12,
+        "Portland": 60,
+        "US_Kevin": 2
+      }
+    },
+    "2026-01-01": {
+      "carloads": 518,
+      "tonnes": 49728.0,
+      "by_destination": {
+        "Vancouver": 410,
+        "US_Mcara": 51,
+        "Thunder_Bay": 16,
+        "Portland": 39,
+        "US_Kevin": 2
+      }
+    },
+    "2025-12-16": {
+      "carloads": 627,
+      "tonnes": 60192.0,
+      "by_destination": {
+        "Vancouver": 286,
+        "Thunder_Bay": 95,
+        "US_Mcara": 105,
+        "Portland": 133,
+        "US_Kevin": 8
+      }
+    },
+    "2025-12-04": {
+      "carloads": 595,
+      "tonnes": 57120.0,
+      "by_destination": {
+        "Vancouver": 381,
+        "Thunder_Bay": 123,
+        "Portland": 49,
+        "US_Mcara": 38,
+        "US_Kevin": 4
+      }
+    },
+    "2026-03-14": {
+      "carloads": 712,
+      "tonnes": 68352.0,
+      "by_destination": {
+        "US_Mcara": 317,
+        "Portland": 81,
+        "Thunder_Bay": 64,
+        "US_Kevin": 37,
+        "Vancouver": 213
+      }
+    },
+    "2026-03-15": {
+      "carloads": 955,
+      "tonnes": 91680.0,
+      "by_destination": {
+        "US_Mcara": 326,
+        "Portland": 180,
+        "Vancouver": 321,
+        "Thunder_Bay": 128
+      }
+    },
+    "2026-03-13": {
+      "carloads": 794,
+      "tonnes": 76224.0,
+      "by_destination": {
+        "US_Mcara": 401,
+        "Portland": 90,
+        "Vancouver": 238,
+        "US_Kevin": 47,
+        "Thunder_Bay": 18
+      }
+    },
+    "2026-03-16": {
+      "carloads": 1180,
+      "tonnes": 113280.0,
+      "by_destination": {
+        "Portland": 555,
+        "US_Mcara": 221,
+        "Thunder_Bay": 50,
+        "US_Kevin": 69,
+        "Vancouver": 285
+      }
+    },
+    "2026-03-17": {
+      "carloads": 212,
+      "tonnes": 20352.0,
+      "by_destination": {
+        "US_Mcara": 29,
+        "Portland": 46,
+        "Vancouver": 37,
+        "US_Kevin": 100
+      }
+    }
+  }
+}

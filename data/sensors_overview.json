@@ -1,0 +1,5384 @@
+{
+  "last_updated": "2026-03-17",
+  "total_active": 298,
+  "us_active": 147,
+  "ca_active": 151,
+  "sensors": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.704,
+            45.612
+          ]
+        },
+        "properties": {
+          "name": "N. Portland E, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -128.639,
+            54.518
+          ]
+        },
+        "properties": {
+          "name": "Terrace, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.363,
+            50.712
+          ]
+        },
+        "properties": {
+          "name": "Mann, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -107.234,
+            52.135
+          ]
+        },
+        "properties": {
+          "name": "Asquith CP, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -100.131,
+            49.842
+          ]
+        },
+        "properties": {
+          "name": "Kemnay, MB ",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.188,
+            48.726
+          ]
+        },
+        "properties": {
+          "name": "Moyie Springs, ID",
+          "country": "United States",
+          "region": "Idaho",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.964,
+            52.362
+          ]
+        },
+        "properties": {
+          "name": "Langham, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -107.216,
+            52.12
+          ]
+        },
+        "properties": {
+          "name": "Asquith CN, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.657,
+            52.143
+          ]
+        },
+        "properties": {
+          "name": "Saskatoon, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -65.189,
+            46.403
+          ]
+        },
+        "properties": {
+          "name": "Birch Ridge, NB",
+          "country": "Canada",
+          "region": "New Brunswick",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.482,
+            51.195
+          ]
+        },
+        "properties": {
+          "name": "Cochrane, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -96.764,
+            49.885
+          ]
+        },
+        "properties": {
+          "name": "Dugald, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.985,
+            49.262
+          ]
+        },
+        "properties": {
+          "name": "Willingdon Jct S, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.416,
+            50.711
+          ]
+        },
+        "properties": {
+          "name": "Kissick, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.953,
+            50.651
+          ]
+        },
+        "properties": {
+          "name": "Monte Creek, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.345,
+            50.71
+          ]
+        },
+        "properties": {
+          "name": "Kamloops, BC OCT N",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.336,
+            50.677
+          ]
+        },
+        "properties": {
+          "name": "Kamloops, BC W",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.009,
+            49.231
+          ]
+        },
+        "properties": {
+          "name": "Mission City, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.474,
+            54.073
+          ]
+        },
+        "properties": {
+          "name": "Wolverine, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.311,
+            50.8
+          ]
+        },
+        "properties": {
+          "name": "Heffley, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.971,
+            49.16
+          ]
+        },
+        "properties": {
+          "name": "Chilliwack, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.301,
+            49.371
+          ]
+        },
+        "properties": {
+          "name": "Jaffray, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.611,
+            49.039
+          ]
+        },
+        "properties": {
+          "name": "Mcara, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.252,
+            45.623
+          ]
+        },
+        "properties": {
+          "name": "Jackman, ME",
+          "country": "United States",
+          "region": "Maine",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.373,
+            44.991
+          ]
+        },
+        "properties": {
+          "name": "Rouses Point, NY",
+          "country": "United States",
+          "region": "New York",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -63.282,
+            45.361
+          ]
+        },
+        "properties": {
+          "name": "Truro, NS",
+          "country": "Canada",
+          "region": "Nova Scotia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.327,
+            53.834
+          ]
+        },
+        "properties": {
+          "name": "Gibbons, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.068,
+            49.823
+          ]
+        },
+        "properties": {
+          "name": "Grande Pointe, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.851,
+            44.921
+          ]
+        },
+        "properties": {
+          "name": "Massena, NY",
+          "country": "United States",
+          "region": "New York",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -104.98,
+            50.414
+          ]
+        },
+        "properties": {
+          "name": "Rufus, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.306,
+            48.364
+          ]
+        },
+        "properties": {
+          "name": "Thunder Bay, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -93.629,
+            48.615
+          ]
+        },
+        "properties": {
+          "name": "Devlin, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.938,
+            49.745
+          ]
+        },
+        "properties": {
+          "name": "Coalhurst, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.959,
+            50.85
+          ]
+        },
+        "properties": {
+          "name": "Carney's Spur, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.239,
+            48.508
+          ]
+        },
+        "properties": {
+          "name": "Sedro Woolley, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.889,
+            44.82
+          ]
+        },
+        "properties": {
+          "name": "Island Pond, VT",
+          "country": "United States",
+          "region": "Vermont",
+          "railways": [
+            "SLR"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -62.666,
+            45.535
+          ]
+        },
+        "properties": {
+          "name": "Stellarton, NS",
+          "country": "Canada",
+          "region": "Nova Scotia",
+          "railways": [
+            "CBNS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.368,
+            49.837
+          ]
+        },
+        "properties": {
+          "name": "Diamond, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.288,
+            43.372
+          ]
+        },
+        "properties": {
+          "name": "Galt, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.816,
+            48.109
+          ]
+        },
+        "properties": {
+          "name": "Val D'Or, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.199,
+            45.857
+          ]
+        },
+        "properties": {
+          "name": "Cold Springs, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.878,
+            46.39
+          ]
+        },
+        "properties": {
+          "name": "Villeroy, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.27,
+            46.718
+          ]
+        },
+        "properties": {
+          "name": "Charny, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.387,
+            46.866
+          ]
+        },
+        "properties": {
+          "name": "Lac Aux Sables, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.965,
+            48.746
+          ]
+        },
+        "properties": {
+          "name": "Kevin, MT",
+          "country": "United States",
+          "region": "Montana",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.565,
+            53.618
+          ]
+        },
+        "properties": {
+          "name": "Campbell Park, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.257,
+            52.833
+          ]
+        },
+        "properties": {
+          "name": "Valemount, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.449,
+            49.991
+          ]
+        },
+        "properties": {
+          "name": "Rosser, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -67.426,
+            45.565
+          ]
+        },
+        "properties": {
+          "name": "Saint Croix, NB",
+          "country": "Canada",
+          "region": "New Brunswick",
+          "railways": [
+            "NBSR"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -110.274,
+            52.35
+          ]
+        },
+        "properties": {
+          "name": "Provost, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -104.426,
+            50.476
+          ]
+        },
+        "properties": {
+          "name": "Milaty, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.308,
+            49.84
+          ]
+        },
+        "properties": {
+          "name": "Carman Jct., MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.147,
+            49.701
+          ]
+        },
+        "properties": {
+          "name": "Squamish, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -81.257,
+            42.978
+          ]
+        },
+        "properties": {
+          "name": "London West, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.304,
+            49.136
+          ]
+        },
+        "properties": {
+          "name": "Letellier, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.198,
+            43.144
+          ]
+        },
+        "properties": {
+          "name": "Cainsville, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.818,
+            46.684
+          ]
+        },
+        "properties": {
+          "name": "Donnacona, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.907,
+            50.564
+          ]
+        },
+        "properties": {
+          "name": "Brooks, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.572,
+            49.762
+          ]
+        },
+        "properties": {
+          "name": "Keewatin, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.907,
+            53.54
+          ]
+        },
+        "properties": {
+          "name": "Spruce Grove, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -81.144,
+            46.419
+          ]
+        },
+        "properties": {
+          "name": "Naughton, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "HCRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.783,
+            48.741
+          ]
+        },
+        "properties": {
+          "name": "Porquis, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "ONT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.347,
+            46.535
+          ]
+        },
+        "properties": {
+          "name": "Sault Ste. Marie, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.376,
+            45.84
+          ]
+        },
+        "properties": {
+          "name": "South River, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -81.187,
+            46.583
+          ]
+        },
+        "properties": {
+          "name": "Chelmsford, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.936,
+            46.783
+          ]
+        },
+        "properties": {
+          "name": "St Charles, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.76,
+            43.688
+          ]
+        },
+        "properties": {
+          "name": "Brampton, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.334,
+            44.748
+          ]
+        },
+        "properties": {
+          "name": "Washago, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.216,
+            43.141
+          ]
+        },
+        "properties": {
+          "name": "Glenridge, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN",
+            "PCHR"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.491,
+            53.485
+          ]
+        },
+        "properties": {
+          "name": "Edmonton Tfr, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.587,
+            45.011
+          ]
+        },
+        "properties": {
+          "name": "Glenton, VT",
+          "country": "United States",
+          "region": "Vermont",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.592,
+            43.551
+          ]
+        },
+        "properties": {
+          "name": "Lorne Park, ON ",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN",
+            "GO"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.511,
+            51.876
+          ]
+        },
+        "properties": {
+          "name": "Dundurn, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.06,
+            53.197
+          ]
+        },
+        "properties": {
+          "name": "Hay Lakes, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.25,
+            44.906
+          ]
+        },
+        "properties": {
+          "name": "Perth, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.611,
+            44.243
+          ]
+        },
+        "properties": {
+          "name": "Kingston, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -130.259,
+            54.199
+          ]
+        },
+        "properties": {
+          "name": "Phelan, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.196,
+            49.164
+          ]
+        },
+        "properties": {
+          "name": "Dewdney, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.765,
+            55.139
+          ]
+        },
+        "properties": {
+          "name": "Grand Prairie, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -83.012,
+            42.291
+          ]
+        },
+        "properties": {
+          "name": "Windsor TFR, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS",
+            "ETL"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.755,
+            44.217
+          ]
+        },
+        "properties": {
+          "name": "Ernestown, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.608,
+            53.395
+          ]
+        },
+        "properties": {
+          "name": "Hinton, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.436,
+            38.61
+          ]
+        },
+        "properties": {
+          "name": "Swanston, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -109.164,
+            52.443
+          ]
+        },
+        "properties": {
+          "name": "Unity, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.338,
+            50.694
+          ]
+        },
+        "properties": {
+          "name": "Kamloops, BC OCT C",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -81.449,
+            42.958
+          ]
+        },
+        "properties": {
+          "name": "Komoka, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.837,
+            53.124
+          ]
+        },
+        "properties": {
+          "name": "Dunster, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.625,
+            55.698
+          ]
+        },
+        "properties": {
+          "name": "Chetwynd, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.983,
+            49.262
+          ]
+        },
+        "properties": {
+          "name": "Willingdon Jct N, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.2,
+            42.994
+          ]
+        },
+        "properties": {
+          "name": "Fraser, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -82.443,
+            42.961
+          ]
+        },
+        "properties": {
+          "name": "Port Huron, MI",
+          "country": "United States",
+          "region": "Michigan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.076,
+            49.186
+          ]
+        },
+        "properties": {
+          "name": "Nicomen, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.324,
+            50.679
+          ]
+        },
+        "properties": {
+          "name": "Kamloops, BC OCT S",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.753,
+            48.997
+          ]
+        },
+        "properties": {
+          "name": "Blaine, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.978,
+            53.535
+          ]
+        },
+        "properties": {
+          "name": "Stony Plain, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -104.811,
+            50.706
+          ]
+        },
+        "properties": {
+          "name": "Craven, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.949,
+            53.464
+          ]
+        },
+        "properties": {
+          "name": "Uncas, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.189,
+            43.578
+          ]
+        },
+        "properties": {
+          "name": "Guelph, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "GO",
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.897,
+            49.101
+          ]
+        },
+        "properties": {
+          "name": "Colebrook, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.398,
+            53.609
+          ]
+        },
+        "properties": {
+          "name": "St. Paul, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.091,
+            52.321
+          ]
+        },
+        "properties": {
+          "name": "Vonda, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.467,
+            43.792
+          ]
+        },
+        "properties": {
+          "name": "Snider, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.344,
+            50.422
+          ]
+        },
+        "properties": {
+          "name": "Spence's Bridge, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.398,
+            50.378
+          ]
+        },
+        "properties": {
+          "name": "Drynoch, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -103.499,
+            51.171
+          ]
+        },
+        "properties": {
+          "name": "Ituna, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.314,
+            50.796
+          ]
+        },
+        "properties": {
+          "name": "Heffley W, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.911,
+            51.245
+          ]
+        },
+        "properties": {
+          "name": "Nicholson, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -111.529,
+            53.383
+          ]
+        },
+        "properties": {
+          "name": "Innisfree, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -105.653,
+            51.946
+          ]
+        },
+        "properties": {
+          "name": "Viscount, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.85,
+            50.752
+          ]
+        },
+        "properties": {
+          "name": "Savona, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.979,
+            51.315
+          ]
+        },
+        "properties": {
+          "name": "Golden, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.684,
+            49.105
+          ]
+        },
+        "properties": {
+          "name": "Milner, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.652,
+            43.726
+          ]
+        },
+        "properties": {
+          "name": "Malport, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -107.596,
+            50.359
+          ]
+        },
+        "properties": {
+          "name": "Waldeck, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.967,
+            49.951
+          ]
+        },
+        "properties": {
+          "name": "Whitemouth, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.611,
+            34.844
+          ]
+        },
+        "properties": {
+          "name": "Needles, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.01,
+            35.214
+          ]
+        },
+        "properties": {
+          "name": "Getz, AZ",
+          "country": "United States",
+          "region": "Arizona",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.238,
+            34.051
+          ]
+        },
+        "properties": {
+          "name": "Loma Linda, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.039,
+            33.544
+          ]
+        },
+        "properties": {
+          "name": "Mecca, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.129,
+            32.671
+          ]
+        },
+        "properties": {
+          "name": "Wellton, AZ",
+          "country": "United States",
+          "region": "Arizona",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.896,
+            35.242
+          ]
+        },
+        "properties": {
+          "name": "Gentry, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.71,
+            35.235
+          ]
+        },
+        "properties": {
+          "name": "Folsom, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.818,
+            32.368
+          ]
+        },
+        "properties": {
+          "name": "Dona Ana, NM",
+          "country": "United States",
+          "region": "New Mexico",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.822,
+            34.287
+          ]
+        },
+        "properties": {
+          "name": "Progress, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.995,
+            34.983
+          ]
+        },
+        "properties": {
+          "name": "Umbarger, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.866,
+            35.101
+          ]
+        },
+        "properties": {
+          "name": "Haney, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.788,
+            35.248
+          ]
+        },
+        "properties": {
+          "name": "Juilliard, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -110.297,
+            31.969
+          ]
+        },
+        "properties": {
+          "name": "Benson, AZ",
+          "country": "United States",
+          "region": "Arizona",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.527,
+            32.733
+          ]
+        },
+        "properties": {
+          "name": "Heber, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -110.981,
+            32.234
+          ]
+        },
+        "properties": {
+          "name": "Tucson S, AZ",
+          "country": "United States",
+          "region": "Arizona",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.964,
+            34.015
+          ]
+        },
+        "properties": {
+          "name": "Puente Jct, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.617,
+            34.846
+          ]
+        },
+        "properties": {
+          "name": "Java, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.771,
+            34.671
+          ]
+        },
+        "properties": {
+          "name": "Belen, NM",
+          "country": "United States",
+          "region": "New Mexico",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.451,
+            31.775
+          ]
+        },
+        "properties": {
+          "name": "El Paso, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.29,
+            31.662
+          ]
+        },
+        "properties": {
+          "name": "Buford, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.889,
+            34.521
+          ]
+        },
+        "properties": {
+          "name": "Bovina, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.336,
+            36.153
+          ]
+        },
+        "properties": {
+          "name": "Tulare, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.943,
+            35.366
+          ]
+        },
+        "properties": {
+          "name": "Magunden, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.689,
+            43.576
+          ]
+        },
+        "properties": {
+          "name": "Streetsville, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.337,
+            34.6
+          ]
+        },
+        "properties": {
+          "name": "Oro Grande, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.72,
+            43.583
+          ]
+        },
+        "properties": {
+          "name": "Streetsville Jct, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.217,
+            43.177
+          ]
+        },
+        "properties": {
+          "name": "Masseys, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.888,
+            43.508
+          ]
+        },
+        "properties": {
+          "name": "Milbase, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.622,
+            45.695
+          ]
+        },
+        "properties": {
+          "name": "Terrebonne, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "QGRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.073,
+            43.89
+          ]
+        },
+        "properties": {
+          "name": "Audley, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.996,
+            50.985
+          ]
+        },
+        "properties": {
+          "name": "Glenmore, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.659,
+            43.843
+          ]
+        },
+        "properties": {
+          "name": "Kleinburg, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.061,
+            43.244
+          ]
+        },
+        "properties": {
+          "name": "Copetown, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -113.961,
+            52.022
+          ]
+        },
+        "properties": {
+          "name": "Campaign, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.476,
+            45.752
+          ]
+        },
+        "properties": {
+          "name": "Ville De Le Gardeur, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -68.439,
+            47.286
+          ]
+        },
+        "properties": {
+          "name": "Albertine, NB",
+          "country": "Canada",
+          "region": "New Brunswick",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.889,
+            50.896
+          ]
+        },
+        "properties": {
+          "name": "Churchbridge, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -103.994,
+            50.638
+          ]
+        },
+        "properties": {
+          "name": "Edgeley, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -96.653,
+            49.667
+          ]
+        },
+        "properties": {
+          "name": "Ste Anne, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.571,
+            49.19
+          ]
+        },
+        "properties": {
+          "name": "Albion, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.095,
+            49.905
+          ]
+        },
+        "properties": {
+          "name": "Pine Jct, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.604,
+            53.983
+          ]
+        },
+        "properties": {
+          "name": "Finmore, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN",
+            "VIA"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.381,
+            49.11
+          ]
+        },
+        "properties": {
+          "name": "Gifford, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "SRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.082,
+            49.906
+          ]
+        },
+        "properties": {
+          "name": "Norcran, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.608,
+            49.213
+          ]
+        },
+        "properties": {
+          "name": "Haney, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.578,
+            49.171
+          ]
+        },
+        "properties": {
+          "name": "Fort Langley, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.957,
+            49.082
+          ]
+        },
+        "properties": {
+          "name": "Delta, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "BCOL"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -106.073,
+            50.452
+          ]
+        },
+        "properties": {
+          "name": "Mortlach, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.432,
+            49.562
+          ]
+        },
+        "properties": {
+          "name": "Yale, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.233,
+            49.124
+          ]
+        },
+        "properties": {
+          "name": "Cox, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.999,
+            45.617
+          ]
+        },
+        "properties": {
+          "name": "Douville, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.214,
+            46.571
+          ]
+        },
+        "properties": {
+          "name": "Batiscan, QC",
+          "country": "Canada",
+          "region": "Quebec",
+          "railways": [
+            "QGRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -120.239,
+            50.675
+          ]
+        },
+        "properties": {
+          "name": "Kamloops E, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -102.464,
+            51.211
+          ]
+        },
+        "properties": {
+          "name": "Yorkton, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -105.628,
+            50.379
+          ]
+        },
+        "properties": {
+          "name": "Zola, SK",
+          "country": "Canada",
+          "region": "Saskatchewan",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.062,
+            49.502
+          ]
+        },
+        "properties": {
+          "name": "Fernie, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -66.154,
+            45.26
+          ]
+        },
+        "properties": {
+          "name": "South Bay, NB",
+          "country": "Canada",
+          "region": "New Brunswick",
+          "railways": [
+            "NBSR"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.036,
+            51.075
+          ]
+        },
+        "properties": {
+          "name": "Titian, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.248,
+            53.828
+          ]
+        },
+        "properties": {
+          "name": "The Pas, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "HBRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.891,
+            49.171
+          ]
+        },
+        "properties": {
+          "name": "Kings, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "SRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.793,
+            49.27
+          ]
+        },
+        "properties": {
+          "name": "Seto, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.717,
+            49.184
+          ]
+        },
+        "properties": {
+          "name": "Westlang, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.961,
+            50.85
+          ]
+        },
+        "properties": {
+          "name": "Carney's Spur (Top), BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.025,
+            49.3
+          ]
+        },
+        "properties": {
+          "name": "Second Narrows, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.647,
+            34.999
+          ]
+        },
+        "properties": {
+          "name": "Boron N, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.883,
+            49.747
+          ]
+        },
+        "properties": {
+          "name": "Elkview, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.479,
+            26.079
+          ]
+        },
+        "properties": {
+          "name": "Los Fresnos, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -99.476,
+            27.502
+          ]
+        },
+        "properties": {
+          "name": "S Laredo, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "KCS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -110.962,
+            32.157
+          ]
+        },
+        "properties": {
+          "name": "Aldona, AZ",
+          "country": "United States",
+          "region": "Arizona",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -99.509,
+            27.553
+          ]
+        },
+        "properties": {
+          "name": "E Mexico Rail, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -100.498,
+            28.705
+          ]
+        },
+        "properties": {
+          "name": "Eagle Pass, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.406,
+            40.853
+          ]
+        },
+        "properties": {
+          "name": "New Galilee S, PA",
+          "country": "United States",
+          "region": "Pennsylvania",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.534,
+            26.025
+          ]
+        },
+        "properties": {
+          "name": "Olmito, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.612,
+            40.845
+          ]
+        },
+        "properties": {
+          "name": "East Palestine S, OH",
+          "country": "United States",
+          "region": "Ohio",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.091,
+            30.022
+          ]
+        },
+        "properties": {
+          "name": "Huffman, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.874,
+            42.475
+          ]
+        },
+        "properties": {
+          "name": "Modoc Point, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.017,
+            44.955
+          ]
+        },
+        "properties": {
+          "name": "Salem, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.001,
+            44.731
+          ]
+        },
+        "properties": {
+          "name": "Jefferson, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.662,
+            45.508
+          ]
+        },
+        "properties": {
+          "name": "Haig, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.385,
+            45.541
+          ]
+        },
+        "properties": {
+          "name": "Troutdale, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.169,
+            44.124
+          ]
+        },
+        "properties": {
+          "name": "Irving, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.872,
+            42.041
+          ]
+        },
+        "properties": {
+          "name": "Worden, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.29,
+            44.115
+          ]
+        },
+        "properties": {
+          "name": "Bend, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.048,
+            44.041
+          ]
+        },
+        "properties": {
+          "name": "Springfield Jct, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.418,
+            41.917
+          ]
+        },
+        "properties": {
+          "name": "Stronghold, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.196,
+            45.744
+          ]
+        },
+        "properties": {
+          "name": "Echo, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.977,
+            43.974
+          ]
+        },
+        "properties": {
+          "name": "Ontario, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.329,
+            34.735
+          ]
+        },
+        "properties": {
+          "name": "Helendale, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.559,
+            40.837
+          ]
+        },
+        "properties": {
+          "name": "East Palestine N, OH",
+          "country": "United States",
+          "region": "Ohio",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.85,
+            49.278
+          ]
+        },
+        "properties": {
+          "name": "Port Moody, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -114.895,
+            49.708
+          ]
+        },
+        "properties": {
+          "name": "Sparwood, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.706,
+            45.611
+          ]
+        },
+        "properties": {
+          "name": "N. Portland W, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -99.504,
+            27.571
+          ]
+        },
+        "properties": {
+          "name": "Port Laredo, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.82,
+            39.061
+          ]
+        },
+        "properties": {
+          "name": "Edwardsville S, KS",
+          "country": "United States",
+          "region": "Kansas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.807,
+            39.06
+          ]
+        },
+        "properties": {
+          "name": "Edwardsville N, KS",
+          "country": "United States",
+          "region": "Kansas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.104,
+            44.057
+          ]
+        },
+        "properties": {
+          "name": "Eugene, OR",
+          "country": "United States",
+          "region": "Oregon",
+          "railways": [
+            "UP",
+            "AMTK",
+            "CORP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.006,
+            38.765
+          ]
+        },
+        "properties": {
+          "name": "Edgerton, KS",
+          "country": "United States",
+          "region": "Kansas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.11,
+            39.193
+          ]
+        },
+        "properties": {
+          "name": "Floyd, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.024,
+            39.196
+          ]
+        },
+        "properties": {
+          "name": "Camden, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "BNSF",
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.765516,
+            29.57
+          ]
+        },
+        "properties": {
+          "name": "Crabb, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.717,
+            40.267
+          ]
+        },
+        "properties": {
+          "name": "Hummelstown, PA",
+          "country": "United States",
+          "region": "Pennsylvania",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.816,
+            42.363
+          ]
+        },
+        "properties": {
+          "name": "Coxsackie, NY",
+          "country": "United States",
+          "region": "New York",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.814,
+            42.482
+          ]
+        },
+        "properties": {
+          "name": "Ravena, NY",
+          "country": "United States",
+          "region": "New York",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.209,
+            30.0656
+          ]
+        },
+        "properties": {
+          "name": "Amelia, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -97.271,
+            28.306
+          ]
+        },
+        "properties": {
+          "name": "Refugio, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.186,
+            30.075
+          ]
+        },
+        "properties": {
+          "name": "Elizabeth, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.258,
+            40.552
+          ]
+        },
+        "properties": {
+          "name": "Sewaren, NJ",
+          "country": "United States",
+          "region": "New Jersey",
+          "railways": [
+            "CSAO"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.013,
+            30.125
+          ]
+        },
+        "properties": {
+          "name": "Vidor, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "KCS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.766,
+            29.582
+          ]
+        },
+        "properties": {
+          "name": "Richmond, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.71,
+            33.64
+          ]
+        },
+        "properties": {
+          "name": "El Toro, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "SCAX"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.419,
+            33.923
+          ]
+        },
+        "properties": {
+          "name": "Prenda, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.325,
+            40.558
+          ]
+        },
+        "properties": {
+          "name": "Ceramics, NJ",
+          "country": "United States",
+          "region": "New Jersey",
+          "railways": [
+            "CSAO"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.725,
+            34.926
+          ]
+        },
+        "properties": {
+          "name": "Toomy, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.128,
+            35.383
+          ]
+        },
+        "properties": {
+          "name": "Rosedale, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.246,
+            40.574
+          ]
+        },
+        "properties": {
+          "name": "Carteret W, NJ",
+          "country": "United States",
+          "region": "New Jersey",
+          "railways": [
+            "CSAO"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.913,
+            46.534
+          ]
+        },
+        "properties": {
+          "name": "Sudbury, ON",
+          "country": "Canada",
+          "region": "Ontario",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.485,
+            33.894
+          ]
+        },
+        "properties": {
+          "name": "May, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -82.181,
+            28.003
+          ]
+        },
+        "properties": {
+          "name": "Dover, FL",
+          "country": "United States",
+          "region": "Florida",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.825,
+            34.439
+          ]
+        },
+        "properties": {
+          "name": "Goleta, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.816,
+            33.716
+          ]
+        },
+        "properties": {
+          "name": "Irvine, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "SCAX"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -82.041,
+            29.044
+          ]
+        },
+        "properties": {
+          "name": "Belleview, FL",
+          "country": "United States",
+          "region": "Florida",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.828,
+            36.799
+          ]
+        },
+        "properties": {
+          "name": "Figarden, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -65.176,
+            45.931
+          ]
+        },
+        "properties": {
+          "name": "Petitcodiac, NB",
+          "country": "Canada",
+          "region": "New Brunswick",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.073,
+            34.09
+          ]
+        },
+        "properties": {
+          "name": "Temple City, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -115.764,
+            49.91
+          ]
+        },
+        "properties": {
+          "name": "Skookumchuck, BC",
+          "country": "Canada",
+          "region": "British Columbia",
+          "railways": [
+            "CPRS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.243,
+            33.787
+          ]
+        },
+        "properties": {
+          "name": "Long Beach, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "PHL"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.821,
+            38.45
+          ]
+        },
+        "properties": {
+          "name": "Dixon, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.914,
+            36.834
+          ]
+        },
+        "properties": {
+          "name": "Biola Jct, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.419,
+            29.167
+          ]
+        },
+        "properties": {
+          "name": "North Angleton, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.357,
+            37.988
+          ]
+        },
+        "properties": {
+          "name": "Giant, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.889,
+            34.864
+          ]
+        },
+        "properties": {
+          "name": "Daggett, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -118.098,
+            33.97
+          ]
+        },
+        "properties": {
+          "name": "Pico Rivera, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.418,
+            30.085
+          ]
+        },
+        "properties": {
+          "name": "Spring Jct, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.211,
+            29.833
+          ]
+        },
+        "properties": {
+          "name": "Fauna, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP",
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.932,
+            30.057
+          ]
+        },
+        "properties": {
+          "name": "Waller, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.248,
+            29.767094
+          ]
+        },
+        "properties": {
+          "name": "Greens Bayou, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -85.612,
+            41.406
+          ]
+        },
+        "properties": {
+          "name": "Cromwell, IN",
+          "country": "United States",
+          "region": "Indiana",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.622,
+            30.115
+          ]
+        },
+        "properties": {
+          "name": "Tomball, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.311,
+            29.646
+          ]
+        },
+        "properties": {
+          "name": "Mykawa, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -85.535,
+            41.395
+          ]
+        },
+        "properties": {
+          "name": "Kimmell, IN",
+          "country": "United States",
+          "region": "Indiana",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -88.543,
+            41.66
+          ]
+        },
+        "properties": {
+          "name": "Plano, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -94.897,
+            30.04
+          ]
+        },
+        "properties": {
+          "name": "Dayton, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.091,
+            29.509
+          ]
+        },
+        "properties": {
+          "name": "League City, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.422,
+            30.081
+          ]
+        },
+        "properties": {
+          "name": "North Spring, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -88.274,
+            41.291
+          ]
+        },
+        "properties": {
+          "name": "Pequot, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -86.167,
+            41.658
+          ]
+        },
+        "properties": {
+          "name": "Mishawaka, IN",
+          "country": "United States",
+          "region": "Indiana",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -117.129,
+            58.511
+          ]
+        },
+        "properties": {
+          "name": "High Level, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.33,
+            29.834
+          ]
+        },
+        "properties": {
+          "name": "Gish, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -86.072,
+            41.663
+          ]
+        },
+        "properties": {
+          "name": "Osceola, IN",
+          "country": "United States",
+          "region": "Indiana",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -100.975,
+            53.977
+          ]
+        },
+        "properties": {
+          "name": "Finger, MB",
+          "country": "Canada",
+          "region": "Manitoba",
+          "railways": [
+            "HBRY"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.707,
+            54.596
+          ]
+        },
+        "properties": {
+          "name": "Horner, AB",
+          "country": "Canada",
+          "region": "Alberta",
+          "railways": [
+            "CN"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.135,
+            38.876
+          ]
+        },
+        "properties": {
+          "name": "Newcastle, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -88.301,
+            41.194
+          ]
+        },
+        "properties": {
+          "name": "Mazonia, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -92.287,
+            40.195
+          ]
+        },
+        "properties": {
+          "name": "Hurdland, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -92.09,
+            40.31
+          ]
+        },
+        "properties": {
+          "name": "Rutledge, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -91.738,
+            39.646
+          ]
+        },
+        "properties": {
+          "name": "Monroe City, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -92.282,
+            39.234
+          ]
+        },
+        "properties": {
+          "name": "Sturgeon, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.652,
+            39.787
+          ]
+        },
+        "properties": {
+          "name": "Springfield, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.555,
+            39.478
+          ]
+        },
+        "properties": {
+          "name": "Adelaide, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.412,
+            39.853
+          ]
+        },
+        "properties": {
+          "name": "Buffalo, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.681,
+            38.744
+          ]
+        },
+        "properties": {
+          "name": "Highland, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.408,
+            38.886
+          ]
+        },
+        "properties": {
+          "name": "Greenville, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "CSXT"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.406,
+            38.57
+          ]
+        },
+        "properties": {
+          "name": "Kirkwood, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.492,
+            38.55
+          ]
+        },
+        "properties": {
+          "name": "Valley Park, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -88.089,
+            41.504
+          ]
+        },
+        "properties": {
+          "name": "Plaines, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.289,
+            38.622
+          ]
+        },
+        "properties": {
+          "name": "Maplewood, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.377,
+            38.579
+          ]
+        },
+        "properties": {
+          "name": "Kirk, MO",
+          "country": "United States",
+          "region": "Missouri",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -89.783,
+            39.009
+          ]
+        },
+        "properties": {
+          "name": "Staunton, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.375,
+            38.667
+          ]
+        },
+        "properties": {
+          "name": "Walerga, CA",
+          "country": "United States",
+          "region": "California",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -90.036,
+            38.549
+          ]
+        },
+        "properties": {
+          "name": "Belleville, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "NS"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -95.227,
+            29.71
+          ]
+        },
+        "properties": {
+          "name": "Sinco, TX",
+          "country": "United States",
+          "region": "Texas",
+          "railways": [
+            "UP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -87.934,
+            41.713
+          ]
+        },
+        "properties": {
+          "name": "Willow Springs, IL",
+          "country": "United States",
+          "region": "Illinois",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.325,
+            48.444
+          ]
+        },
+        "properties": {
+          "name": "Mount Vernon, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -112.334,
+            48.64
+          ]
+        },
+        "properties": {
+          "name": "Cut Bank, MT",
+          "country": "United States",
+          "region": "Montana",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.007,
+            46.776
+          ]
+        },
+        "properties": {
+          "name": "Grand Mound, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "PSAP"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.862,
+            46.846
+          ]
+        },
+        "properties": {
+          "name": "Tenino, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.322,
+            47.198
+          ]
+        },
+        "properties": {
+          "name": "Puyallup N, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.027,
+            47.348
+          ]
+        },
+        "properties": {
+          "name": "Ravensdale, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -121.804,
+            47.862
+          ]
+        },
+        "properties": {
+          "name": "Sultan, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.561,
+            47.305
+          ]
+        },
+        "properties": {
+          "name": "Ephrata, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.532,
+            48.221
+          ]
+        },
+        "properties": {
+          "name": "Algoma, ID",
+          "country": "United States",
+          "region": "Idaho",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -116.35,
+            48.283
+          ]
+        },
+        "properties": {
+          "name": "Kootenai, ID",
+          "country": "United States",
+          "region": "Idaho",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.939,
+            46.488
+          ]
+        },
+        "properties": {
+          "name": "Winlock E, WA",
+          "country": "United States",
+          "region": "Washington",
+          "railways": [
+            "BNSF"
+          ]
+        }
+      }
+    ]
+  }
+}
