@@ -1,0 +1,214 @@
+{
+  "pull_date": "2026-03-19T20:49:49Z",
+  "date_range": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "sensors_queried": 15,
+  "totals": {
+    "trains": 104030,
+    "cars": 6775172,
+    "containers": 3535071,
+    "hazmat_cars": 543352,
+    "api_requests": 279
+  },
+  "sensor_summaries": [
+    {
+      "name": "Bend, OR",
+      "sensor_id": 268,
+      "lat": 44.115,
+      "lng": -121.29,
+      "railways": [
+        "BNSF"
+      ],
+      "trains": 1920,
+      "cars": 130786,
+      "containers": 180,
+      "hazmat_cars": 21924
+    },
+    {
+      "name": "Cold Springs, OR",
+      "sensor_id": 266,
+      "lat": 45.857,
+      "lng": -119.199,
+      "railways": [
+        "UP"
+      ],
+      "trains": 3540,
+      "cars": 301074,
+      "containers": 3066,
+      "hazmat_cars": 33383
+    },
+    {
+      "name": "Echo, OR",
+      "sensor_id": 269,
+      "lat": 45.744,
+      "lng": -119.196,
+      "railways": [
+        "UP"
+      ],
+      "trains": 5056,
+      "cars": 627186,
+      "containers": 385694,
+      "hazmat_cars": 31471
+    },
+    {
+      "name": "Eugene, OR",
+      "sensor_id": 264,
+      "lat": 44.057,
+      "lng": -123.104,
+      "railways": [
+        "UP",
+        "AMTK",
+        "CORP"
+      ],
+      "trains": 8484,
+      "cars": 342211,
+      "containers": 132023,
+      "hazmat_cars": 31251
+    },
+    {
+      "name": "Haig, OR",
+      "sensor_id": 263,
+      "lat": 45.508,
+      "lng": -122.662,
+      "railways": [
+        "UP"
+      ],
+      "trains": 7507,
+      "cars": 361901,
+      "containers": 266246,
+      "hazmat_cars": 26976
+    },
+    {
+      "name": "Irving, OR",
+      "sensor_id": 265,
+      "lat": 44.124,
+      "lng": -123.169,
+      "railways": [
+        "UP"
+      ],
+      "trains": 5843,
+      "cars": 308114,
+      "containers": 138252,
+      "hazmat_cars": 31750
+    },
+    {
+      "name": "Jefferson, OR",
+      "sensor_id": 261,
+      "lat": 44.731,
+      "lng": -123.001,
+      "railways": [
+        "UP"
+      ],
+      "trains": 5422,
+      "cars": 277626,
+      "containers": 130123,
+      "hazmat_cars": 31390
+    },
+    {
+      "name": "Modoc Point, OR",
+      "sensor_id": 259,
+      "lat": 42.475,
+      "lng": -121.874,
+      "railways": [
+        "UP"
+      ],
+      "trains": 4818,
+      "cars": 332136,
+      "containers": 113884,
+      "hazmat_cars": 43237
+    },
+    {
+      "name": "N. Portland E, OR",
+      "sensor_id": 270,
+      "lat": 45.612,
+      "lng": -122.704,
+      "railways": [
+        "BNSF"
+      ],
+      "trains": 17717,
+      "cars": 937083,
+      "containers": 627234,
+      "hazmat_cars": 76281
+    },
+    {
+      "name": "N. Portland W, OR",
+      "sensor_id": 402,
+      "lat": 45.611,
+      "lng": -122.706,
+      "railways": [
+        "BNSF"
+      ],
+      "trains": 17256,
+      "cars": 901591,
+      "containers": 577312,
+      "hazmat_cars": 77884
+    },
+    {
+      "name": "Ontario, OR",
+      "sensor_id": 271,
+      "lat": 43.974,
+      "lng": -116.977,
+      "railways": [
+        "UP"
+      ],
+      "trains": 5469,
+      "cars": 584148,
+      "containers": 311737,
+      "hazmat_cars": 29133
+    },
+    {
+      "name": "Salem, OR",
+      "sensor_id": 258,
+      "lat": 44.955,
+      "lng": -123.017,
+      "railways": [
+        "UP"
+      ],
+      "trains": 5682,
+      "cars": 294704,
+      "containers": 130189,
+      "hazmat_cars": 31972
+    },
+    {
+      "name": "Springfield Jct, OR",
+      "sensor_id": 262,
+      "lat": 44.041,
+      "lng": -123.048,
+      "railways": [
+        "UP"
+      ],
+      "trains": 4757,
+      "cars": 303877,
+      "containers": 125365,
+      "hazmat_cars": 27169
+    },
+    {
+      "name": "Troutdale, OR",
+      "sensor_id": 267,
+      "lat": 45.541,
+      "lng": -122.385,
+      "railways": [
+        "UP"
+      ],
+      "trains": 6871,
+      "cars": 811182,
+      "containers": 468766,
+      "hazmat_cars": 22192
+    },
+    {
+      "name": "Worden, OR",
+      "sensor_id": 256,
+      "lat": 42.041,
+      "lng": -121.872,
+      "railways": [
+        "UP"
+      ],
+      "trains": 3688,
+      "cars": 261553,
+      "containers": 125000,
+      "hazmat_cars": 27339
+    }
+  ]
+}

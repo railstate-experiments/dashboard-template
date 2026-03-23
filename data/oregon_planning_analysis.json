@@ -1,0 +1,6839 @@
+{
+  "generated": "2026-03-21T16:23:44Z",
+  "month_labels": [
+    "Jan '25",
+    "Feb '25",
+    "Mar '25",
+    "Apr '25",
+    "May '25",
+    "Jun '25",
+    "Jul '25",
+    "Aug '25",
+    "Sep '25",
+    "Oct '25",
+    "Nov '25",
+    "Dec '25"
+  ],
+  "months": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12"
+  ],
+  "summary": {
+    "total_trains": 104030,
+    "total_car_sightings": 6775172,
+    "sensors": 15,
+    "train_types": 10,
+    "operators": {
+      "BNSF": 18534,
+      "UP": 67751,
+      "": 13,
+      "AMTK": 17732
+    },
+    "date_range": {
+      "start": "2025-01-01",
+      "end": "2025-12-31"
+    },
+    "avg_trains_per_day": 285,
+    "avg_cars_per_train": 65.1
+  },
+  "train_type_counts": {
+    "Manifest": 43892,
+    "Automotive": 2989,
+    "Grain Unit": 10906,
+    "Petroleum Unit": 1117,
+    "Light Locomotives": 4338,
+    "Intermodal": 19999,
+    "MOW": 2296,
+    "Coal Unit": 25,
+    "Potash Unit": 723,
+    "Passenger": 17745
+  },
+  "corridors_volume": [
+    {
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 37695,
+      "by_type": {
+        "Manifest": 18358,
+        "Intermodal": 6255,
+        "Passenger": 9396,
+        "MOW": 640,
+        "Grain Unit": 1573,
+        "Light Locomotives": 1115,
+        "Automotive": 169,
+        "Petroleum Unit": 181,
+        "Potash Unit": 5,
+        "Coal Unit": 3
+      },
+      "monthly": [
+        3270,
+        2998,
+        3190,
+        3064,
+        3179,
+        3075,
+        3192,
+        3241,
+        3062,
+        3303,
+        3002,
+        3119
+      ]
+    },
+    {
+      "subdivision": "BNSF Fallbridge Sub",
+      "total_trains": 34973,
+      "by_type": {
+        "Passenger": 7349,
+        "Light Locomotives": 2917,
+        "Intermodal": 7199,
+        "Manifest": 9403,
+        "Automotive": 2348,
+        "Grain Unit": 3834,
+        "Petroleum Unit": 816,
+        "MOW": 1040,
+        "Coal Unit": 16,
+        "Potash Unit": 51
+      },
+      "monthly": [
+        3053,
+        2630,
+        2952,
+        2858,
+        3028,
+        2867,
+        2814,
+        2902,
+        2807,
+        3074,
+        2976,
+        3012
+      ]
+    },
+    {
+      "subdivision": "UP La Grande Sub",
+      "total_trains": 8596,
+      "by_type": {
+        "Manifest": 4251,
+        "Potash Unit": 291,
+        "Grain Unit": 2061,
+        "MOW": 265,
+        "Light Locomotives": 71,
+        "Petroleum Unit": 30,
+        "Intermodal": 1517,
+        "Automotive": 103,
+        "Passenger": 7
+      },
+      "monthly": [
+        726,
+        687,
+        742,
+        816,
+        722,
+        589,
+        578,
+        745,
+        723,
+        783,
+        759,
+        726
+      ]
+    },
+    {
+      "subdivision": "UP Cascade Sub",
+      "total_trains": 8506,
+      "by_type": {
+        "Grain Unit": 415,
+        "Intermodal": 1476,
+        "Manifest": 5180,
+        "Passenger": 987,
+        "Light Locomotives": 137,
+        "Automotive": 79,
+        "MOW": 168,
+        "Petroleum Unit": 60,
+        "Coal Unit": 4
+      },
+      "monthly": [
+        750,
+        378,
+        547,
+        639,
+        778,
+        769,
+        772,
+        783,
+        743,
+        810,
+        784,
+        753
+      ]
+    },
+    {
+      "subdivision": "UP Graham Line",
+      "total_trains": 6871,
+      "by_type": {
+        "Grain Unit": 1934,
+        "Intermodal": 2148,
+        "Potash Unit": 368,
+        "Manifest": 2261,
+        "Automotive": 104,
+        "Light Locomotives": 10,
+        "MOW": 43,
+        "Passenger": 2,
+        "Petroleum Unit": 1
+      },
+      "monthly": [
+        593,
+        526,
+        590,
+        603,
+        619,
+        514,
+        528,
+        581,
+        533,
+        591,
+        605,
+        588
+      ]
+    },
+    {
+      "subdivision": "UP Nampa Sub",
+      "total_trains": 5469,
+      "by_type": {
+        "Manifest": 2862,
+        "Intermodal": 1393,
+        "Grain Unit": 950,
+        "Light Locomotives": 44,
+        "Automotive": 93,
+        "MOW": 108,
+        "Potash Unit": 8,
+        "Passenger": 4,
+        "Petroleum Unit": 7
+      },
+      "monthly": [
+        475,
+        426,
+        452,
+        475,
+        467,
+        412,
+        433,
+        457,
+        480,
+        471,
+        465,
+        456
+      ]
+    },
+    {
+      "subdivision": "BNSF Oregon Trunk Sub",
+      "total_trains": 1920,
+      "by_type": {
+        "Manifest": 1577,
+        "Automotive": 93,
+        "Grain Unit": 139,
+        "Petroleum Unit": 22,
+        "Light Locomotives": 44,
+        "Intermodal": 11,
+        "MOW": 32,
+        "Coal Unit": 2
+      },
+      "monthly": [
+        168,
+        137,
+        184,
+        165,
+        172,
+        163,
+        148,
+        144,
+        151,
+        175,
+        162,
+        151
+      ]
+    }
+  ],
+  "sensor_volumes": [
+    {
+      "name": "N. Portland E, OR",
+      "subdivision": "BNSF Fallbridge Sub",
+      "total_trains": 17717,
+      "by_type": {
+        "Passenger": 3770,
+        "Light Locomotives": 1652,
+        "Intermodal": 3614,
+        "Manifest": 4629,
+        "Automotive": 1175,
+        "Grain Unit": 1966,
+        "Petroleum Unit": 399,
+        "MOW": 471,
+        "Coal Unit": 15,
+        "Potash Unit": 26
+      },
+      "monthly": [
+        1544,
+        1330,
+        1510,
+        1454,
+        1544,
+        1427,
+        1409,
+        1492,
+        1409,
+        1575,
+        1511,
+        1512
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Passenger": 381,
+          "Light Locomotives": 135,
+          "Intermodal": 313,
+          "Manifest": 386,
+          "Automotive": 119,
+          "Grain Unit": 150,
+          "Petroleum Unit": 45,
+          "MOW": 11,
+          "Coal Unit": 2,
+          "Potash Unit": 2
+        },
+        "2025-02": {
+          "Grain Unit": 135,
+          "Passenger": 322,
+          "Light Locomotives": 106,
+          "Manifest": 353,
+          "Intermodal": 293,
+          "Automotive": 85,
+          "MOW": 14,
+          "Petroleum Unit": 20,
+          "Coal Unit": 2
+        },
+        "2025-03": {
+          "Passenger": 318,
+          "Manifest": 393,
+          "Light Locomotives": 132,
+          "Automotive": 118,
+          "Grain Unit": 172,
+          "Intermodal": 316,
+          "MOW": 29,
+          "Petroleum Unit": 29,
+          "Coal Unit": 3
+        },
+        "2025-04": {
+          "Passenger": 280,
+          "Light Locomotives": 93,
+          "Manifest": 405,
+          "Automotive": 95,
+          "Intermodal": 303,
+          "MOW": 58,
+          "Grain Unit": 195,
+          "Petroleum Unit": 25
+        },
+        "2025-05": {
+          "Passenger": 308,
+          "Intermodal": 314,
+          "Manifest": 410,
+          "MOW": 56,
+          "Grain Unit": 160,
+          "Light Locomotives": 160,
+          "Automotive": 99,
+          "Petroleum Unit": 34,
+          "Coal Unit": 3
+        },
+        "2025-06": {
+          "Passenger": 287,
+          "Manifest": 388,
+          "Light Locomotives": 130,
+          "MOW": 71,
+          "Automotive": 113,
+          "Intermodal": 279,
+          "Grain Unit": 123,
+          "Petroleum Unit": 34,
+          "Potash Unit": 2
+        },
+        "2025-07": {
+          "Passenger": 276,
+          "Manifest": 384,
+          "Automotive": 113,
+          "Intermodal": 281,
+          "MOW": 61,
+          "Light Locomotives": 140,
+          "Coal Unit": 5,
+          "Grain Unit": 104,
+          "Petroleum Unit": 37,
+          "Potash Unit": 8
+        },
+        "2025-08": {
+          "Passenger": 289,
+          "Manifest": 390,
+          "MOW": 53,
+          "Automotive": 99,
+          "Light Locomotives": 139,
+          "Petroleum Unit": 45,
+          "Intermodal": 317,
+          "Grain Unit": 155,
+          "Potash Unit": 5
+        },
+        "2025-09": {
+          "Passenger": 287,
+          "Manifest": 361,
+          "Light Locomotives": 140,
+          "Automotive": 72,
+          "Intermodal": 288,
+          "MOW": 45,
+          "Grain Unit": 186,
+          "Petroleum Unit": 21,
+          "Potash Unit": 9
+        },
+        "2025-10": {
+          "Light Locomotives": 194,
+          "Passenger": 311,
+          "Manifest": 397,
+          "Automotive": 92,
+          "Intermodal": 319,
+          "MOW": 48,
+          "Grain Unit": 174,
+          "Petroleum Unit": 40
+        },
+        "2025-11": {
+          "Passenger": 330,
+          "Manifest": 380,
+          "Grain Unit": 200,
+          "Light Locomotives": 155,
+          "Intermodal": 298,
+          "Automotive": 87,
+          "Petroleum Unit": 38,
+          "MOW": 23
+        },
+        "2025-12": {
+          "Passenger": 381,
+          "Light Locomotives": 128,
+          "Manifest": 382,
+          "Automotive": 83,
+          "Grain Unit": 212,
+          "Intermodal": 293,
+          "Petroleum Unit": 31,
+          "MOW": 2
+        }
+      }
+    },
+    {
+      "name": "N. Portland W, OR",
+      "subdivision": "BNSF Fallbridge Sub",
+      "total_trains": 17256,
+      "by_type": {
+        "Passenger": 3579,
+        "Light Locomotives": 1265,
+        "Intermodal": 3585,
+        "Manifest": 4774,
+        "Automotive": 1173,
+        "Grain Unit": 1868,
+        "Petroleum Unit": 417,
+        "MOW": 569,
+        "Coal Unit": 1,
+        "Potash Unit": 25
+      },
+      "monthly": [
+        1509,
+        1300,
+        1442,
+        1404,
+        1484,
+        1440,
+        1405,
+        1410,
+        1398,
+        1499,
+        1465,
+        1500
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Passenger": 380,
+          "Light Locomotives": 114,
+          "Intermodal": 314,
+          "Manifest": 402,
+          "Automotive": 125,
+          "Grain Unit": 111,
+          "Petroleum Unit": 43,
+          "MOW": 20
+        },
+        "2025-02": {
+          "Passenger": 272,
+          "Grain Unit": 119,
+          "MOW": 27,
+          "Manifest": 397,
+          "Intermodal": 283,
+          "Automotive": 84,
+          "Light Locomotives": 94,
+          "Petroleum Unit": 23,
+          "Coal Unit": 1
+        },
+        "2025-03": {
+          "Passenger": 213,
+          "Manifest": 448,
+          "Light Locomotives": 123,
+          "Petroleum Unit": 28,
+          "Automotive": 126,
+          "Grain Unit": 172,
+          "MOW": 36,
+          "Intermodal": 296
+        },
+        "2025-04": {
+          "Passenger": 198,
+          "Manifest": 431,
+          "Automotive": 88,
+          "Intermodal": 295,
+          "Light Locomotives": 92,
+          "Grain Unit": 200,
+          "MOW": 75,
+          "Petroleum Unit": 25
+        },
+        "2025-05": {
+          "Passenger": 231,
+          "MOW": 89,
+          "Intermodal": 309,
+          "Manifest": 439,
+          "Light Locomotives": 121,
+          "Grain Unit": 153,
+          "Automotive": 105,
+          "Petroleum Unit": 37
+        },
+        "2025-06": {
+          "Passenger": 291,
+          "MOW": 45,
+          "Light Locomotives": 119,
+          "Manifest": 406,
+          "Automotive": 112,
+          "Intermodal": 298,
+          "Grain Unit": 130,
+          "Petroleum Unit": 36,
+          "Potash Unit": 3
+        },
+        "2025-07": {
+          "Passenger": 320,
+          "Manifest": 393,
+          "Automotive": 99,
+          "Intermodal": 303,
+          "Light Locomotives": 98,
+          "Grain Unit": 102,
+          "MOW": 39,
+          "Petroleum Unit": 42,
+          "Potash Unit": 9
+        },
+        "2025-08": {
+          "Passenger": 322,
+          "Manifest": 385,
+          "Intermodal": 294,
+          "Automotive": 96,
+          "Light Locomotives": 87,
+          "MOW": 34,
+          "Grain Unit": 147,
+          "Potash Unit": 5,
+          "Petroleum Unit": 40
+        },
+        "2025-09": {
+          "Passenger": 294,
+          "Intermodal": 294,
+          "Manifest": 368,
+          "Light Locomotives": 73,
+          "Automotive": 83,
+          "Grain Unit": 177,
+          "MOW": 72,
+          "Petroleum Unit": 29,
+          "Potash Unit": 8
+        },
+        "2025-10": {
+          "Light Locomotives": 139,
+          "Passenger": 320,
+          "MOW": 78,
+          "Manifest": 374,
+          "Automotive": 80,
+          "Intermodal": 308,
+          "Grain Unit": 162,
+          "Petroleum Unit": 38
+        },
+        "2025-11": {
+          "Passenger": 326,
+          "Petroleum Unit": 40,
+          "MOW": 54,
+          "Manifest": 372,
+          "Light Locomotives": 97,
+          "Intermodal": 290,
+          "Automotive": 87,
+          "Grain Unit": 199
+        },
+        "2025-12": {
+          "Passenger": 412,
+          "Petroleum Unit": 36,
+          "Manifest": 359,
+          "Automotive": 88,
+          "Light Locomotives": 108,
+          "Grain Unit": 196,
+          "Intermodal": 301
+        }
+      }
+    },
+    {
+      "name": "Eugene, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 8484,
+      "by_type": {
+        "Manifest": 4075,
+        "Intermodal": 790,
+        "Passenger": 2617,
+        "MOW": 148,
+        "Grain Unit": 652,
+        "Light Locomotives": 175,
+        "Automotive": 11,
+        "Petroleum Unit": 16
+      },
+      "monthly": [
+        632,
+        723,
+        714,
+        737,
+        763,
+        697,
+        716,
+        722,
+        662,
+        745,
+        695,
+        678
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Manifest": 300,
+          "Intermodal": 48,
+          "Passenger": 205,
+          "MOW": 12,
+          "Grain Unit": 52,
+          "Light Locomotives": 14,
+          "Automotive": 1
+        },
+        "2025-02": {
+          "Passenger": 238,
+          "Manifest": 349,
+          "Grain Unit": 48,
+          "Intermodal": 57,
+          "Light Locomotives": 21,
+          "MOW": 5,
+          "Automotive": 4,
+          "Petroleum Unit": 1
+        },
+        "2025-03": {
+          "Passenger": 181,
+          "Manifest": 354,
+          "Intermodal": 59,
+          "Light Locomotives": 30,
+          "Grain Unit": 56,
+          "MOW": 32,
+          "Automotive": 2
+        },
+        "2025-04": {
+          "Manifest": 369,
+          "Light Locomotives": 20,
+          "Passenger": 203,
+          "Grain Unit": 60,
+          "MOW": 17,
+          "Intermodal": 68
+        },
+        "2025-05": {
+          "Passenger": 206,
+          "Grain Unit": 72,
+          "Manifest": 384,
+          "Intermodal": 65,
+          "Light Locomotives": 17,
+          "MOW": 19
+        },
+        "2025-06": {
+          "Passenger": 204,
+          "Manifest": 334,
+          "Grain Unit": 62,
+          "Intermodal": 70,
+          "MOW": 16,
+          "Light Locomotives": 11
+        },
+        "2025-07": {
+          "Passenger": 235,
+          "Manifest": 333,
+          "Light Locomotives": 14,
+          "Intermodal": 64,
+          "Grain Unit": 60,
+          "Petroleum Unit": 1,
+          "MOW": 8,
+          "Automotive": 1
+        },
+        "2025-08": {
+          "Manifest": 328,
+          "Passenger": 238,
+          "Light Locomotives": 16,
+          "MOW": 14,
+          "Grain Unit": 57,
+          "Intermodal": 68,
+          "Automotive": 1
+        },
+        "2025-09": {
+          "Passenger": 216,
+          "MOW": 11,
+          "Manifest": 303,
+          "Automotive": 1,
+          "Grain Unit": 48,
+          "Intermodal": 72,
+          "Light Locomotives": 10,
+          "Petroleum Unit": 1
+        },
+        "2025-10": {
+          "Passenger": 219,
+          "Manifest": 369,
+          "Grain Unit": 59,
+          "Light Locomotives": 12,
+          "Intermodal": 74,
+          "MOW": 9,
+          "Petroleum Unit": 3
+        },
+        "2025-11": {
+          "Manifest": 334,
+          "Passenger": 235,
+          "MOW": 4,
+          "Intermodal": 73,
+          "Grain Unit": 38,
+          "Petroleum Unit": 4,
+          "Light Locomotives": 6,
+          "Automotive": 1
+        },
+        "2025-12": {
+          "Passenger": 237,
+          "Manifest": 318,
+          "Grain Unit": 40,
+          "Intermodal": 72,
+          "MOW": 1,
+          "Petroleum Unit": 6,
+          "Light Locomotives": 4
+        }
+      }
+    },
+    {
+      "name": "Haig, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 7507,
+      "by_type": {
+        "Passenger": 1317,
+        "Intermodal": 2283,
+        "MOW": 195,
+        "Light Locomotives": 511,
+        "Manifest": 2809,
+        "Automotive": 153,
+        "Grain Unit": 229,
+        "Petroleum Unit": 8,
+        "Potash Unit": 2
+      },
+      "monthly": [
+        740,
+        619,
+        718,
+        589,
+        610,
+        603,
+        637,
+        696,
+        593,
+        670,
+        417,
+        615
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Passenger": 128,
+          "Intermodal": 232,
+          "MOW": 13,
+          "Light Locomotives": 55,
+          "Manifest": 263,
+          "Automotive": 28,
+          "Grain Unit": 21
+        },
+        "2025-02": {
+          "MOW": 22,
+          "Passenger": 135,
+          "Intermodal": 173,
+          "Manifest": 233,
+          "Light Locomotives": 34,
+          "Automotive": 8,
+          "Grain Unit": 12,
+          "Petroleum Unit": 2
+        },
+        "2025-03": {
+          "Passenger": 112,
+          "Light Locomotives": 58,
+          "Intermodal": 220,
+          "Manifest": 249,
+          "Automotive": 28,
+          "MOW": 33,
+          "Grain Unit": 18
+        },
+        "2025-04": {
+          "Manifest": 223,
+          "Intermodal": 185,
+          "Light Locomotives": 42,
+          "Passenger": 87,
+          "MOW": 23,
+          "Automotive": 9,
+          "Grain Unit": 20
+        },
+        "2025-05": {
+          "Light Locomotives": 49,
+          "Passenger": 87,
+          "Manifest": 240,
+          "Intermodal": 182,
+          "Automotive": 12,
+          "MOW": 23,
+          "Grain Unit": 17
+        },
+        "2025-06": {
+          "Passenger": 99,
+          "Light Locomotives": 38,
+          "Manifest": 243,
+          "Intermodal": 175,
+          "Grain Unit": 25,
+          "Automotive": 12,
+          "MOW": 10,
+          "Petroleum Unit": 1
+        },
+        "2025-07": {
+          "Passenger": 97,
+          "Manifest": 264,
+          "Intermodal": 192,
+          "MOW": 14,
+          "Light Locomotives": 42,
+          "Automotive": 6,
+          "Grain Unit": 19,
+          "Petroleum Unit": 2,
+          "Potash Unit": 1
+        },
+        "2025-08": {
+          "Manifest": 262,
+          "Intermodal": 216,
+          "Automotive": 17,
+          "Passenger": 100,
+          "MOW": 23,
+          "Light Locomotives": 55,
+          "Grain Unit": 22,
+          "Petroleum Unit": 1
+        },
+        "2025-09": {
+          "Light Locomotives": 23,
+          "Passenger": 108,
+          "Manifest": 224,
+          "Intermodal": 191,
+          "Grain Unit": 18,
+          "Automotive": 13,
+          "MOW": 16
+        },
+        "2025-10": {
+          "Passenger": 132,
+          "Intermodal": 206,
+          "Manifest": 249,
+          "Grain Unit": 29,
+          "Automotive": 10,
+          "Light Locomotives": 33,
+          "MOW": 11
+        },
+        "2025-11": {
+          "Light Locomotives": 34,
+          "Manifest": 147,
+          "Passenger": 84,
+          "Grain Unit": 13,
+          "Intermodal": 127,
+          "MOW": 6,
+          "Automotive": 6
+        },
+        "2025-12": {
+          "Manifest": 212,
+          "Intermodal": 184,
+          "Passenger": 148,
+          "Light Locomotives": 48,
+          "Grain Unit": 15,
+          "Petroleum Unit": 2,
+          "Automotive": 4,
+          "Potash Unit": 1,
+          "MOW": 1
+        }
+      }
+    },
+    {
+      "name": "Troutdale, OR",
+      "subdivision": "UP Graham Line",
+      "total_trains": 6871,
+      "by_type": {
+        "Grain Unit": 1934,
+        "Intermodal": 2148,
+        "Potash Unit": 368,
+        "Manifest": 2261,
+        "Automotive": 104,
+        "Light Locomotives": 10,
+        "MOW": 43,
+        "Passenger": 2,
+        "Petroleum Unit": 1
+      },
+      "monthly": [
+        593,
+        526,
+        590,
+        603,
+        619,
+        514,
+        528,
+        581,
+        533,
+        591,
+        605,
+        588
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Grain Unit": 151,
+          "Intermodal": 198,
+          "Potash Unit": 32,
+          "Manifest": 189,
+          "Automotive": 15,
+          "Light Locomotives": 6,
+          "MOW": 2
+        },
+        "2025-02": {
+          "Manifest": 176,
+          "Intermodal": 177,
+          "Grain Unit": 142,
+          "Automotive": 7,
+          "MOW": 3,
+          "Potash Unit": 21
+        },
+        "2025-03": {
+          "Manifest": 195,
+          "Intermodal": 185,
+          "Grain Unit": 167,
+          "Potash Unit": 31,
+          "Automotive": 11,
+          "Light Locomotives": 1
+        },
+        "2025-04": {
+          "Manifest": 189,
+          "Automotive": 11,
+          "Potash Unit": 41,
+          "Grain Unit": 184,
+          "Intermodal": 177,
+          "MOW": 1
+        },
+        "2025-05": {
+          "Manifest": 208,
+          "MOW": 17,
+          "Intermodal": 190,
+          "Grain Unit": 160,
+          "Potash Unit": 32,
+          "Automotive": 11,
+          "Passenger": 1
+        },
+        "2025-06": {
+          "Manifest": 169,
+          "Petroleum Unit": 1,
+          "Intermodal": 163,
+          "Grain Unit": 131,
+          "Automotive": 12,
+          "Potash Unit": 33,
+          "MOW": 5
+        },
+        "2025-07": {
+          "Intermodal": 175,
+          "Manifest": 181,
+          "Grain Unit": 116,
+          "Potash Unit": 43,
+          "Automotive": 9,
+          "Light Locomotives": 1,
+          "MOW": 3
+        },
+        "2025-08": {
+          "Intermodal": 176,
+          "Manifest": 199,
+          "Grain Unit": 153,
+          "Potash Unit": 34,
+          "MOW": 10,
+          "Light Locomotives": 1,
+          "Automotive": 8
+        },
+        "2025-09": {
+          "Intermodal": 173,
+          "Manifest": 187,
+          "Grain Unit": 155,
+          "Potash Unit": 10,
+          "Automotive": 5,
+          "Light Locomotives": 1,
+          "MOW": 2
+        },
+        "2025-10": {
+          "Intermodal": 179,
+          "Manifest": 193,
+          "Automotive": 5,
+          "Grain Unit": 184,
+          "Potash Unit": 29,
+          "Passenger": 1
+        },
+        "2025-11": {
+          "Manifest": 196,
+          "Intermodal": 173,
+          "Grain Unit": 199,
+          "Automotive": 6,
+          "Potash Unit": 31
+        },
+        "2025-12": {
+          "Manifest": 179,
+          "Intermodal": 182,
+          "Grain Unit": 192,
+          "Potash Unit": 31,
+          "Automotive": 4
+        }
+      }
+    },
+    {
+      "name": "Irving, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 5843,
+      "by_type": {
+        "Light Locomotives": 77,
+        "Passenger": 1534,
+        "Manifest": 3163,
+        "Intermodal": 819,
+        "Petroleum Unit": 10,
+        "Grain Unit": 182,
+        "MOW": 55,
+        "Automotive": 2,
+        "Coal Unit": 1
+      },
+      "monthly": [
+        513,
+        436,
+        491,
+        429,
+        480,
+        477,
+        517,
+        491,
+        470,
+        508,
+        517,
+        514
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Light Locomotives": 9,
+          "Passenger": 149,
+          "Manifest": 265,
+          "Intermodal": 63,
+          "Petroleum Unit": 4,
+          "Grain Unit": 20,
+          "MOW": 3
+        },
+        "2025-02": {
+          "Passenger": 144,
+          "Manifest": 217,
+          "Intermodal": 55,
+          "Light Locomotives": 4,
+          "MOW": 4,
+          "Grain Unit": 12
+        },
+        "2025-03": {
+          "Passenger": 119,
+          "Manifest": 267,
+          "Intermodal": 62,
+          "Light Locomotives": 15,
+          "Grain Unit": 16,
+          "MOW": 11,
+          "Petroleum Unit": 1
+        },
+        "2025-04": {
+          "Passenger": 86,
+          "Manifest": 253,
+          "Petroleum Unit": 1,
+          "Light Locomotives": 9,
+          "Intermodal": 63,
+          "Grain Unit": 15,
+          "Automotive": 1,
+          "MOW": 1
+        },
+        "2025-05": {
+          "Passenger": 113,
+          "Light Locomotives": 11,
+          "Manifest": 268,
+          "Intermodal": 66,
+          "Coal Unit": 1,
+          "Grain Unit": 16,
+          "MOW": 5
+        },
+        "2025-06": {
+          "Passenger": 112,
+          "Manifest": 264,
+          "MOW": 9,
+          "Light Locomotives": 5,
+          "Intermodal": 68,
+          "Grain Unit": 19
+        },
+        "2025-07": {
+          "Passenger": 139,
+          "Manifest": 276,
+          "Intermodal": 72,
+          "Light Locomotives": 6,
+          "Grain Unit": 20,
+          "MOW": 2,
+          "Petroleum Unit": 2
+        },
+        "2025-08": {
+          "Manifest": 288,
+          "Passenger": 104,
+          "Intermodal": 70,
+          "MOW": 10,
+          "Grain Unit": 18,
+          "Light Locomotives": 1
+        },
+        "2025-09": {
+          "Light Locomotives": 3,
+          "Manifest": 262,
+          "Passenger": 115,
+          "Intermodal": 77,
+          "Grain Unit": 10,
+          "MOW": 3
+        },
+        "2025-10": {
+          "Manifest": 280,
+          "Passenger": 128,
+          "Intermodal": 75,
+          "Light Locomotives": 3,
+          "Grain Unit": 17,
+          "MOW": 4,
+          "Petroleum Unit": 1
+        },
+        "2025-11": {
+          "Manifest": 272,
+          "Passenger": 157,
+          "Intermodal": 72,
+          "Light Locomotives": 5,
+          "Grain Unit": 10,
+          "MOW": 1
+        },
+        "2025-12": {
+          "Light Locomotives": 6,
+          "Manifest": 251,
+          "Passenger": 168,
+          "Intermodal": 76,
+          "Automotive": 1,
+          "MOW": 2,
+          "Petroleum Unit": 1,
+          "Grain Unit": 9
+        }
+      }
+    },
+    {
+      "name": "Salem, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 5682,
+      "by_type": {
+        "Manifest": 2569,
+        "Petroleum Unit": 123,
+        "Passenger": 1855,
+        "Intermodal": 814,
+        "MOW": 64,
+        "Grain Unit": 170,
+        "Light Locomotives": 85,
+        "Automotive": 1,
+        "Coal Unit": 1
+      },
+      "monthly": [
+        481,
+        404,
+        444,
+        475,
+        453,
+        482,
+        512,
+        504,
+        464,
+        489,
+        486,
+        488
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Manifest": 229,
+          "Petroleum Unit": 5,
+          "Passenger": 155,
+          "Intermodal": 59,
+          "MOW": 7,
+          "Grain Unit": 18,
+          "Light Locomotives": 8
+        },
+        "2025-02": {
+          "Passenger": 142,
+          "Manifest": 190,
+          "Intermodal": 53,
+          "Petroleum Unit": 4,
+          "Light Locomotives": 3,
+          "Grain Unit": 10,
+          "MOW": 2
+        },
+        "2025-03": {
+          "Passenger": 124,
+          "Intermodal": 58,
+          "Manifest": 206,
+          "Petroleum Unit": 7,
+          "MOW": 17,
+          "Grain Unit": 14,
+          "Light Locomotives": 18
+        },
+        "2025-04": {
+          "Light Locomotives": 14,
+          "MOW": 9,
+          "Passenger": 138,
+          "Manifest": 223,
+          "Intermodal": 67,
+          "Grain Unit": 14,
+          "Petroleum Unit": 9,
+          "Automotive": 1
+        },
+        "2025-05": {
+          "Passenger": 150,
+          "Manifest": 200,
+          "Intermodal": 63,
+          "Petroleum Unit": 11,
+          "Grain Unit": 14,
+          "Light Locomotives": 12,
+          "MOW": 3
+        },
+        "2025-06": {
+          "Passenger": 159,
+          "Manifest": 209,
+          "Intermodal": 71,
+          "Grain Unit": 19,
+          "Light Locomotives": 6,
+          "Petroleum Unit": 14,
+          "MOW": 4
+        },
+        "2025-07": {
+          "Passenger": 177,
+          "Light Locomotives": 6,
+          "Manifest": 232,
+          "Intermodal": 69,
+          "Petroleum Unit": 7,
+          "Grain Unit": 16,
+          "MOW": 4,
+          "Coal Unit": 1
+        },
+        "2025-08": {
+          "Manifest": 226,
+          "Passenger": 166,
+          "Intermodal": 74,
+          "Petroleum Unit": 11,
+          "MOW": 7,
+          "Light Locomotives": 4,
+          "Grain Unit": 16
+        },
+        "2025-09": {
+          "Passenger": 149,
+          "Manifest": 216,
+          "Petroleum Unit": 8,
+          "Grain Unit": 12,
+          "Intermodal": 75,
+          "MOW": 3,
+          "Light Locomotives": 1
+        },
+        "2025-10": {
+          "Passenger": 159,
+          "Manifest": 215,
+          "Petroleum Unit": 14,
+          "Intermodal": 77,
+          "Light Locomotives": 3,
+          "Grain Unit": 18,
+          "MOW": 3
+        },
+        "2025-11": {
+          "Manifest": 214,
+          "Passenger": 165,
+          "Intermodal": 73,
+          "Light Locomotives": 8,
+          "Petroleum Unit": 13,
+          "Grain Unit": 10,
+          "MOW": 3
+        },
+        "2025-12": {
+          "Passenger": 171,
+          "Manifest": 209,
+          "Petroleum Unit": 20,
+          "Intermodal": 75,
+          "Grain Unit": 9,
+          "MOW": 2,
+          "Light Locomotives": 2
+        }
+      }
+    },
+    {
+      "name": "Ontario, OR",
+      "subdivision": "UP Nampa Sub",
+      "total_trains": 5469,
+      "by_type": {
+        "Manifest": 2862,
+        "Intermodal": 1393,
+        "Grain Unit": 950,
+        "Light Locomotives": 44,
+        "Automotive": 93,
+        "MOW": 108,
+        "Potash Unit": 8,
+        "Passenger": 4,
+        "Petroleum Unit": 7
+      },
+      "monthly": [
+        475,
+        426,
+        452,
+        475,
+        467,
+        412,
+        433,
+        457,
+        480,
+        471,
+        465,
+        456
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Manifest": 239,
+          "Intermodal": 136,
+          "Grain Unit": 73,
+          "Light Locomotives": 7,
+          "Automotive": 16,
+          "MOW": 2,
+          "Potash Unit": 2
+        },
+        "2025-02": {
+          "Grain Unit": 72,
+          "Manifest": 218,
+          "Intermodal": 119,
+          "Automotive": 7,
+          "Light Locomotives": 7,
+          "MOW": 2,
+          "Passenger": 1
+        },
+        "2025-03": {
+          "Manifest": 246,
+          "Intermodal": 129,
+          "Grain Unit": 62,
+          "Light Locomotives": 4,
+          "Automotive": 10,
+          "MOW": 1
+        },
+        "2025-04": {
+          "Manifest": 257,
+          "Grain Unit": 78,
+          "Intermodal": 114,
+          "MOW": 7,
+          "Automotive": 9,
+          "Light Locomotives": 7,
+          "Petroleum Unit": 2,
+          "Passenger": 1
+        },
+        "2025-05": {
+          "Manifest": 253,
+          "Intermodal": 113,
+          "Grain Unit": 68,
+          "MOW": 17,
+          "Automotive": 11,
+          "Light Locomotives": 3,
+          "Passenger": 1,
+          "Petroleum Unit": 1
+        },
+        "2025-06": {
+          "Intermodal": 100,
+          "Manifest": 220,
+          "MOW": 13,
+          "Automotive": 11,
+          "Grain Unit": 63,
+          "Light Locomotives": 3,
+          "Petroleum Unit": 1,
+          "Potash Unit": 1
+        },
+        "2025-07": {
+          "Manifest": 234,
+          "Intermodal": 105,
+          "Automotive": 7,
+          "Grain Unit": 64,
+          "MOW": 15,
+          "Petroleum Unit": 2,
+          "Potash Unit": 4,
+          "Light Locomotives": 2
+        },
+        "2025-08": {
+          "Manifest": 223,
+          "Grain Unit": 82,
+          "Intermodal": 110,
+          "MOW": 29,
+          "Light Locomotives": 5,
+          "Automotive": 7,
+          "Petroleum Unit": 1
+        },
+        "2025-09": {
+          "Intermodal": 110,
+          "MOW": 14,
+          "Manifest": 251,
+          "Grain Unit": 98,
+          "Automotive": 4,
+          "Light Locomotives": 3
+        },
+        "2025-10": {
+          "Manifest": 249,
+          "Intermodal": 117,
+          "Automotive": 5,
+          "Grain Unit": 91,
+          "MOW": 7,
+          "Passenger": 1,
+          "Light Locomotives": 1
+        },
+        "2025-11": {
+          "Intermodal": 122,
+          "Manifest": 235,
+          "Grain Unit": 103,
+          "Automotive": 3,
+          "MOW": 1,
+          "Light Locomotives": 1
+        },
+        "2025-12": {
+          "Manifest": 237,
+          "Intermodal": 118,
+          "Light Locomotives": 1,
+          "Grain Unit": 96,
+          "Automotive": 3,
+          "Potash Unit": 1
+        }
+      }
+    },
+    {
+      "name": "Jefferson, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 5422,
+      "by_type": {
+        "Passenger": 1560,
+        "MOW": 71,
+        "Manifest": 2618,
+        "Intermodal": 800,
+        "Light Locomotives": 168,
+        "Grain Unit": 184,
+        "Petroleum Unit": 16,
+        "Potash Unit": 3,
+        "Automotive": 2
+      },
+      "monthly": [
+        477,
+        416,
+        479,
+        427,
+        436,
+        413,
+        462,
+        457,
+        461,
+        463,
+        483,
+        448
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Passenger": 149,
+          "MOW": 5,
+          "Manifest": 228,
+          "Intermodal": 62,
+          "Light Locomotives": 12,
+          "Grain Unit": 20,
+          "Petroleum Unit": 1
+        },
+        "2025-02": {
+          "Passenger": 141,
+          "Manifest": 199,
+          "Intermodal": 51,
+          "Light Locomotives": 11,
+          "Grain Unit": 13,
+          "Petroleum Unit": 1
+        },
+        "2025-03": {
+          "Passenger": 125,
+          "Manifest": 240,
+          "Intermodal": 62,
+          "Light Locomotives": 26,
+          "MOW": 4,
+          "Grain Unit": 21,
+          "Potash Unit": 1
+        },
+        "2025-04": {
+          "MOW": 15,
+          "Manifest": 228,
+          "Passenger": 79,
+          "Light Locomotives": 19,
+          "Potash Unit": 1,
+          "Intermodal": 62,
+          "Grain Unit": 18,
+          "Automotive": 1,
+          "Petroleum Unit": 4
+        },
+        "2025-05": {
+          "MOW": 12,
+          "Manifest": 215,
+          "Passenger": 93,
+          "Intermodal": 66,
+          "Light Locomotives": 31,
+          "Petroleum Unit": 2,
+          "Grain Unit": 16,
+          "Automotive": 1
+        },
+        "2025-06": {
+          "Passenger": 88,
+          "Manifest": 217,
+          "MOW": 9,
+          "Light Locomotives": 8,
+          "Intermodal": 69,
+          "Grain Unit": 19,
+          "Petroleum Unit": 3
+        },
+        "2025-07": {
+          "Manifest": 234,
+          "MOW": 7,
+          "Passenger": 106,
+          "Intermodal": 69,
+          "Light Locomotives": 25,
+          "Grain Unit": 20,
+          "Petroleum Unit": 1
+        },
+        "2025-08": {
+          "Manifest": 222,
+          "Passenger": 131,
+          "Light Locomotives": 14,
+          "Intermodal": 63,
+          "MOW": 9,
+          "Grain Unit": 16,
+          "Petroleum Unit": 2
+        },
+        "2025-09": {
+          "Light Locomotives": 13,
+          "Passenger": 146,
+          "Manifest": 212,
+          "Intermodal": 75,
+          "Grain Unit": 11,
+          "MOW": 4
+        },
+        "2025-10": {
+          "Passenger": 157,
+          "Manifest": 210,
+          "Light Locomotives": 5,
+          "Intermodal": 76,
+          "MOW": 2,
+          "Grain Unit": 13
+        },
+        "2025-11": {
+          "Manifest": 223,
+          "Passenger": 172,
+          "Intermodal": 74,
+          "Grain Unit": 9,
+          "MOW": 2,
+          "Light Locomotives": 2,
+          "Petroleum Unit": 1
+        },
+        "2025-12": {
+          "Manifest": 190,
+          "Passenger": 173,
+          "Intermodal": 71,
+          "MOW": 2,
+          "Petroleum Unit": 1,
+          "Grain Unit": 8,
+          "Potash Unit": 1,
+          "Light Locomotives": 2
+        }
+      }
+    },
+    {
+      "name": "Echo, OR",
+      "subdivision": "UP La Grande Sub",
+      "total_trains": 5056,
+      "by_type": {
+        "Grain Unit": 1112,
+        "Intermodal": 1478,
+        "Manifest": 2242,
+        "Light Locomotives": 49,
+        "Automotive": 94,
+        "MOW": 65,
+        "Potash Unit": 12,
+        "Passenger": 2,
+        "Petroleum Unit": 2
+      },
+      "monthly": [
+        418,
+        411,
+        418,
+        462,
+        412,
+        379,
+        400,
+        445,
+        442,
+        438,
+        424,
+        407
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Grain Unit": 79,
+          "Intermodal": 138,
+          "Manifest": 176,
+          "Light Locomotives": 6,
+          "Automotive": 13,
+          "MOW": 4,
+          "Potash Unit": 2
+        },
+        "2025-02": {
+          "Manifest": 176,
+          "Intermodal": 125,
+          "Grain Unit": 89,
+          "Automotive": 7,
+          "Light Locomotives": 10,
+          "MOW": 4
+        },
+        "2025-03": {
+          "Manifest": 196,
+          "Intermodal": 134,
+          "Light Locomotives": 3,
+          "Grain Unit": 67,
+          "Automotive": 8,
+          "MOW": 10
+        },
+        "2025-04": {
+          "Manifest": 207,
+          "Grain Unit": 105,
+          "Intermodal": 124,
+          "Automotive": 9,
+          "Light Locomotives": 6,
+          "MOW": 11
+        },
+        "2025-05": {
+          "Intermodal": 120,
+          "Manifest": 180,
+          "Grain Unit": 87,
+          "MOW": 8,
+          "Light Locomotives": 5,
+          "Automotive": 11,
+          "Passenger": 1
+        },
+        "2025-06": {
+          "Manifest": 179,
+          "Intermodal": 110,
+          "Grain Unit": 70,
+          "Automotive": 11,
+          "MOW": 5,
+          "Light Locomotives": 3,
+          "Potash Unit": 1
+        },
+        "2025-07": {
+          "Manifest": 179,
+          "Grain Unit": 73,
+          "Intermodal": 126,
+          "Automotive": 9,
+          "Potash Unit": 6,
+          "MOW": 3,
+          "Petroleum Unit": 1,
+          "Light Locomotives": 3
+        },
+        "2025-08": {
+          "Manifest": 187,
+          "Intermodal": 128,
+          "Grain Unit": 105,
+          "Potash Unit": 3,
+          "MOW": 8,
+          "Automotive": 8,
+          "Light Locomotives": 6
+        },
+        "2025-09": {
+          "Light Locomotives": 3,
+          "Manifest": 196,
+          "Intermodal": 114,
+          "Grain Unit": 121,
+          "Automotive": 5,
+          "MOW": 2,
+          "Petroleum Unit": 1
+        },
+        "2025-10": {
+          "Manifest": 192,
+          "Intermodal": 123,
+          "Automotive": 5,
+          "Light Locomotives": 2,
+          "Grain Unit": 108,
+          "MOW": 7,
+          "Passenger": 1
+        },
+        "2025-11": {
+          "Manifest": 189,
+          "Grain Unit": 109,
+          "Intermodal": 118,
+          "MOW": 3,
+          "Automotive": 4,
+          "Light Locomotives": 1
+        },
+        "2025-12": {
+          "Manifest": 185,
+          "Intermodal": 118,
+          "Light Locomotives": 1,
+          "Grain Unit": 99,
+          "Automotive": 4
+        }
+      }
+    },
+    {
+      "name": "Modoc Point, OR",
+      "subdivision": "UP Cascade Sub",
+      "total_trains": 4818,
+      "by_type": {
+        "Grain Unit": 246,
+        "Intermodal": 705,
+        "Manifest": 3154,
+        "Passenger": 392,
+        "Light Locomotives": 67,
+        "Automotive": 79,
+        "MOW": 121,
+        "Petroleum Unit": 54
+      },
+      "monthly": [
+        450,
+        199,
+        231,
+        315,
+        468,
+        448,
+        433,
+        448,
+        427,
+        473,
+        470,
+        456
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Grain Unit": 23,
+          "Intermodal": 56,
+          "Manifest": 303,
+          "Passenger": 50,
+          "Light Locomotives": 9,
+          "Automotive": 6,
+          "MOW": 2,
+          "Petroleum Unit": 1
+        },
+        "2025-02": {
+          "Light Locomotives": 7,
+          "Manifest": 117,
+          "Passenger": 11,
+          "Grain Unit": 8,
+          "Intermodal": 21,
+          "MOW": 9,
+          "Petroleum Unit": 26
+        },
+        "2025-03": {
+          "Manifest": 158,
+          "Intermodal": 13,
+          "MOW": 28,
+          "Petroleum Unit": 14,
+          "Passenger": 1,
+          "Light Locomotives": 4,
+          "Grain Unit": 13
+        },
+        "2025-04": {
+          "Manifest": 216,
+          "MOW": 13,
+          "Intermodal": 38,
+          "Petroleum Unit": 7,
+          "Grain Unit": 11,
+          "Light Locomotives": 9,
+          "Passenger": 18,
+          "Automotive": 3
+        },
+        "2025-05": {
+          "MOW": 11,
+          "Petroleum Unit": 3,
+          "Manifest": 321,
+          "Intermodal": 68,
+          "Passenger": 25,
+          "Light Locomotives": 10,
+          "Automotive": 8,
+          "Grain Unit": 22
+        },
+        "2025-06": {
+          "Passenger": 26,
+          "Manifest": 296,
+          "MOW": 21,
+          "Automotive": 9,
+          "Light Locomotives": 8,
+          "Intermodal": 67,
+          "Grain Unit": 21
+        },
+        "2025-07": {
+          "Manifest": 290,
+          "Intermodal": 67,
+          "Light Locomotives": 6,
+          "Automotive": 10,
+          "MOW": 11,
+          "Passenger": 23,
+          "Grain Unit": 26
+        },
+        "2025-08": {
+          "Manifest": 294,
+          "Passenger": 29,
+          "Intermodal": 72,
+          "Grain Unit": 27,
+          "MOW": 9,
+          "Automotive": 11,
+          "Light Locomotives": 6
+        },
+        "2025-09": {
+          "Manifest": 271,
+          "MOW": 5,
+          "Passenger": 44,
+          "Automotive": 8,
+          "Intermodal": 76,
+          "Grain Unit": 21,
+          "Light Locomotives": 1,
+          "Petroleum Unit": 1
+        },
+        "2025-10": {
+          "Manifest": 297,
+          "Passenger": 55,
+          "MOW": 6,
+          "Intermodal": 74,
+          "Grain Unit": 30,
+          "Automotive": 9,
+          "Petroleum Unit": 1,
+          "Light Locomotives": 1
+        },
+        "2025-11": {
+          "Manifest": 312,
+          "Passenger": 48,
+          "Intermodal": 72,
+          "Petroleum Unit": 1,
+          "Grain Unit": 24,
+          "Automotive": 10,
+          "Light Locomotives": 3
+        },
+        "2025-12": {
+          "Manifest": 279,
+          "Intermodal": 81,
+          "Passenger": 62,
+          "Grain Unit": 20,
+          "MOW": 6,
+          "Light Locomotives": 3,
+          "Automotive": 5
+        }
+      }
+    },
+    {
+      "name": "Springfield Jct, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "total_trains": 4757,
+      "by_type": {
+        "Passenger": 513,
+        "Manifest": 3124,
+        "Intermodal": 749,
+        "Light Locomotives": 99,
+        "Grain Unit": 156,
+        "MOW": 107,
+        "Petroleum Unit": 8,
+        "Coal Unit": 1
+      },
+      "monthly": [
+        427,
+        400,
+        344,
+        407,
+        437,
+        403,
+        348,
+        371,
+        412,
+        428,
+        404,
+        376
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Passenger": 49,
+          "Manifest": 284,
+          "Intermodal": 53,
+          "Light Locomotives": 17,
+          "Grain Unit": 11,
+          "MOW": 13
+        },
+        "2025-02": {
+          "Passenger": 51,
+          "Manifest": 267,
+          "Grain Unit": 12,
+          "Intermodal": 53,
+          "Light Locomotives": 10,
+          "MOW": 7
+        },
+        "2025-03": {
+          "Passenger": 47,
+          "Manifest": 224,
+          "Intermodal": 42,
+          "Light Locomotives": 9,
+          "MOW": 9,
+          "Grain Unit": 13
+        },
+        "2025-04": {
+          "Light Locomotives": 9,
+          "Manifest": 277,
+          "Passenger": 37,
+          "Intermodal": 63,
+          "Grain Unit": 15,
+          "MOW": 6
+        },
+        "2025-05": {
+          "Manifest": 293,
+          "Intermodal": 67,
+          "Passenger": 40,
+          "MOW": 11,
+          "Light Locomotives": 9,
+          "Grain Unit": 17
+        },
+        "2025-06": {
+          "Manifest": 257,
+          "MOW": 16,
+          "Passenger": 31,
+          "Light Locomotives": 14,
+          "Intermodal": 68,
+          "Grain Unit": 16,
+          "Petroleum Unit": 1
+        },
+        "2025-07": {
+          "Manifest": 244,
+          "Intermodal": 57,
+          "Light Locomotives": 8,
+          "Passenger": 16,
+          "MOW": 9,
+          "Grain Unit": 14
+        },
+        "2025-08": {
+          "Manifest": 245,
+          "Passenger": 27,
+          "Intermodal": 57,
+          "MOW": 15,
+          "Grain Unit": 16,
+          "Light Locomotives": 9,
+          "Petroleum Unit": 1,
+          "Coal Unit": 1
+        },
+        "2025-09": {
+          "MOW": 12,
+          "Manifest": 266,
+          "Passenger": 44,
+          "Intermodal": 71,
+          "Light Locomotives": 5,
+          "Grain Unit": 11,
+          "Petroleum Unit": 3
+        },
+        "2025-10": {
+          "Manifest": 270,
+          "Passenger": 55,
+          "Light Locomotives": 6,
+          "Intermodal": 74,
+          "MOW": 5,
+          "Grain Unit": 16,
+          "Petroleum Unit": 2
+        },
+        "2025-11": {
+          "Manifest": 261,
+          "Passenger": 57,
+          "Intermodal": 70,
+          "Grain Unit": 11,
+          "MOW": 1,
+          "Light Locomotives": 3,
+          "Petroleum Unit": 1
+        },
+        "2025-12": {
+          "Manifest": 236,
+          "Intermodal": 74,
+          "Passenger": 59,
+          "MOW": 3,
+          "Grain Unit": 4
+        }
+      }
+    },
+    {
+      "name": "Worden, OR",
+      "subdivision": "UP Cascade Sub",
+      "total_trains": 3688,
+      "by_type": {
+        "Manifest": 2026,
+        "Passenger": 595,
+        "Intermodal": 771,
+        "Grain Unit": 169,
+        "MOW": 47,
+        "Petroleum Unit": 6,
+        "Light Locomotives": 70,
+        "Coal Unit": 4
+      },
+      "monthly": [
+        300,
+        179,
+        316,
+        324,
+        310,
+        321,
+        339,
+        335,
+        316,
+        337,
+        314,
+        297
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Manifest": 176,
+          "Passenger": 51,
+          "Intermodal": 52,
+          "Grain Unit": 14,
+          "MOW": 3,
+          "Petroleum Unit": 2,
+          "Light Locomotives": 2
+        },
+        "2025-02": {
+          "Manifest": 108,
+          "Passenger": 13,
+          "Grain Unit": 9,
+          "Intermodal": 33,
+          "MOW": 4,
+          "Light Locomotives": 7,
+          "Coal Unit": 4,
+          "Petroleum Unit": 1
+        },
+        "2025-03": {
+          "Passenger": 54,
+          "Manifest": 173,
+          "Light Locomotives": 11,
+          "Intermodal": 59,
+          "Grain Unit": 17,
+          "MOW": 2
+        },
+        "2025-04": {
+          "Passenger": 44,
+          "Manifest": 184,
+          "Light Locomotives": 14,
+          "Intermodal": 65,
+          "Grain Unit": 14,
+          "MOW": 3
+        },
+        "2025-05": {
+          "Passenger": 54,
+          "Manifest": 172,
+          "Intermodal": 62,
+          "Grain Unit": 13,
+          "MOW": 8,
+          "Light Locomotives": 1
+        },
+        "2025-06": {
+          "Passenger": 55,
+          "Manifest": 175,
+          "Intermodal": 68,
+          "Grain Unit": 17,
+          "Light Locomotives": 4,
+          "MOW": 2
+        },
+        "2025-07": {
+          "Manifest": 180,
+          "MOW": 3,
+          "Intermodal": 70,
+          "Passenger": 53,
+          "Light Locomotives": 12,
+          "Petroleum Unit": 1,
+          "Grain Unit": 20
+        },
+        "2025-08": {
+          "Manifest": 179,
+          "Passenger": 56,
+          "Intermodal": 70,
+          "Grain Unit": 18,
+          "Light Locomotives": 8,
+          "MOW": 4
+        },
+        "2025-09": {
+          "Manifest": 171,
+          "Passenger": 55,
+          "Light Locomotives": 2,
+          "Intermodal": 75,
+          "Grain Unit": 12,
+          "MOW": 1
+        },
+        "2025-10": {
+          "Manifest": 177,
+          "Passenger": 54,
+          "MOW": 6,
+          "Intermodal": 78,
+          "Light Locomotives": 3,
+          "Grain Unit": 18,
+          "Petroleum Unit": 1
+        },
+        "2025-11": {
+          "Manifest": 179,
+          "Passenger": 48,
+          "Intermodal": 69,
+          "MOW": 3,
+          "Light Locomotives": 3,
+          "Grain Unit": 11,
+          "Petroleum Unit": 1
+        },
+        "2025-12": {
+          "Manifest": 152,
+          "Intermodal": 70,
+          "Passenger": 58,
+          "Light Locomotives": 3,
+          "MOW": 8,
+          "Grain Unit": 6
+        }
+      }
+    },
+    {
+      "name": "Cold Springs, OR",
+      "subdivision": "UP La Grande Sub",
+      "total_trains": 3540,
+      "by_type": {
+        "Manifest": 2009,
+        "Potash Unit": 279,
+        "Grain Unit": 949,
+        "MOW": 200,
+        "Light Locomotives": 22,
+        "Petroleum Unit": 28,
+        "Intermodal": 39,
+        "Automotive": 9,
+        "Passenger": 5
+      },
+      "monthly": [
+        308,
+        276,
+        324,
+        354,
+        310,
+        210,
+        178,
+        300,
+        281,
+        345,
+        335,
+        319
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Manifest": 180,
+          "Potash Unit": 29,
+          "Grain Unit": 95,
+          "MOW": 2,
+          "Light Locomotives": 1,
+          "Petroleum Unit": 1
+        },
+        "2025-02": {
+          "Grain Unit": 73,
+          "Manifest": 156,
+          "Potash Unit": 22,
+          "MOW": 18,
+          "Light Locomotives": 2,
+          "Intermodal": 1,
+          "Petroleum Unit": 3,
+          "Automotive": 1
+        },
+        "2025-03": {
+          "Manifest": 166,
+          "Grain Unit": 118,
+          "Intermodal": 1,
+          "MOW": 7,
+          "Potash Unit": 30,
+          "Light Locomotives": 2
+        },
+        "2025-04": {
+          "Manifest": 188,
+          "Grain Unit": 104,
+          "Potash Unit": 30,
+          "Light Locomotives": 2,
+          "MOW": 28,
+          "Automotive": 1,
+          "Intermodal": 1
+        },
+        "2025-05": {
+          "MOW": 21,
+          "Grain Unit": 71,
+          "Manifest": 187,
+          "Potash Unit": 23,
+          "Petroleum Unit": 1,
+          "Intermodal": 2,
+          "Automotive": 2,
+          "Passenger": 2,
+          "Light Locomotives": 1
+        },
+        "2025-06": {
+          "Manifest": 131,
+          "Light Locomotives": 2,
+          "Grain Unit": 48,
+          "MOW": 6,
+          "Potash Unit": 21,
+          "Passenger": 1,
+          "Intermodal": 1
+        },
+        "2025-07": {
+          "Potash Unit": 14,
+          "Grain Unit": 30,
+          "Manifest": 114,
+          "Passenger": 1,
+          "Light Locomotives": 4,
+          "Intermodal": 2,
+          "MOW": 10,
+          "Petroleum Unit": 2,
+          "Automotive": 1
+        },
+        "2025-08": {
+          "Manifest": 172,
+          "Grain Unit": 62,
+          "MOW": 30,
+          "Light Locomotives": 2,
+          "Petroleum Unit": 6,
+          "Potash Unit": 28
+        },
+        "2025-09": {
+          "Manifest": 181,
+          "MOW": 27,
+          "Grain Unit": 57,
+          "Potash Unit": 9,
+          "Intermodal": 2,
+          "Light Locomotives": 2,
+          "Petroleum Unit": 2,
+          "Passenger": 1
+        },
+        "2025-10": {
+          "Manifest": 192,
+          "MOW": 25,
+          "Grain Unit": 100,
+          "Potash Unit": 24,
+          "Intermodal": 1,
+          "Petroleum Unit": 3
+        },
+        "2025-11": {
+          "Manifest": 193,
+          "Grain Unit": 73,
+          "MOW": 25,
+          "Potash Unit": 19,
+          "Intermodal": 24,
+          "Light Locomotives": 1
+        },
+        "2025-12": {
+          "Intermodal": 4,
+          "Manifest": 149,
+          "Petroleum Unit": 10,
+          "MOW": 1,
+          "Grain Unit": 118,
+          "Potash Unit": 30,
+          "Automotive": 4,
+          "Light Locomotives": 3
+        }
+      }
+    },
+    {
+      "name": "Bend, OR",
+      "subdivision": "BNSF Oregon Trunk Sub",
+      "total_trains": 1920,
+      "by_type": {
+        "Manifest": 1577,
+        "Automotive": 93,
+        "Grain Unit": 139,
+        "Petroleum Unit": 22,
+        "Light Locomotives": 44,
+        "Intermodal": 11,
+        "MOW": 32,
+        "Coal Unit": 2
+      },
+      "monthly": [
+        168,
+        137,
+        184,
+        165,
+        172,
+        163,
+        148,
+        144,
+        151,
+        175,
+        162,
+        151
+      ],
+      "monthly_by_type": {
+        "2025-01": {
+          "Manifest": 149,
+          "Automotive": 6,
+          "Grain Unit": 8,
+          "Petroleum Unit": 2,
+          "Light Locomotives": 3
+        },
+        "2025-02": {
+          "Manifest": 115,
+          "Petroleum Unit": 4,
+          "Grain Unit": 8,
+          "Light Locomotives": 4,
+          "Intermodal": 2,
+          "MOW": 2,
+          "Automotive": 2
+        },
+        "2025-03": {
+          "Manifest": 153,
+          "Automotive": 8,
+          "Light Locomotives": 3,
+          "Petroleum Unit": 3,
+          "MOW": 4,
+          "Grain Unit": 12,
+          "Intermodal": 1
+        },
+        "2025-04": {
+          "Manifest": 139,
+          "Automotive": 6,
+          "Grain Unit": 10,
+          "Intermodal": 1,
+          "Light Locomotives": 3,
+          "MOW": 4,
+          "Petroleum Unit": 2
+        },
+        "2025-05": {
+          "MOW": 1,
+          "Petroleum Unit": 3,
+          "Manifest": 142,
+          "Automotive": 9,
+          "Grain Unit": 12,
+          "Light Locomotives": 4,
+          "Coal Unit": 1
+        },
+        "2025-06": {
+          "Manifest": 132,
+          "Automotive": 10,
+          "Grain Unit": 8,
+          "Light Locomotives": 4,
+          "Petroleum Unit": 1,
+          "MOW": 7,
+          "Coal Unit": 1
+        },
+        "2025-07": {
+          "Manifest": 124,
+          "Automotive": 10,
+          "Light Locomotives": 1,
+          "Grain Unit": 11,
+          "MOW": 1,
+          "Petroleum Unit": 1
+        },
+        "2025-08": {
+          "Light Locomotives": 2,
+          "Manifest": 119,
+          "Grain Unit": 10,
+          "Automotive": 9,
+          "Petroleum Unit": 1,
+          "MOW": 1,
+          "Intermodal": 2
+        },
+        "2025-09": {
+          "Manifest": 115,
+          "Automotive": 8,
+          "Light Locomotives": 6,
+          "Grain Unit": 13,
+          "MOW": 6,
+          "Petroleum Unit": 2,
+          "Intermodal": 1
+        },
+        "2025-10": {
+          "Manifest": 138,
+          "Automotive": 10,
+          "Grain Unit": 18,
+          "Intermodal": 1,
+          "MOW": 4,
+          "Petroleum Unit": 2,
+          "Light Locomotives": 2
+        },
+        "2025-11": {
+          "Manifest": 135,
+          "Automotive": 10,
+          "Grain Unit": 13,
+          "Light Locomotives": 4
+        },
+        "2025-12": {
+          "Manifest": 116,
+          "Grain Unit": 16,
+          "Light Locomotives": 8,
+          "Intermodal": 3,
+          "Automotive": 5,
+          "MOW": 2,
+          "Petroleum Unit": 1
+        }
+      }
+    }
+  ],
+  "car_mix": [
+    {
+      "subdivision": "UP Brooklyn Sub",
+      "total_cars": 1888433,
+      "by_type": {
+        "Tank Car": 247915,
+        "Covered Hopper": 257969,
+        "Gondola": 97879,
+        "Box Car": 258479,
+        "Flat/Well Car": 313838,
+        "Intermodal": 0,
+        "Locomotive": 111127,
+        "Other": 601226
+      }
+    },
+    {
+      "subdivision": "BNSF Fallbridge Sub",
+      "total_cars": 1838674,
+      "by_type": {
+        "Tank Car": 199380,
+        "Covered Hopper": 472257,
+        "Gondola": 44159,
+        "Box Car": 98803,
+        "Flat/Well Car": 226779,
+        "Intermodal": 0,
+        "Locomotive": 78422,
+        "Other": 718874
+      }
+    },
+    {
+      "subdivision": "UP La Grande Sub",
+      "total_cars": 928260,
+      "by_type": {
+        "Tank Car": 103551,
+        "Covered Hopper": 376997,
+        "Gondola": 18524,
+        "Box Car": 53596,
+        "Flat/Well Car": 98767,
+        "Intermodal": 0,
+        "Locomotive": 38737,
+        "Other": 238088
+      }
+    },
+    {
+      "subdivision": "UP Graham Line",
+      "total_cars": 811182,
+      "by_type": {
+        "Tank Car": 37617,
+        "Covered Hopper": 339772,
+        "Gondola": 30252,
+        "Box Car": 34564,
+        "Flat/Well Car": 75624,
+        "Intermodal": 0,
+        "Locomotive": 26543,
+        "Other": 266810
+      }
+    },
+    {
+      "subdivision": "UP Cascade Sub",
+      "total_cars": 593689,
+      "by_type": {
+        "Tank Car": 99706,
+        "Covered Hopper": 102892,
+        "Gondola": 26946,
+        "Box Car": 72127,
+        "Flat/Well Car": 103469,
+        "Intermodal": 0,
+        "Locomotive": 30979,
+        "Other": 157570
+      }
+    },
+    {
+      "subdivision": "UP Nampa Sub",
+      "total_cars": 584148,
+      "by_type": {
+        "Tank Car": 52205,
+        "Covered Hopper": 184587,
+        "Gondola": 13394,
+        "Box Car": 35130,
+        "Flat/Well Car": 71478,
+        "Intermodal": 0,
+        "Locomotive": 27054,
+        "Other": 200300
+      }
+    },
+    {
+      "subdivision": "BNSF Oregon Trunk Sub",
+      "total_cars": 130786,
+      "by_type": {
+        "Tank Car": 39324,
+        "Covered Hopper": 43833,
+        "Gondola": 2107,
+        "Box Car": 7902,
+        "Flat/Well Car": 26857,
+        "Intermodal": 0,
+        "Locomotive": 7015,
+        "Other": 3748
+      }
+    }
+  ],
+  "travel_times": [
+    {
+      "origin": "Springfield Jct, OR",
+      "destination": "Eugene, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 4048,
+      "median_minutes": 16.8,
+      "mean_minutes": 119.4,
+      "std_minutes": 317.3,
+      "min_minutes": 5.3,
+      "max_minutes": 1438.8,
+      "percentiles": {
+        "p10": 7.3,
+        "p25": 10.9,
+        "p50": 16.8,
+        "p75": 28.1,
+        "p90": 284.7
+      },
+      "monthly_median": [
+        18.3,
+        15.2,
+        17.8,
+        17.2,
+        13.9,
+        16.2,
+        16.7,
+        14.1,
+        18.7,
+        16.7,
+        16.4,
+        16.5
+      ]
+    },
+    {
+      "origin": "Eugene, OR",
+      "destination": "Springfield Jct, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 3595,
+      "median_minutes": 9.6,
+      "mean_minutes": 118.5,
+      "std_minutes": 321.0,
+      "min_minutes": 5.1,
+      "max_minutes": 1439.7,
+      "percentiles": {
+        "p10": 6.6,
+        "p25": 7.4,
+        "p50": 9.6,
+        "p75": 18.4,
+        "p90": 341.1
+      },
+      "monthly_median": [
+        15.2,
+        11.2,
+        8.8,
+        11.2,
+        10.2,
+        9.7,
+        12.1,
+        9.2,
+        11.6,
+        7.7,
+        9.9,
+        7.4
+      ]
+    },
+    {
+      "origin": "Jefferson, OR",
+      "destination": "Salem, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 2813,
+      "median_minutes": 28.6,
+      "mean_minutes": 57.5,
+      "std_minutes": 142.0,
+      "min_minutes": 19.9,
+      "max_minutes": 1395.0,
+      "percentiles": {
+        "p10": 24.6,
+        "p25": 25.8,
+        "p50": 28.6,
+        "p75": 35.5,
+        "p90": 70.3
+      },
+      "monthly_median": [
+        29.4,
+        27.9,
+        28.4,
+        29.1,
+        28.8,
+        27.1,
+        27.1,
+        28.3,
+        28.9,
+        28.9,
+        30.2,
+        28.8
+      ]
+    },
+    {
+      "origin": "Salem, OR",
+      "destination": "Jefferson, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 2784,
+      "median_minutes": 33.0,
+      "mean_minutes": 65.8,
+      "std_minutes": 140.4,
+      "min_minutes": 13.4,
+      "max_minutes": 1418.4,
+      "percentiles": {
+        "p10": 25.6,
+        "p25": 28.9,
+        "p50": 33.0,
+        "p75": 43.7,
+        "p90": 87.3
+      },
+      "monthly_median": [
+        32.7,
+        32.0,
+        35.0,
+        35.0,
+        33.6,
+        32.4,
+        34.3,
+        32.2,
+        32.9,
+        33.1,
+        32.1,
+        32.1
+      ]
+    },
+    {
+      "origin": "Eugene, OR",
+      "destination": "Irving, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 2773,
+      "median_minutes": 82.3,
+      "mean_minutes": 163.5,
+      "std_minutes": 238.7,
+      "min_minutes": 5.9,
+      "max_minutes": 1430.0,
+      "percentiles": {
+        "p10": 6.7,
+        "p25": 24.0,
+        "p50": 82.3,
+        "p75": 205.8,
+        "p90": 361.2
+      },
+      "monthly_median": [
+        68.8,
+        75.0,
+        114.1,
+        115.6,
+        121.7,
+        95.6,
+        63.3,
+        77.9,
+        100.7,
+        153.9,
+        33.0,
+        29.1
+      ]
+    },
+    {
+      "origin": "Irving, OR",
+      "destination": "Jefferson, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 2690,
+      "median_minutes": 70.5,
+      "mean_minutes": 98.1,
+      "std_minutes": 106.3,
+      "min_minutes": 16.0,
+      "max_minutes": 1434.9,
+      "percentiles": {
+        "p10": 48.0,
+        "p25": 54.8,
+        "p50": 70.5,
+        "p75": 107.3,
+        "p90": 150.9
+      },
+      "monthly_median": [
+        72.3,
+        82.0,
+        86.0,
+        72.3,
+        78.4,
+        68.9,
+        61.8,
+        76.9,
+        73.4,
+        68.7,
+        61.1,
+        58.4
+      ]
+    },
+    {
+      "origin": "N. Portland E, OR",
+      "destination": "N. Portland W, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 2621,
+      "median_minutes": 531.7,
+      "mean_minutes": 586.3,
+      "std_minutes": 433.3,
+      "min_minutes": 5.2,
+      "max_minutes": 1439.1,
+      "percentiles": {
+        "p10": 58.5,
+        "p25": 182.2,
+        "p50": 531.7,
+        "p75": 975.8,
+        "p90": 1232.3
+      },
+      "monthly_median": [
+        379.4,
+        501.2,
+        498.8,
+        400.3,
+        428.3,
+        547.3,
+        600.2,
+        560.6,
+        671.7,
+        601.5,
+        522.6,
+        530.1
+      ]
+    },
+    {
+      "origin": "Ontario, OR",
+      "destination": "Echo, OR",
+      "origin_sub": "UP Nampa Sub",
+      "dest_sub": "UP La Grande Sub",
+      "sample_count": 2601,
+      "median_minutes": 761.3,
+      "mean_minutes": 773.7,
+      "std_minutes": 205.6,
+      "min_minutes": 9.2,
+      "max_minutes": 1433.3,
+      "percentiles": {
+        "p10": 536.6,
+        "p25": 642.7,
+        "p50": 761.3,
+        "p75": 876.6,
+        "p90": 1006.8
+      },
+      "monthly_median": [
+        716.9,
+        809.5,
+        745.2,
+        764.5,
+        724.9,
+        754.6,
+        810.6,
+        772.0,
+        804.4,
+        767.4,
+        744.4,
+        724.1
+      ]
+    },
+    {
+      "origin": "N. Portland W, OR",
+      "destination": "N. Portland E, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 2567,
+      "median_minutes": 449.3,
+      "mean_minutes": 543.9,
+      "std_minutes": 437.8,
+      "min_minutes": 5.0,
+      "max_minutes": 1439.8,
+      "percentiles": {
+        "p10": 51.3,
+        "p25": 154.2,
+        "p50": 449.3,
+        "p75": 931.4,
+        "p90": 1217.3
+      },
+      "monthly_median": [
+        489.1,
+        446.9,
+        208.0,
+        428.2,
+        298.6,
+        468.0,
+        461.1,
+        539.9,
+        582.8,
+        482.5,
+        590.9,
+        384.3
+      ]
+    },
+    {
+      "origin": "Irving, OR",
+      "destination": "Eugene, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 2463,
+      "median_minutes": 169.6,
+      "mean_minutes": 211.8,
+      "std_minutes": 229.0,
+      "min_minutes": 5.8,
+      "max_minutes": 1438.0,
+      "percentiles": {
+        "p10": 6.8,
+        "p25": 27.4,
+        "p50": 169.6,
+        "p75": 279.1,
+        "p90": 544.6
+      },
+      "monthly_median": [
+        155.0,
+        186.3,
+        162.1,
+        185.3,
+        174.9,
+        153.3,
+        198.2,
+        202.2,
+        162.5,
+        194.3,
+        112.7,
+        107.6
+      ]
+    },
+    {
+      "origin": "Jefferson, OR",
+      "destination": "Irving, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 2371,
+      "median_minutes": 83.6,
+      "mean_minutes": 111.3,
+      "std_minutes": 114.6,
+      "min_minutes": 21.1,
+      "max_minutes": 1435.0,
+      "percentiles": {
+        "p10": 49.5,
+        "p25": 59.3,
+        "p50": 83.6,
+        "p75": 124.8,
+        "p90": 181.4
+      },
+      "monthly_median": [
+        84.0,
+        83.7,
+        99.5,
+        95.9,
+        82.8,
+        85.4,
+        89.0,
+        92.0,
+        88.6,
+        88.4,
+        71.7,
+        65.8
+      ]
+    },
+    {
+      "origin": "Echo, OR",
+      "destination": "Troutdale, OR",
+      "origin_sub": "UP La Grande Sub",
+      "dest_sub": "UP Graham Line",
+      "sample_count": 2224,
+      "median_minutes": 540.9,
+      "mean_minutes": 585.5,
+      "std_minutes": 290.9,
+      "min_minutes": 17.0,
+      "max_minutes": 1437.3,
+      "percentiles": {
+        "p10": 263.7,
+        "p25": 428.0,
+        "p50": 540.9,
+        "p75": 657.0,
+        "p90": 1023.6
+      },
+      "monthly_median": [
+        522.6,
+        543.5,
+        511.9,
+        576.4,
+        536.4,
+        562.3,
+        544.9,
+        585.2,
+        552.8,
+        512.4,
+        508.1,
+        539.0
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "Echo, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "UP La Grande Sub",
+      "sample_count": 2214,
+      "median_minutes": 522.1,
+      "mean_minutes": 559.5,
+      "std_minutes": 268.7,
+      "min_minutes": 10.0,
+      "max_minutes": 1440.0,
+      "percentiles": {
+        "p10": 272.9,
+        "p25": 355.7,
+        "p50": 522.1,
+        "p75": 666.4,
+        "p90": 908.5
+      },
+      "monthly_median": [
+        507.8,
+        558.0,
+        508.9,
+        539.4,
+        505.3,
+        520.7,
+        489.8,
+        470.7,
+        544.2,
+        525.9,
+        541.5,
+        543.5
+      ]
+    },
+    {
+      "origin": "Echo, OR",
+      "destination": "Ontario, OR",
+      "origin_sub": "UP La Grande Sub",
+      "dest_sub": "UP Nampa Sub",
+      "sample_count": 2042,
+      "median_minutes": 751.8,
+      "mean_minutes": 788.9,
+      "std_minutes": 229.5,
+      "min_minutes": 10.3,
+      "max_minutes": 1436.5,
+      "percentiles": {
+        "p10": 570.7,
+        "p25": 659.8,
+        "p50": 751.8,
+        "p75": 865.9,
+        "p90": 1118.4
+      },
+      "monthly_median": [
+        760.4,
+        780.6,
+        743.0,
+        779.2,
+        771.2,
+        733.7,
+        782.7,
+        735.1,
+        746.1,
+        778.6,
+        716.0,
+        744.2
+      ]
+    },
+    {
+      "origin": "Haig, OR",
+      "destination": "Salem, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 1845,
+      "median_minutes": 126.3,
+      "mean_minutes": 186.5,
+      "std_minutes": 226.3,
+      "min_minutes": 10.3,
+      "max_minutes": 1435.3,
+      "percentiles": {
+        "p10": 57.9,
+        "p25": 85.5,
+        "p50": 126.3,
+        "p75": 169.9,
+        "p90": 268.8
+      },
+      "monthly_median": [
+        132.4,
+        113.5,
+        127.7,
+        122.2,
+        128.2,
+        137.1,
+        139.8,
+        140.9,
+        116.1,
+        136.2,
+        85.5,
+        66.2
+      ]
+    },
+    {
+      "origin": "Salem, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 1712,
+      "median_minutes": 125.4,
+      "mean_minutes": 185.9,
+      "std_minutes": 182.7,
+      "min_minutes": 5.1,
+      "max_minutes": 1393.8,
+      "percentiles": {
+        "p10": 56.6,
+        "p25": 64.5,
+        "p50": 125.4,
+        "p75": 233.9,
+        "p90": 378.9
+      },
+      "monthly_median": [
+        149.1,
+        146.5,
+        144.8,
+        116.4,
+        169.0,
+        155.1,
+        122.7,
+        122.4,
+        125.0,
+        103.7,
+        82.1,
+        62.4
+      ]
+    },
+    {
+      "origin": "Bend, OR",
+      "destination": "Modoc Point, OR",
+      "origin_sub": "BNSF Oregon Trunk Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 1642,
+      "median_minutes": 284.8,
+      "mean_minutes": 347.6,
+      "std_minutes": 199.8,
+      "min_minutes": 83.8,
+      "max_minutes": 1430.3,
+      "percentiles": {
+        "p10": 210.1,
+        "p25": 233.8,
+        "p50": 284.8,
+        "p75": 368.8,
+        "p90": 559.9
+      },
+      "monthly_median": [
+        250.6,
+        344.4,
+        null,
+        271.0,
+        272.7,
+        308.5,
+        329.0,
+        309.6,
+        302.1,
+        288.8,
+        258.4,
+        250.3
+      ]
+    },
+    {
+      "origin": "N. Portland W, OR",
+      "destination": "Troutdale, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "UP Graham Line",
+      "sample_count": 1479,
+      "median_minutes": 168.7,
+      "mean_minutes": 254.8,
+      "std_minutes": 258.5,
+      "min_minutes": 6.5,
+      "max_minutes": 1438.5,
+      "percentiles": {
+        "p10": 91.7,
+        "p25": 120.1,
+        "p50": 168.7,
+        "p75": 240.0,
+        "p90": 586.8
+      },
+      "monthly_median": [
+        125.8,
+        160.9,
+        168.3,
+        187.2,
+        201.8,
+        152.3,
+        175.6,
+        183.9,
+        159.0,
+        167.3,
+        159.6,
+        146.0
+      ]
+    },
+    {
+      "origin": "Modoc Point, OR",
+      "destination": "Bend, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "BNSF Oregon Trunk Sub",
+      "sample_count": 1474,
+      "median_minutes": 256.6,
+      "mean_minutes": 341.2,
+      "std_minutes": 235.3,
+      "min_minutes": 15.1,
+      "max_minutes": 1431.3,
+      "percentiles": {
+        "p10": 190.0,
+        "p25": 211.4,
+        "p50": 256.6,
+        "p75": 330.2,
+        "p90": 641.7
+      },
+      "monthly_median": [
+        244.8,
+        243.3,
+        null,
+        278.2,
+        298.0,
+        251.4,
+        279.0,
+        256.6,
+        255.6,
+        296.2,
+        262.2,
+        227.1
+      ]
+    },
+    {
+      "origin": "Modoc Point, OR",
+      "destination": "Springfield Jct, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 1465,
+      "median_minutes": 378.2,
+      "mean_minutes": 466.1,
+      "std_minutes": 261.6,
+      "min_minutes": 14.1,
+      "max_minutes": 1434.8,
+      "percentiles": {
+        "p10": 288.1,
+        "p25": 322.9,
+        "p50": 378.2,
+        "p75": 461.6,
+        "p90": 890.2
+      },
+      "monthly_median": [
+        360.9,
+        378.7,
+        null,
+        414.8,
+        386.0,
+        425.3,
+        382.5,
+        379.0,
+        357.3,
+        371.1,
+        374.0,
+        355.8
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "N. Portland W, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 1260,
+      "median_minutes": 170.9,
+      "mean_minutes": 263.9,
+      "std_minutes": 258.7,
+      "min_minutes": 28.5,
+      "max_minutes": 1432.4,
+      "percentiles": {
+        "p10": 89.9,
+        "p25": 119.4,
+        "p50": 170.9,
+        "p75": 287.6,
+        "p90": 579.2
+      },
+      "monthly_median": [
+        281.2,
+        225.8,
+        216.0,
+        209.3,
+        141.2,
+        159.4,
+        172.1,
+        172.2,
+        151.3,
+        197.6,
+        182.1,
+        141.7
+      ]
+    },
+    {
+      "origin": "Haig, OR",
+      "destination": "N. Portland W, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 1222,
+      "median_minutes": 64.4,
+      "mean_minutes": 204.2,
+      "std_minutes": 297.8,
+      "min_minutes": 11.8,
+      "max_minutes": 1422.5,
+      "percentiles": {
+        "p10": 40.2,
+        "p25": 48.1,
+        "p50": 64.4,
+        "p75": 193.0,
+        "p90": 637.4
+      },
+      "monthly_median": [
+        91.2,
+        64.0,
+        111.8,
+        98.2,
+        86.3,
+        86.8,
+        66.8,
+        66.6,
+        60.7,
+        52.9,
+        60.2,
+        52.5
+      ]
+    },
+    {
+      "origin": "Springfield Jct, OR",
+      "destination": "Modoc Point, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 1173,
+      "median_minutes": 395.7,
+      "mean_minutes": 465.9,
+      "std_minutes": 239.2,
+      "min_minutes": 60.3,
+      "max_minutes": 1435.7,
+      "percentiles": {
+        "p10": 249.2,
+        "p25": 347.4,
+        "p50": 395.7,
+        "p75": 472.6,
+        "p90": 767.2
+      },
+      "monthly_median": [
+        385.3,
+        371.5,
+        null,
+        397.9,
+        387.5,
+        449.8,
+        464.1,
+        444.5,
+        409.4,
+        386.2,
+        388.1,
+        365.8
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 1158,
+      "median_minutes": 271.9,
+      "mean_minutes": 368.0,
+      "std_minutes": 337.9,
+      "min_minutes": 10.5,
+      "max_minutes": 1438.5,
+      "percentiles": {
+        "p10": 44.6,
+        "p25": 91.7,
+        "p50": 271.9,
+        "p75": 447.4,
+        "p90": 994.2
+      },
+      "monthly_median": [
+        239.9,
+        260.7,
+        290.9,
+        297.8,
+        281.4,
+        248.8,
+        273.2,
+        319.6,
+        322.9,
+        243.2,
+        277.5,
+        280.9
+      ]
+    },
+    {
+      "origin": "N. Portland W, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 1015,
+      "median_minutes": 83.5,
+      "mean_minutes": 323.8,
+      "std_minutes": 385.4,
+      "min_minutes": 28.3,
+      "max_minutes": 1438.2,
+      "percentiles": {
+        "p10": 42.8,
+        "p25": 53.1,
+        "p50": 83.5,
+        "p75": 613.0,
+        "p90": 940.3
+      },
+      "monthly_median": [
+        362.7,
+        225.1,
+        108.0,
+        99.3,
+        123.6,
+        285.3,
+        125.6,
+        80.7,
+        68.3,
+        70.3,
+        67.2,
+        56.1
+      ]
+    },
+    {
+      "origin": "Modoc Point, OR",
+      "destination": "Worden, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 1002,
+      "median_minutes": 142.8,
+      "mean_minutes": 175.2,
+      "std_minutes": 153.7,
+      "min_minutes": 26.6,
+      "max_minutes": 1430.7,
+      "percentiles": {
+        "p10": 59.0,
+        "p25": 75.2,
+        "p50": 142.8,
+        "p75": 212.0,
+        "p90": 307.0
+      },
+      "monthly_median": [
+        152.4,
+        169.4,
+        null,
+        175.8,
+        166.2,
+        155.3,
+        99.9,
+        128.3,
+        161.1,
+        195.0,
+        133.7,
+        127.0
+      ]
+    },
+    {
+      "origin": "Worden, OR",
+      "destination": "Modoc Point, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 997,
+      "median_minutes": 126.3,
+      "mean_minutes": 185.9,
+      "std_minutes": 210.7,
+      "min_minutes": 26.6,
+      "max_minutes": 1430.4,
+      "percentiles": {
+        "p10": 55.2,
+        "p25": 66.2,
+        "p50": 126.3,
+        "p75": 219.7,
+        "p90": 327.8
+      },
+      "monthly_median": [
+        94.1,
+        200.3,
+        null,
+        165.1,
+        121.6,
+        161.9,
+        127.1,
+        127.0,
+        113.3,
+        119.5,
+        121.5,
+        125.7
+      ]
+    },
+    {
+      "origin": "Haig, OR",
+      "destination": "Troutdale, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Graham Line",
+      "sample_count": 984,
+      "median_minutes": 100.6,
+      "mean_minutes": 251.9,
+      "std_minutes": 329.8,
+      "min_minutes": 20.6,
+      "max_minutes": 1438.3,
+      "percentiles": {
+        "p10": 48.6,
+        "p25": 55.9,
+        "p50": 100.6,
+        "p75": 275.8,
+        "p90": 768.4
+      },
+      "monthly_median": [
+        131.5,
+        75.2,
+        99.1,
+        127.4,
+        110.0,
+        100.1,
+        107.3,
+        132.8,
+        78.1,
+        66.6,
+        124.4,
+        59.3
+      ]
+    },
+    {
+      "origin": "Eugene, OR",
+      "destination": "Modoc Point, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 725,
+      "median_minutes": 453.4,
+      "mean_minutes": 598.3,
+      "std_minutes": 338.5,
+      "min_minutes": 12.0,
+      "max_minutes": 1430.0,
+      "percentiles": {
+        "p10": 280.6,
+        "p25": 379.2,
+        "p50": 453.4,
+        "p75": 787.5,
+        "p90": 1206.7
+      },
+      "monthly_median": [
+        446.2,
+        579.3,
+        null,
+        784.8,
+        449.8,
+        471.2,
+        454.4,
+        486.7,
+        426.1,
+        437.1,
+        518.4,
+        398.4
+      ]
+    },
+    {
+      "origin": "Eugene, OR",
+      "destination": "Jefferson, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 720,
+      "median_minutes": 102.6,
+      "mean_minutes": 215.8,
+      "std_minutes": 233.4,
+      "min_minutes": 13.6,
+      "max_minutes": 1383.6,
+      "percentiles": {
+        "p10": 54.1,
+        "p25": 59.2,
+        "p50": 102.6,
+        "p75": 295.3,
+        "p90": 421.2
+      },
+      "monthly_median": [
+        87.0,
+        133.9,
+        102.6,
+        159.9,
+        191.8,
+        93.3,
+        104.4,
+        93.5,
+        89.4,
+        100.8,
+        227.2,
+        72.3
+      ]
+    },
+    {
+      "origin": "Modoc Point, OR",
+      "destination": "Eugene, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 683,
+      "median_minutes": 441.5,
+      "mean_minutes": 598.3,
+      "std_minutes": 334.9,
+      "min_minutes": 9.9,
+      "max_minutes": 1439.8,
+      "percentiles": {
+        "p10": 316.6,
+        "p25": 380.1,
+        "p50": 441.5,
+        "p75": 792.0,
+        "p90": 1198.0
+      },
+      "monthly_median": [
+        424.9,
+        412.4,
+        null,
+        475.5,
+        438.8,
+        416.0,
+        439.1,
+        468.9,
+        407.6,
+        456.4,
+        459.0,
+        416.5
+      ]
+    },
+    {
+      "origin": "N. Portland E, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 643,
+      "median_minutes": 80.8,
+      "mean_minutes": 336.8,
+      "std_minutes": 409.0,
+      "min_minutes": 7.7,
+      "max_minutes": 1439.0,
+      "percentiles": {
+        "p10": 41.4,
+        "p25": 50.1,
+        "p50": 80.8,
+        "p75": 574.3,
+        "p90": 950.9
+      },
+      "monthly_median": [
+        86.4,
+        62.5,
+        79.3,
+        176.7,
+        378.6,
+        75.4,
+        81.5,
+        122.9,
+        58.0,
+        176.2,
+        59.3,
+        73.0
+      ]
+    },
+    {
+      "origin": "Jefferson, OR",
+      "destination": "Eugene, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 633,
+      "median_minutes": 210.7,
+      "mean_minutes": 283.0,
+      "std_minutes": 271.9,
+      "min_minutes": 11.4,
+      "max_minutes": 1424.0,
+      "percentiles": {
+        "p10": 56.0,
+        "p25": 68.6,
+        "p50": 210.7,
+        "p75": 400.7,
+        "p90": 668.2
+      },
+      "monthly_median": [
+        256.9,
+        100.3,
+        146.2,
+        257.7,
+        195.8,
+        239.9,
+        261.1,
+        252.2,
+        94.0,
+        167.3,
+        81.8,
+        103.1
+      ]
+    },
+    {
+      "origin": "Haig, OR",
+      "destination": "N. Portland E, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 625,
+      "median_minutes": 79.5,
+      "mean_minutes": 322.3,
+      "std_minutes": 418.3,
+      "min_minutes": 15.3,
+      "max_minutes": 1429.2,
+      "percentiles": {
+        "p10": 40.2,
+        "p25": 48.0,
+        "p50": 79.5,
+        "p75": 434.6,
+        "p90": 1123.7
+      },
+      "monthly_median": [
+        71.4,
+        81.4,
+        94.4,
+        83.1,
+        86.6,
+        48.6,
+        84.0,
+        104.9,
+        78.1,
+        66.2,
+        135.4,
+        171.4
+      ]
+    },
+    {
+      "origin": "Salem, OR",
+      "destination": "N. Portland W, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 598,
+      "median_minutes": 296.8,
+      "mean_minutes": 395.2,
+      "std_minutes": 364.7,
+      "min_minutes": 18.3,
+      "max_minutes": 1430.2,
+      "percentiles": {
+        "p10": 102.2,
+        "p25": 110.4,
+        "p50": 296.8,
+        "p75": 528.8,
+        "p90": 982.6
+      },
+      "monthly_median": [
+        360.3,
+        407.8,
+        516.4,
+        486.3,
+        446.6,
+        425.9,
+        400.8,
+        295.3,
+        326.4,
+        115.7,
+        123.2,
+        113.9
+      ]
+    },
+    {
+      "origin": "Irving, OR",
+      "destination": "Salem, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 561,
+      "median_minutes": 106.4,
+      "mean_minutes": 174.2,
+      "std_minutes": 204.8,
+      "min_minutes": 13.2,
+      "max_minutes": 1405.2,
+      "percentiles": {
+        "p10": 76.9,
+        "p25": 82.9,
+        "p50": 106.4,
+        "p75": 170.5,
+        "p90": 270.8
+      },
+      "monthly_median": [
+        134.8,
+        98.4,
+        85.8,
+        106.5,
+        123.5,
+        124.6,
+        102.7,
+        101.6,
+        102.9,
+        106.7,
+        102.8,
+        123.5
+      ]
+    },
+    {
+      "origin": "Salem, OR",
+      "destination": "Irving, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 542,
+      "median_minutes": 118.8,
+      "mean_minutes": 178.2,
+      "std_minutes": 204.2,
+      "min_minutes": 65.7,
+      "max_minutes": 1434.2,
+      "percentiles": {
+        "p10": 73.9,
+        "p25": 82.8,
+        "p50": 118.8,
+        "p75": 176.0,
+        "p90": 268.8
+      },
+      "monthly_median": [
+        119.9,
+        101.8,
+        119.0,
+        155.9,
+        115.3,
+        115.0,
+        109.3,
+        151.2,
+        96.0,
+        86.4,
+        148.0,
+        121.2
+      ]
+    },
+    {
+      "origin": "Ontario, OR",
+      "destination": "Troutdale, OR",
+      "origin_sub": "UP Nampa Sub",
+      "dest_sub": "UP Graham Line",
+      "sample_count": 533,
+      "median_minutes": 1239.4,
+      "mean_minutes": 1090.1,
+      "std_minutes": 358.4,
+      "min_minutes": 5.4,
+      "max_minutes": 1439.9,
+      "percentiles": {
+        "p10": 592.2,
+        "p25": 860.7,
+        "p50": 1239.4,
+        "p75": 1340.8,
+        "p90": 1397.3
+      },
+      "monthly_median": [
+        1210.0,
+        1215.2,
+        1291.3,
+        1211.4,
+        1251.3,
+        1280.0,
+        1241.7,
+        1239.3,
+        1190.7,
+        1318.0,
+        1235.0,
+        1175.8
+      ]
+    },
+    {
+      "origin": "Worden, OR",
+      "destination": "Springfield Jct, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 529,
+      "median_minutes": 520.6,
+      "mean_minutes": 534.6,
+      "std_minutes": 181.4,
+      "min_minutes": 68.9,
+      "max_minutes": 1377.8,
+      "percentiles": {
+        "p10": 345.3,
+        "p25": 394.6,
+        "p50": 520.6,
+        "p75": 623.1,
+        "p90": 720.5
+      },
+      "monthly_median": [
+        556.0,
+        502.0,
+        556.8,
+        513.0,
+        522.6,
+        537.8,
+        474.6,
+        584.3,
+        480.0,
+        497.8,
+        428.6,
+        500.0
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "Ontario, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "UP Nampa Sub",
+      "sample_count": 515,
+      "median_minutes": 1207.9,
+      "mean_minutes": 1060.1,
+      "std_minutes": 377.2,
+      "min_minutes": 5.9,
+      "max_minutes": 1439.6,
+      "percentiles": {
+        "p10": 371.5,
+        "p25": 920.9,
+        "p50": 1207.9,
+        "p75": 1320.2,
+        "p90": 1394.7
+      },
+      "monthly_median": [
+        1176.5,
+        1179.4,
+        1258.7,
+        1136.8,
+        1269.4,
+        1178.8,
+        1262.5,
+        1219.3,
+        1191.1,
+        1092.9,
+        1179.8,
+        1240.7
+      ]
+    },
+    {
+      "origin": "Springfield Jct, OR",
+      "destination": "Worden, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 491,
+      "median_minutes": 572.4,
+      "mean_minutes": 613.3,
+      "std_minutes": 220.1,
+      "min_minutes": 34.4,
+      "max_minutes": 1437.2,
+      "percentiles": {
+        "p10": 378.4,
+        "p25": 504.0,
+        "p50": 572.4,
+        "p75": 688.0,
+        "p90": 861.7
+      },
+      "monthly_median": [
+        480.9,
+        581.9,
+        555.2,
+        542.9,
+        557.4,
+        580.7,
+        615.6,
+        611.5,
+        519.6,
+        536.3,
+        601.9,
+        551.4
+      ]
+    },
+    {
+      "origin": "N. Portland E, OR",
+      "destination": "Troutdale, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "UP Graham Line",
+      "sample_count": 478,
+      "median_minutes": 181.5,
+      "mean_minutes": 355.4,
+      "std_minutes": 373.7,
+      "min_minutes": 5.7,
+      "max_minutes": 1430.9,
+      "percentiles": {
+        "p10": 92.4,
+        "p25": 119.7,
+        "p50": 181.5,
+        "p75": 377.6,
+        "p90": 1063.0
+      },
+      "monthly_median": [
+        159.8,
+        184.0,
+        206.3,
+        189.1,
+        203.9,
+        154.9,
+        275.7,
+        254.8,
+        176.5,
+        151.6,
+        242.8,
+        177.6
+      ]
+    },
+    {
+      "origin": "Salem, OR",
+      "destination": "N. Portland E, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 477,
+      "median_minutes": 178.3,
+      "mean_minutes": 465.3,
+      "std_minutes": 451.9,
+      "min_minutes": 11.2,
+      "max_minutes": 1436.2,
+      "percentiles": {
+        "p10": 104.0,
+        "p25": 111.1,
+        "p50": 178.3,
+        "p75": 711.0,
+        "p90": 1310.6
+      },
+      "monthly_median": [
+        140.5,
+        202.9,
+        167.2,
+        267.9,
+        116.7,
+        371.3,
+        270.7,
+        126.7,
+        141.2,
+        153.7,
+        313.6,
+        1199.7
+      ]
+    },
+    {
+      "origin": "Jefferson, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 468,
+      "median_minutes": 178.9,
+      "mean_minutes": 251.7,
+      "std_minutes": 236.6,
+      "min_minutes": 5.8,
+      "max_minutes": 1411.1,
+      "percentiles": {
+        "p10": 83.5,
+        "p25": 98.7,
+        "p50": 178.9,
+        "p75": 305.3,
+        "p90": 469.5
+      },
+      "monthly_median": [
+        176.7,
+        135.1,
+        226.0,
+        222.8,
+        166.5,
+        290.0,
+        236.8,
+        185.5,
+        164.6,
+        181.7,
+        130.9,
+        155.8
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "N. Portland E, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "BNSF Fallbridge Sub",
+      "sample_count": 463,
+      "median_minutes": 193.1,
+      "mean_minutes": 336.8,
+      "std_minutes": 352.2,
+      "min_minutes": 11.2,
+      "max_minutes": 1439.7,
+      "percentiles": {
+        "p10": 93.0,
+        "p25": 118.1,
+        "p50": 193.1,
+        "p75": 372.2,
+        "p90": 971.2
+      },
+      "monthly_median": [
+        264.3,
+        167.0,
+        193.8,
+        209.5,
+        143.1,
+        185.0,
+        144.8,
+        137.1,
+        229.5,
+        241.7,
+        252.2,
+        153.1
+      ]
+    },
+    {
+      "origin": "Cold Springs, OR",
+      "destination": "Troutdale, OR",
+      "origin_sub": "UP La Grande Sub",
+      "dest_sub": "UP Graham Line",
+      "sample_count": 454,
+      "median_minutes": 570.0,
+      "mean_minutes": 607.4,
+      "std_minutes": 192.6,
+      "min_minutes": 14.0,
+      "max_minutes": 1430.2,
+      "percentiles": {
+        "p10": 444.7,
+        "p25": 502.3,
+        "p50": 570.0,
+        "p75": 678.6,
+        "p90": 834.1
+      },
+      "monthly_median": [
+        522.4,
+        612.0,
+        577.0,
+        617.7,
+        537.1,
+        589.9,
+        616.2,
+        540.1,
+        556.2,
+        529.8,
+        615.1,
+        570.1
+      ]
+    },
+    {
+      "origin": "N. Portland E, OR",
+      "destination": "Salem, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 451,
+      "median_minutes": 133.5,
+      "mean_minutes": 474.2,
+      "std_minutes": 489.9,
+      "min_minutes": 16.9,
+      "max_minutes": 1437.8,
+      "percentiles": {
+        "p10": 104.5,
+        "p25": 113.9,
+        "p50": 133.5,
+        "p75": 967.9,
+        "p90": 1356.3
+      },
+      "monthly_median": [
+        125.8,
+        124.0,
+        121.9,
+        126.3,
+        123.7,
+        122.3,
+        144.0,
+        151.9,
+        129.4,
+        542.4,
+        140.6,
+        129.8
+      ]
+    },
+    {
+      "origin": "N. Portland W, OR",
+      "destination": "Salem, OR",
+      "origin_sub": "BNSF Fallbridge Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 445,
+      "median_minutes": 146.4,
+      "mean_minutes": 456.3,
+      "std_minutes": 443.5,
+      "min_minutes": 8.7,
+      "max_minutes": 1432.4,
+      "percentiles": {
+        "p10": 107.5,
+        "p25": 117.3,
+        "p50": 146.4,
+        "p75": 845.5,
+        "p90": 1150.1
+      },
+      "monthly_median": [
+        993.0,
+        960.7,
+        660.4,
+        137.9,
+        523.4,
+        419.3,
+        695.4,
+        142.1,
+        133.2,
+        133.6,
+        128.1,
+        130.4
+      ]
+    },
+    {
+      "origin": "Eugene, OR",
+      "destination": "Worden, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 433,
+      "median_minutes": 557.9,
+      "mean_minutes": 608.1,
+      "std_minutes": 213.0,
+      "min_minutes": 51.1,
+      "max_minutes": 1336.0,
+      "percentiles": {
+        "p10": 391.5,
+        "p25": 461.9,
+        "p50": 557.9,
+        "p75": 700.5,
+        "p90": 916.0
+      },
+      "monthly_median": [
+        504.3,
+        665.4,
+        558.8,
+        555.4,
+        509.8,
+        584.0,
+        612.7,
+        587.0,
+        562.3,
+        582.8,
+        554.8,
+        537.2
+      ]
+    },
+    {
+      "origin": "Haig, OR",
+      "destination": "Jefferson, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 412,
+      "median_minutes": 199.3,
+      "mean_minutes": 310.2,
+      "std_minutes": 308.6,
+      "min_minutes": 9.4,
+      "max_minutes": 1379.8,
+      "percentiles": {
+        "p10": 89.0,
+        "p25": 127.5,
+        "p50": 199.3,
+        "p75": 298.3,
+        "p90": 860.0
+      },
+      "monthly_median": [
+        222.0,
+        143.4,
+        195.1,
+        214.0,
+        206.1,
+        195.1,
+        170.6,
+        215.1,
+        223.4,
+        218.7,
+        144.9,
+        167.6
+      ]
+    },
+    {
+      "origin": "Salem, OR",
+      "destination": "Eugene, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 393,
+      "median_minutes": 216.2,
+      "mean_minutes": 313.0,
+      "std_minutes": 291.0,
+      "min_minutes": 44.1,
+      "max_minutes": 1426.8,
+      "percentiles": {
+        "p10": 81.9,
+        "p25": 94.5,
+        "p50": 216.2,
+        "p75": 427.8,
+        "p90": 700.5
+      },
+      "monthly_median": [
+        170.1,
+        131.7,
+        130.2,
+        250.4,
+        202.4,
+        110.6,
+        161.7,
+        250.7,
+        246.2,
+        329.1,
+        317.7,
+        245.7
+      ]
+    },
+    {
+      "origin": "Echo, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "UP La Grande Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 383,
+      "median_minutes": 866.6,
+      "mean_minutes": 806.9,
+      "std_minutes": 437.7,
+      "min_minutes": 8.5,
+      "max_minutes": 1434.5,
+      "percentiles": {
+        "p10": 298.6,
+        "p25": 349.1,
+        "p50": 866.6,
+        "p75": 1248.5,
+        "p90": 1348.9
+      },
+      "monthly_median": [
+        497.6,
+        584.3,
+        547.2,
+        948.8,
+        547.9,
+        956.6,
+        1035.8,
+        900.1,
+        818.8,
+        1019.6,
+        958.1,
+        1229.8
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "Cold Springs, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "UP La Grande Sub",
+      "sample_count": 376,
+      "median_minutes": 479.9,
+      "mean_minutes": 526.9,
+      "std_minutes": 215.2,
+      "min_minutes": 34.6,
+      "max_minutes": 1437.8,
+      "percentiles": {
+        "p10": 369.3,
+        "p25": 399.2,
+        "p50": 479.9,
+        "p75": 551.5,
+        "p90": 813.7
+      },
+      "monthly_median": [
+        485.9,
+        484.4,
+        489.8,
+        496.5,
+        456.8,
+        529.5,
+        487.9,
+        437.4,
+        454.2,
+        429.1,
+        523.0,
+        461.0
+      ]
+    },
+    {
+      "origin": "Springfield Jct, OR",
+      "destination": "Irving, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 369,
+      "median_minutes": 96.9,
+      "mean_minutes": 221.3,
+      "std_minutes": 314.8,
+      "min_minutes": 21.6,
+      "max_minutes": 1434.4,
+      "percentiles": {
+        "p10": 29.6,
+        "p25": 36.4,
+        "p50": 96.9,
+        "p75": 237.5,
+        "p90": 527.1
+      },
+      "monthly_median": [
+        75.2,
+        63.3,
+        36.0,
+        172.1,
+        87.9,
+        161.9,
+        48.8,
+        209.5,
+        171.8,
+        176.8,
+        141.8,
+        39.0
+      ]
+    },
+    {
+      "origin": "Irving, OR",
+      "destination": "Springfield Jct, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 367,
+      "median_minutes": 185.1,
+      "mean_minutes": 269.5,
+      "std_minutes": 282.8,
+      "min_minutes": 19.6,
+      "max_minutes": 1369.3,
+      "percentiles": {
+        "p10": 29.2,
+        "p25": 69.7,
+        "p50": 185.1,
+        "p75": 324.4,
+        "p90": 692.3
+      },
+      "monthly_median": [
+        89.7,
+        87.4,
+        165.5,
+        278.5,
+        219.0,
+        181.1,
+        272.5,
+        275.4,
+        209.8,
+        214.9,
+        230.1,
+        170.7
+      ]
+    },
+    {
+      "origin": "Haig, OR",
+      "destination": "Irving, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 364,
+      "median_minutes": 336.6,
+      "mean_minutes": 455.2,
+      "std_minutes": 325.7,
+      "min_minutes": 7.0,
+      "max_minutes": 1433.0,
+      "percentiles": {
+        "p10": 140.6,
+        "p25": 251.8,
+        "p50": 336.6,
+        "p75": 519.7,
+        "p90": 982.8
+      },
+      "monthly_median": [
+        289.9,
+        337.2,
+        326.3,
+        367.6,
+        364.3,
+        364.5,
+        313.4,
+        426.5,
+        293.4,
+        519.7,
+        318.7,
+        273.9
+      ]
+    },
+    {
+      "origin": "Irving, OR",
+      "destination": "Haig, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 354,
+      "median_minutes": 367.7,
+      "mean_minutes": 422.0,
+      "std_minutes": 253.9,
+      "min_minutes": 15.4,
+      "max_minutes": 1434.0,
+      "percentiles": {
+        "p10": 214.9,
+        "p25": 293.1,
+        "p50": 367.7,
+        "p75": 444.7,
+        "p90": 685.5
+      },
+      "monthly_median": [
+        376.7,
+        363.3,
+        336.4,
+        392.9,
+        377.7,
+        379.1,
+        329.0,
+        353.2,
+        380.5,
+        382.2,
+        406.5,
+        359.3
+      ]
+    },
+    {
+      "origin": "Irving, OR",
+      "destination": "Worden, OR",
+      "origin_sub": "UP Brooklyn Sub",
+      "dest_sub": "UP Cascade Sub",
+      "sample_count": 351,
+      "median_minutes": 800.1,
+      "mean_minutes": 778.4,
+      "std_minutes": 277.7,
+      "min_minutes": 31.1,
+      "max_minutes": 1433.8,
+      "percentiles": {
+        "p10": 427.0,
+        "p25": 495.7,
+        "p50": 800.1,
+        "p75": 963.0,
+        "p90": 1152.1
+      },
+      "monthly_median": [
+        611.0,
+        826.4,
+        856.4,
+        716.8,
+        667.9,
+        820.9,
+        964.2,
+        853.4,
+        856.2,
+        808.1,
+        787.4,
+        759.0
+      ]
+    },
+    {
+      "origin": "Worden, OR",
+      "destination": "Eugene, OR",
+      "origin_sub": "UP Cascade Sub",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 326,
+      "median_minutes": 572.3,
+      "mean_minutes": 589.5,
+      "std_minutes": 230.4,
+      "min_minutes": 36.3,
+      "max_minutes": 1423.5,
+      "percentiles": {
+        "p10": 354.0,
+        "p25": 393.1,
+        "p50": 572.3,
+        "p75": 700.0,
+        "p90": 859.4
+      },
+      "monthly_median": [
+        607.5,
+        494.4,
+        486.1,
+        565.4,
+        657.6,
+        596.8,
+        606.5,
+        687.0,
+        612.6,
+        549.6,
+        601.2,
+        552.7
+      ]
+    },
+    {
+      "origin": "Troutdale, OR",
+      "destination": "Salem, OR",
+      "origin_sub": "UP Graham Line",
+      "dest_sub": "UP Brooklyn Sub",
+      "sample_count": 323,
+      "median_minutes": 473.9,
+      "mean_minutes": 575.0,
+      "std_minutes": 281.0,
+      "min_minutes": 16.3,
+      "max_minutes": 1416.2,
+      "percentiles": {
+        "p10": 328.7,
+        "p25": 406.6,
+        "p50": 473.9,
+        "p75": 668.7,
+        "p90": 1052.9
+      },
+      "monthly_median": [
+        436.1,
+        695.4,
+        518.4,
+        503.8,
+        483.3,
+        470.6,
+        399.4,
+        493.0,
+        428.1,
+        433.4,
+        852.0,
+        719.2
+      ]
+    }
+  ],
+  "headway": {
+    "by_sensor": {
+      "Bend, OR": {
+        "sensor": "Bend, OR",
+        "subdivision": "BNSF Oregon Trunk Sub",
+        "sample_count": 1904,
+        "median_minutes": 214.6,
+        "mean_minutes": 273.0,
+        "percentiles": {
+          "p10": 51.0,
+          "p25": 109.5,
+          "p50": 214.6,
+          "p75": 377.2,
+          "p90": 568.0
+        },
+        "pct_under_30min": 5.6,
+        "pct_under_60min": 12.0
+      },
+      "Cold Springs, OR": {
+        "sensor": "Cold Springs, OR",
+        "subdivision": "UP La Grande Sub",
+        "sample_count": 3529,
+        "median_minutes": 105.4,
+        "mean_minutes": 144.6,
+        "percentiles": {
+          "p10": 15.3,
+          "p25": 48.7,
+          "p50": 105.4,
+          "p75": 190.8,
+          "p90": 314.3
+        },
+        "pct_under_30min": 16.3,
+        "pct_under_60min": 31.9
+      },
+      "Echo, OR": {
+        "sensor": "Echo, OR",
+        "subdivision": "UP La Grande Sub",
+        "sample_count": 5037,
+        "median_minutes": 83.0,
+        "mean_minutes": 104.2,
+        "percentiles": {
+          "p10": 21.2,
+          "p25": 40.0,
+          "p50": 83.0,
+          "p75": 143.4,
+          "p90": 213.2
+        },
+        "pct_under_30min": 15.8,
+        "pct_under_60min": 38.4
+      },
+      "Eugene, OR": {
+        "sensor": "Eugene, OR",
+        "subdivision": "UP Brooklyn Sub",
+        "sample_count": 8419,
+        "median_minutes": 41.0,
+        "mean_minutes": 61.2,
+        "percentiles": {
+          "p10": 8.0,
+          "p25": 17.8,
+          "p50": 41.0,
+          "p75": 82.8,
+          "p90": 145.3
+        },
+        "pct_under_30min": 39.0,
+        "pct_under_60min": 63.8
+      },
+      "Haig, OR": {
+        "sensor": "Haig, OR",
+        "subdivision": "UP Brooklyn Sub",
+        "sample_count": 7480,
+        "median_minutes": 44.9,
+        "mean_minutes": 67.3,
+        "percentiles": {
+          "p10": 8.4,
+          "p25": 20.6,
+          "p50": 44.9,
+          "p75": 86.5,
+          "p90": 152.0
+        },
+        "pct_under_30min": 35.7,
+        "pct_under_60min": 61.0
+      },
+      "Irving, OR": {
+        "sensor": "Irving, OR",
+        "subdivision": "UP Brooklyn Sub",
+        "sample_count": 5840,
+        "median_minutes": 66.3,
+        "mean_minutes": 90.0,
+        "percentiles": {
+          "p10": 15.4,
+          "p25": 31.2,
+          "p50": 66.3,
+          "p75": 127.0,
+          "p90": 195.2
+        },
+        "pct_under_30min": 23.9,
+        "pct_under_60min": 46.0
+      },
+      "Jefferson, OR": {
+        "sensor": "Jefferson, OR",
+        "subdivision": "UP Brooklyn Sub",
+        "sample_count": 5417,
+        "median_minutes": 75.1,
+        "mean_minutes": 96.5,
+        "percentiles": {
+          "p10": 20.6,
+          "p25": 39.5,
+          "p50": 75.1,
+          "p75": 129.9,
+          "p90": 195.7
+        },
+        "pct_under_30min": 19.1,
+        "pct_under_60min": 40.4
+      },
+      "Modoc Point, OR": {
+        "sensor": "Modoc Point, OR",
+        "subdivision": "UP Cascade Sub",
+        "sample_count": 4790,
+        "median_minutes": 76.2,
+        "mean_minutes": 108.2,
+        "percentiles": {
+          "p10": 18.3,
+          "p25": 38.7,
+          "p50": 76.2,
+          "p75": 137.2,
+          "p90": 222.6
+        },
+        "pct_under_30min": 18.1,
+        "pct_under_60min": 40.6
+      },
+      "N. Portland E, OR": {
+        "sensor": "N. Portland E, OR",
+        "subdivision": "BNSF Fallbridge Sub",
+        "sample_count": 17587,
+        "median_minutes": 22.2,
+        "mean_minutes": 29.9,
+        "percentiles": {
+          "p10": 6.3,
+          "p25": 11.4,
+          "p50": 22.2,
+          "p75": 39.9,
+          "p90": 62.4
+        },
+        "pct_under_30min": 62.9,
+        "pct_under_60min": 89.0
+      },
+      "N. Portland W, OR": {
+        "sensor": "N. Portland W, OR",
+        "subdivision": "BNSF Fallbridge Sub",
+        "sample_count": 17122,
+        "median_minutes": 22.9,
+        "mean_minutes": 30.7,
+        "percentiles": {
+          "p10": 6.5,
+          "p25": 11.8,
+          "p50": 22.9,
+          "p75": 41.2,
+          "p90": 65.3
+        },
+        "pct_under_30min": 61.7,
+        "pct_under_60min": 87.8
+      },
+      "Ontario, OR": {
+        "sensor": "Ontario, OR",
+        "subdivision": "UP Nampa Sub",
+        "sample_count": 5449,
+        "median_minutes": 71.6,
+        "mean_minutes": 96.4,
+        "percentiles": {
+          "p10": 15.4,
+          "p25": 35.6,
+          "p50": 71.6,
+          "p75": 132.1,
+          "p90": 210.5
+        },
+        "pct_under_30min": 20.2,
+        "pct_under_60min": 43.3
+      },
+      "Salem, OR": {
+        "sensor": "Salem, OR",
+        "subdivision": "UP Brooklyn Sub",
+        "sample_count": 5675,
+        "median_minutes": 67.9,
+        "mean_minutes": 91.5,
+        "percentiles": {
+          "p10": 17.1,
+          "p25": 35.1,
+          "p50": 67.9,
+          "p75": 117.8,
+          "p90": 192.0
+        },
+        "pct_under_30min": 20.8,
+        "pct_under_60min": 44.9
+      },
+      "Springfield Jct, OR": {
+        "sensor": "Springfield Jct, OR",
+        "subdivision": "UP Brooklyn Sub",
+        "sample_count": 4747,
+        "median_minutes": 81.0,
+        "mean_minutes": 105.6,
+        "percentiles": {
+          "p10": 20.1,
+          "p25": 41.5,
+          "p50": 81.0,
+          "p75": 147.1,
+          "p90": 218.5
+        },
+        "pct_under_30min": 16.6,
+        "pct_under_60min": 38.6
+      },
+      "Troutdale, OR": {
+        "sensor": "Troutdale, OR",
+        "subdivision": "UP Graham Line",
+        "sample_count": 6852,
+        "median_minutes": 58.9,
+        "mean_minutes": 76.3,
+        "percentiles": {
+          "p10": 14.6,
+          "p25": 25.9,
+          "p50": 58.9,
+          "p75": 104.4,
+          "p90": 162.9
+        },
+        "pct_under_30min": 29.0,
+        "pct_under_60min": 50.9
+      },
+      "Worden, OR": {
+        "sensor": "Worden, OR",
+        "subdivision": "UP Cascade Sub",
+        "sample_count": 3679,
+        "median_minutes": 99.7,
+        "mean_minutes": 142.0,
+        "percentiles": {
+          "p10": 22.3,
+          "p25": 54.3,
+          "p50": 99.7,
+          "p75": 187.0,
+          "p90": 311.9
+        },
+        "pct_under_30min": 12.3,
+        "pct_under_60min": 28.2
+      }
+    },
+    "by_hour": {
+      "0": {
+        "median": 33.6,
+        "mean": 58.8,
+        "count": 5543
+      },
+      "1": {
+        "median": 30.5,
+        "mean": 54.9,
+        "count": 5183
+      },
+      "2": {
+        "median": 36.4,
+        "mean": 62.1,
+        "count": 4658
+      },
+      "3": {
+        "median": 44.3,
+        "mean": 70.8,
+        "count": 4462
+      },
+      "4": {
+        "median": 41.8,
+        "mean": 72.7,
+        "count": 4697
+      },
+      "5": {
+        "median": 42.3,
+        "mean": 73.0,
+        "count": 4665
+      },
+      "6": {
+        "median": 42.7,
+        "mean": 70.1,
+        "count": 4546
+      },
+      "7": {
+        "median": 45.3,
+        "mean": 73.9,
+        "count": 4084
+      },
+      "8": {
+        "median": 52.2,
+        "mean": 80.0,
+        "count": 3571
+      },
+      "9": {
+        "median": 57.6,
+        "mean": 89.1,
+        "count": 3458
+      },
+      "10": {
+        "median": 59.1,
+        "mean": 92.2,
+        "count": 3439
+      },
+      "11": {
+        "median": 60.4,
+        "mean": 94.2,
+        "count": 3318
+      },
+      "12": {
+        "median": 50.7,
+        "mean": 85.4,
+        "count": 3857
+      },
+      "13": {
+        "median": 50.6,
+        "mean": 86.7,
+        "count": 3887
+      },
+      "14": {
+        "median": 49.6,
+        "mean": 88.0,
+        "count": 4392
+      },
+      "15": {
+        "median": 52.4,
+        "mean": 89.5,
+        "count": 4231
+      },
+      "16": {
+        "median": 51.1,
+        "mean": 82.8,
+        "count": 3867
+      },
+      "17": {
+        "median": 49.6,
+        "mean": 75.2,
+        "count": 4293
+      },
+      "18": {
+        "median": 41.0,
+        "mean": 71.4,
+        "count": 4462
+      },
+      "19": {
+        "median": 46.9,
+        "mean": 75.2,
+        "count": 4358
+      },
+      "20": {
+        "median": 49.1,
+        "mean": 75.8,
+        "count": 4786
+      },
+      "21": {
+        "median": 42.0,
+        "mean": 66.0,
+        "count": 4637
+      },
+      "22": {
+        "median": 46.5,
+        "mean": 71.1,
+        "count": 4357
+      },
+      "23": {
+        "median": 43.5,
+        "mean": 71.5,
+        "count": 4776
+      }
+    }
+  },
+  "train_lengths": [
+    {
+      "train_type": "Manifest",
+      "sample_count": 43880,
+      "median_cars": 74.0,
+      "mean_cars": 70.4,
+      "min_cars": 1,
+      "max_cars": 269,
+      "percentiles_cars": {
+        "p10": 11.0,
+        "p25": 41.0,
+        "p50": 74.0,
+        "p75": 97.0,
+        "p90": 120.0
+      },
+      "feet_count": 43784,
+      "median_feet": 4938.0,
+      "mean_feet": 4697.0,
+      "min_feet": 56.0,
+      "max_feet": 17107.0,
+      "percentiles_feet": {
+        "p10": 733.7,
+        "p25": 2694.7,
+        "p50": 4938.2,
+        "p75": 6472.8,
+        "p90": 7994.4
+      },
+      "monthly_median_feet": [
+        4980.0,
+        4831.0,
+        4901.0,
+        4899.0,
+        4839.0,
+        4793.0,
+        4583.0,
+        4944.0,
+        5168.0,
+        5085.0,
+        5193.0,
+        5031.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          1872,
+          1504,
+          1594,
+          1771,
+          2034,
+          2424,
+          2720,
+          3082,
+          3474,
+          3676,
+          3564,
+          3136,
+          1817,
+          1452,
+          962,
+          872,
+          805,
+          571,
+          627,
+          280,
+          149,
+          36,
+          21,
+          6,
+          5,
+          12,
+          2,
+          8
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          4.87,
+          3.91,
+          4.14,
+          4.6,
+          5.29,
+          6.3,
+          7.07,
+          8.01,
+          9.03,
+          9.55,
+          9.26,
+          8.15,
+          4.72,
+          3.77,
+          2.5,
+          2.27,
+          2.09,
+          1.48,
+          1.63,
+          0.73,
+          0.39,
+          0.09,
+          0.05,
+          0.02,
+          0.01,
+          0.03,
+          0.01,
+          0.02
+        ],
+        "filtered_count": 38476,
+        "excluded": 5308
+      }
+    },
+    {
+      "train_type": "Intermodal",
+      "sample_count": 19991,
+      "median_cars": 100,
+      "mean_cars": 102.9,
+      "min_cars": 1,
+      "max_cars": 290,
+      "percentiles_cars": {
+        "p10": 45.0,
+        "p25": 78.0,
+        "p50": 100.0,
+        "p75": 124.0,
+        "p90": 165.0
+      },
+      "feet_count": 19894,
+      "median_feet": 6888.0,
+      "mean_feet": 6905.0,
+      "min_feet": 67.0,
+      "max_feet": 19690.0,
+      "percentiles_feet": {
+        "p10": 3086.9,
+        "p25": 5390.6,
+        "p50": 6887.9,
+        "p75": 8382.7,
+        "p90": 10736.7
+      },
+      "monthly_median_feet": [
+        6885.0,
+        6455.0,
+        6731.0,
+        6888.0,
+        6681.0,
+        6543.0,
+        6645.0,
+        6942.0,
+        7017.0,
+        6996.0,
+        7107.0,
+        7052.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          347,
+          331,
+          275,
+          273,
+          313,
+          449,
+          628,
+          831,
+          1040,
+          1342,
+          1793,
+          2245,
+          2404,
+          1160,
+          971,
+          902,
+          620,
+          590,
+          489,
+          376,
+          325,
+          279,
+          264,
+          247,
+          172,
+          166,
+          115,
+          225
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          1.81,
+          1.73,
+          1.43,
+          1.42,
+          1.63,
+          2.34,
+          3.28,
+          4.33,
+          5.42,
+          7.0,
+          9.35,
+          11.71,
+          12.54,
+          6.05,
+          5.06,
+          4.7,
+          3.23,
+          3.08,
+          2.55,
+          1.96,
+          1.7,
+          1.46,
+          1.38,
+          1.29,
+          0.9,
+          0.87,
+          0.6,
+          1.17
+        ],
+        "filtered_count": 19172,
+        "excluded": 722
+      }
+    },
+    {
+      "train_type": "Passenger",
+      "sample_count": 17745,
+      "median_cars": 6,
+      "mean_cars": 6.8,
+      "min_cars": 1,
+      "max_cars": 121,
+      "percentiles_cars": {
+        "p10": 4.0,
+        "p25": 5.0,
+        "p50": 6.0,
+        "p75": 9.0,
+        "p90": 11.0
+      },
+      "feet_count": 17659,
+      "median_feet": 470.0,
+      "mean_feet": 545.0,
+      "min_feet": 84.0,
+      "max_feet": 9221.0,
+      "percentiles_feet": {
+        "p10": 323.0,
+        "p25": 386.0,
+        "p50": 469.8,
+        "p75": 754.1,
+        "p90": 905.2
+      },
+      "monthly_median_feet": [
+        486.0,
+        488.0,
+        503.0,
+        419.0,
+        465.0,
+        448.0,
+        437.0,
+        448.0,
+        460.0,
+        460.0,
+        454.0,
+        391.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          256,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          97.71,
+          0.76,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.76,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.76,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filtered_count": 262,
+        "excluded": 17397
+      }
+    },
+    {
+      "train_type": "Grain Unit",
+      "sample_count": 10857,
+      "median_cars": 110,
+      "mean_cars": 104.3,
+      "min_cars": 1,
+      "max_cars": 284,
+      "percentiles_cars": {
+        "p10": 34.0,
+        "p25": 102.0,
+        "p50": 110.0,
+        "p75": 118.0,
+        "p90": 148.0
+      },
+      "feet_count": 10853,
+      "median_feet": 6312.0,
+      "mean_feet": 6066.0,
+      "min_feet": 56.0,
+      "max_feet": 16134.0,
+      "percentiles_feet": {
+        "p10": 1953.0,
+        "p25": 5932.0,
+        "p50": 6311.9,
+        "p75": 6924.2,
+        "p90": 8716.0
+      },
+      "monthly_median_feet": [
+        6309.0,
+        6301.0,
+        6282.0,
+        6301.0,
+        6236.0,
+        6344.0,
+        6258.0,
+        6361.0,
+        6414.0,
+        6303.0,
+        6376.0,
+        6275.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          138,
+          95,
+          88,
+          47,
+          73,
+          50,
+          72,
+          178,
+          295,
+          1122,
+          4089,
+          1246,
+          458,
+          336,
+          314,
+          617,
+          604,
+          126,
+          31,
+          3,
+          0,
+          1,
+          2,
+          2,
+          0,
+          0,
+          1,
+          2
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          1.38,
+          0.95,
+          0.88,
+          0.47,
+          0.73,
+          0.5,
+          0.72,
+          1.78,
+          2.95,
+          11.23,
+          40.93,
+          12.47,
+          4.58,
+          3.36,
+          3.14,
+          6.18,
+          6.05,
+          1.26,
+          0.31,
+          0.03,
+          0.0,
+          0.01,
+          0.02,
+          0.02,
+          0.0,
+          0.0,
+          0.01,
+          0.02
+        ],
+        "filtered_count": 9990,
+        "excluded": 863
+      }
+    },
+    {
+      "train_type": "Light Locomotives",
+      "sample_count": 4338,
+      "median_cars": 2.0,
+      "mean_cars": 3.0,
+      "min_cars": 1,
+      "max_cars": 26,
+      "percentiles_cars": {
+        "p10": 2.0,
+        "p25": 2.0,
+        "p50": 2.0,
+        "p75": 3.0,
+        "p90": 5.0
+      },
+      "feet_count": 4321,
+      "median_feet": 147.0,
+      "mean_feet": 211.0,
+      "min_feet": 56.0,
+      "max_feet": 1902.0,
+      "percentiles_feet": {
+        "p10": 134.6,
+        "p25": 134.6,
+        "p50": 147.4,
+        "p75": 221.7,
+        "p90": 365.8
+      },
+      "monthly_median_feet": [
+        159.0,
+        220.0,
+        146.0,
+        146.0,
+        146.0,
+        148.0,
+        148.0,
+        202.0,
+        146.0,
+        146.0,
+        146.0,
+        149.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          25.0,
+          75.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filtered_count": 4,
+        "excluded": 4317
+      }
+    },
+    {
+      "train_type": "Automotive",
+      "sample_count": 2987,
+      "median_cars": 45,
+      "mean_cars": 45.7,
+      "min_cars": 1,
+      "max_cars": 159,
+      "percentiles_cars": {
+        "p10": 9.0,
+        "p25": 22.0,
+        "p50": 45.0,
+        "p75": 68.0,
+        "p90": 80.0
+      },
+      "feet_count": 2967,
+      "median_feet": 4036.0,
+      "mean_feet": 4153.0,
+      "min_feet": 94.0,
+      "max_feet": 14386.0,
+      "percentiles_feet": {
+        "p10": 759.8,
+        "p25": 2018.5,
+        "p50": 4035.6,
+        "p75": 6212.9,
+        "p90": 7450.3
+      },
+      "monthly_median_feet": [
+        4486.0,
+        4384.0,
+        4152.0,
+        4726.0,
+        4020.0,
+        4002.0,
+        4149.0,
+        3094.0,
+        3430.0,
+        3074.0,
+        4315.0,
+        2784.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          161,
+          214,
+          282,
+          195,
+          153,
+          114,
+          141,
+          103,
+          167,
+          256,
+          153,
+          198,
+          214,
+          173,
+          29,
+          18,
+          13,
+          5,
+          11,
+          3,
+          3,
+          1,
+          1,
+          1,
+          3,
+          0,
+          1,
+          0
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          6.16,
+          8.19,
+          10.79,
+          7.46,
+          5.86,
+          4.36,
+          5.4,
+          3.94,
+          6.39,
+          9.8,
+          5.86,
+          7.58,
+          8.19,
+          6.62,
+          1.11,
+          0.69,
+          0.5,
+          0.19,
+          0.42,
+          0.11,
+          0.11,
+          0.04,
+          0.04,
+          0.04,
+          0.11,
+          0.0,
+          0.04,
+          0.0
+        ],
+        "filtered_count": 2613,
+        "excluded": 354
+      }
+    },
+    {
+      "train_type": "MOW",
+      "sample_count": 2296,
+      "median_cars": 2.0,
+      "mean_cars": 9.6,
+      "min_cars": 1,
+      "max_cars": 106,
+      "percentiles_cars": {
+        "p10": 2.0,
+        "p25": 2.0,
+        "p50": 2.0,
+        "p75": 4.0,
+        "p90": 27.5
+      },
+      "feet_count": 2291,
+      "median_feet": 132.0,
+      "mean_feet": 607.0,
+      "min_feet": 59.0,
+      "max_feet": 25432.0,
+      "percentiles_feet": {
+        "p10": 117.8,
+        "p25": 126.2,
+        "p50": 132.1,
+        "p75": 279.7,
+        "p90": 1776.9
+      },
+      "monthly_median_feet": [
+        132.0,
+        224.0,
+        126.0,
+        126.0,
+        132.0,
+        205.0,
+        132.0,
+        207.0,
+        126.0,
+        126.0,
+        126.0,
+        3017.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          29,
+          39,
+          16,
+          18,
+          17,
+          23,
+          121,
+          7,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          10.39,
+          13.98,
+          5.73,
+          6.45,
+          6.09,
+          8.24,
+          43.37,
+          2.51,
+          0.72,
+          0.36,
+          0.36,
+          0.0,
+          0.0,
+          0.0,
+          0.36,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.36,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.08
+        ],
+        "filtered_count": 279,
+        "excluded": 2012
+      }
+    },
+    {
+      "train_type": "Petroleum Unit",
+      "sample_count": 1105,
+      "median_cars": 96,
+      "mean_cars": 69.0,
+      "min_cars": 1,
+      "max_cars": 156,
+      "percentiles_cars": {
+        "p10": 4.0,
+        "p25": 12.0,
+        "p50": 96.0,
+        "p75": 112.0,
+        "p90": 113.0
+      },
+      "feet_count": 1101,
+      "median_feet": 5705.0,
+      "mean_feet": 4128.0,
+      "min_feet": 57.0,
+      "max_feet": 9348.0,
+      "percentiles_feet": {
+        "p10": 239.9,
+        "p25": 713.6,
+        "p50": 5704.7,
+        "p75": 6694.8,
+        "p90": 6799.5
+      },
+      "monthly_median_feet": [
+        5647.0,
+        1506.0,
+        3245.0,
+        5398.0,
+        6072.0,
+        5904.0,
+        6235.0,
+        5624.0,
+        6265.0,
+        5340.0,
+        6421.0,
+        5682.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          46,
+          30,
+          17,
+          16,
+          13,
+          14,
+          22,
+          12,
+          35,
+          105,
+          110,
+          339,
+          17,
+          9,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          5.84,
+          3.81,
+          2.16,
+          2.03,
+          1.65,
+          1.78,
+          2.79,
+          1.52,
+          4.44,
+          13.32,
+          13.96,
+          43.02,
+          2.16,
+          1.14,
+          0.13,
+          0.13,
+          0.13,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filtered_count": 788,
+        "excluded": 313
+      }
+    },
+    {
+      "train_type": "Potash Unit",
+      "sample_count": 721,
+      "median_cars": 192,
+      "mean_cars": 178.9,
+      "min_cars": 3,
+      "max_cars": 214,
+      "percentiles_cars": {
+        "p10": 111.0,
+        "p25": 188.0,
+        "p50": 192.0,
+        "p75": 194.0,
+        "p90": 195.0
+      },
+      "feet_count": 723,
+      "median_feet": 9160.0,
+      "mean_feet": 8693.0,
+      "min_feet": 141.0,
+      "max_feet": 10196.0,
+      "percentiles_feet": {
+        "p10": 6597.9,
+        "p25": 8986.7,
+        "p50": 9159.7,
+        "p75": 9276.5,
+        "p90": 9419.5
+      },
+      "monthly_median_feet": [
+        9182.0,
+        9188.0,
+        9221.0,
+        9216.0,
+        9142.0,
+        9062.0,
+        8921.0,
+        9111.0,
+        8924.0,
+        9219.0,
+        9261.0,
+        9136.0
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          6,
+          2,
+          1,
+          9,
+          8,
+          31,
+          18,
+          7,
+          5,
+          10,
+          81,
+          481,
+          49,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pcts": [
+          0.0,
+          0.0,
+          0.14,
+          0.0,
+          0.0,
+          0.14,
+          0.28,
+          0.84,
+          0.28,
+          0.14,
+          1.26,
+          1.12,
+          4.34,
+          2.52,
+          0.98,
+          0.7,
+          1.4,
+          11.33,
+          67.27,
+          6.85,
+          0.42,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filtered_count": 715,
+        "excluded": 8
+      }
+    },
+    {
+      "train_type": "Coal Unit",
+      "sample_count": 25,
+      "median_cars": 3,
+      "mean_cars": 2.9,
+      "min_cars": 1,
+      "max_cars": 8,
+      "percentiles_cars": {
+        "p10": 1.4,
+        "p25": 2.0,
+        "p50": 3.0,
+        "p75": 4.0,
+        "p90": 4.6
+      },
+      "feet_count": 25,
+      "median_feet": 169.0,
+      "mean_feet": 185.0,
+      "min_feet": 52.0,
+      "max_feet": 565.0,
+      "percentiles_feet": {
+        "p10": 78.7,
+        "p25": 119.8,
+        "p50": 168.8,
+        "p75": 221.0,
+        "p90": 315.5
+      },
+      "monthly_median_feet": [
+        206.0,
+        120.0,
+        122.0,
+        null,
+        122.0,
+        52.0,
+        229.0,
+        270.0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "histogram_feet": {
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pcts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "filtered_count": 0,
+        "excluded": 25
+      }
+    }
+  ],
+  "length_bin_labels_ft": [
+    "0-499",
+    "500-999",
+    "1,000-1,499",
+    "1,500-1,999",
+    "2,000-2,499",
+    "2,500-2,999",
+    "3,000-3,499",
+    "3,500-3,999",
+    "4,000-4,499",
+    "4,500-4,999",
+    "5,000-5,499",
+    "5,500-5,999",
+    "6,000-6,499",
+    "6,500-6,999",
+    "7,000-7,499",
+    "7,500-7,999",
+    "8,000-8,499",
+    "8,500-8,999",
+    "9,000-9,499",
+    "9,500-9,999",
+    "10,000-10,499",
+    "10,500-10,999",
+    "11,000-11,499",
+    "11,500-11,999",
+    "12,000-12,499",
+    "12,500-12,999",
+    "13,000-13,499",
+    "13,500-13,999",
+    "14,000-14,499",
+    "14,500-14,999"
+  ],
+  "length_bin_width_ft": 500,
+  "sensor_lengths": [
+    {
+      "sensor": "N. Portland E, OR",
+      "subdivision": "BNSF Fallbridge Sub",
+      "sample_count": 17681,
+      "median_cars": 43,
+      "mean_cars": 53.0,
+      "percentiles": {
+        "p10": 2.0,
+        "p25": 5.0,
+        "p50": 43.0,
+        "p75": 93.0,
+        "p90": 115.0
+      }
+    },
+    {
+      "sensor": "N. Portland W, OR",
+      "subdivision": "BNSF Fallbridge Sub",
+      "sample_count": 17225,
+      "median_cars": 44,
+      "mean_cars": 52.3,
+      "percentiles": {
+        "p10": 3.0,
+        "p25": 5.0,
+        "p50": 44.0,
+        "p75": 90.0,
+        "p90": 114.0
+      }
+    },
+    {
+      "sensor": "Eugene, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "sample_count": 8484,
+      "median_cars": 16.0,
+      "mean_cars": 40.3,
+      "percentiles": {
+        "p10": 4.0,
+        "p25": 5.0,
+        "p50": 16.0,
+        "p75": 80.0,
+        "p90": 100.0
+      }
+    },
+    {
+      "sensor": "Haig, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "sample_count": 7504,
+      "median_cars": 35.0,
+      "mean_cars": 48.2,
+      "percentiles": {
+        "p10": 4.0,
+        "p25": 6.0,
+        "p50": 35.0,
+        "p75": 84.0,
+        "p90": 107.0
+      }
+    },
+    {
+      "sensor": "Troutdale, OR",
+      "subdivision": "UP Graham Line",
+      "sample_count": 6857,
+      "median_cars": 112,
+      "mean_cars": 118.3,
+      "percentiles": {
+        "p10": 73.0,
+        "p25": 97.0,
+        "p50": 112.0,
+        "p75": 142.0,
+        "p90": 179.0
+      }
+    },
+    {
+      "sensor": "Irving, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "sample_count": 5842,
+      "median_cars": 51.0,
+      "mean_cars": 52.7,
+      "percentiles": {
+        "p10": 5.0,
+        "p25": 8.0,
+        "p50": 51.0,
+        "p75": 93.0,
+        "p90": 105.0
+      }
+    },
+    {
+      "sensor": "Salem, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "sample_count": 5682,
+      "median_cars": 47.0,
+      "mean_cars": 51.9,
+      "percentiles": {
+        "p10": 5.0,
+        "p25": 8.0,
+        "p50": 47.0,
+        "p75": 94.0,
+        "p90": 106.0
+      }
+    },
+    {
+      "sensor": "Ontario, OR",
+      "subdivision": "UP Nampa Sub",
+      "sample_count": 5469,
+      "median_cars": 113,
+      "mean_cars": 106.8,
+      "percentiles": {
+        "p10": 33.0,
+        "p25": 75.0,
+        "p50": 113.0,
+        "p75": 141.0,
+        "p90": 161.0
+      }
+    },
+    {
+      "sensor": "Jefferson, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "sample_count": 5422,
+      "median_cars": 48.0,
+      "mean_cars": 51.2,
+      "percentiles": {
+        "p10": 4.0,
+        "p25": 6.0,
+        "p50": 48.0,
+        "p75": 93.0,
+        "p90": 106.0
+      }
+    },
+    {
+      "sensor": "Echo, OR",
+      "subdivision": "UP La Grande Sub",
+      "sample_count": 5056,
+      "median_cars": 126.0,
+      "mean_cars": 124.0,
+      "percentiles": {
+        "p10": 72.0,
+        "p25": 102.8,
+        "p50": 126.0,
+        "p75": 152.0,
+        "p90": 172.0
+      }
+    },
+    {
+      "sensor": "Modoc Point, OR",
+      "subdivision": "UP Cascade Sub",
+      "sample_count": 4818,
+      "median_cars": 80.0,
+      "mean_cars": 68.9,
+      "percentiles": {
+        "p10": 6.0,
+        "p25": 49.0,
+        "p50": 80.0,
+        "p75": 97.0,
+        "p90": 106.0
+      }
+    },
+    {
+      "sensor": "Springfield Jct, OR",
+      "subdivision": "UP Brooklyn Sub",
+      "sample_count": 4757,
+      "median_cars": 76,
+      "mean_cars": 63.9,
+      "percentiles": {
+        "p10": 9.0,
+        "p25": 19.0,
+        "p50": 76.0,
+        "p75": 96.0,
+        "p90": 106.0
+      }
+    },
+    {
+      "sensor": "Worden, OR",
+      "subdivision": "UP Cascade Sub",
+      "sample_count": 3688,
+      "median_cars": 85.0,
+      "mean_cars": 70.9,
+      "percentiles": {
+        "p10": 10.0,
+        "p25": 43.0,
+        "p50": 85.0,
+        "p75": 100.0,
+        "p90": 108.0
+      }
+    },
+    {
+      "sensor": "Cold Springs, OR",
+      "subdivision": "UP La Grande Sub",
+      "sample_count": 3540,
+      "median_cars": 93.0,
+      "mean_cars": 85.0,
+      "percentiles": {
+        "p10": 4.0,
+        "p25": 43.0,
+        "p50": 93.0,
+        "p75": 113.0,
+        "p90": 155.0
+      }
+    },
+    {
+      "sensor": "Bend, OR",
+      "subdivision": "BNSF Oregon Trunk Sub",
+      "sample_count": 1920,
+      "median_cars": 77.0,
+      "mean_cars": 68.1,
+      "percentiles": {
+        "p10": 7.0,
+        "p25": 58.0,
+        "p50": 77.0,
+        "p75": 92.0,
+        "p90": 102.0
+      }
+    }
+  ],
+  "time_of_day": {
+    "total": {
+      "0": 5574,
+      "1": 5232,
+      "2": 4688,
+      "3": 4489,
+      "4": 4724,
+      "5": 4686,
+      "6": 4558,
+      "7": 4102,
+      "8": 3581,
+      "9": 3469,
+      "10": 3452,
+      "11": 3327,
+      "12": 3872,
+      "13": 3909,
+      "14": 4411,
+      "15": 4249,
+      "16": 3886,
+      "17": 4309,
+      "18": 4483,
+      "19": 4392,
+      "20": 4809,
+      "21": 4657,
+      "22": 4377,
+      "23": 4794
+    },
+    "by_sensor": {
+      "Bend, OR": {
+        "0": 95,
+        "1": 76,
+        "2": 91,
+        "3": 65,
+        "4": 84,
+        "5": 67,
+        "6": 67,
+        "7": 55,
+        "8": 60,
+        "9": 72,
+        "10": 49,
+        "11": 63,
+        "12": 59,
+        "13": 63,
+        "14": 109,
+        "15": 121,
+        "16": 71,
+        "17": 93,
+        "18": 103,
+        "19": 60,
+        "20": 98,
+        "21": 81,
+        "22": 110,
+        "23": 108
+      },
+      "Cold Springs, OR": {
+        "0": 105,
+        "1": 107,
+        "2": 105,
+        "3": 107,
+        "4": 123,
+        "5": 120,
+        "6": 93,
+        "7": 116,
+        "8": 106,
+        "9": 107,
+        "10": 116,
+        "11": 102,
+        "12": 95,
+        "13": 183,
+        "14": 177,
+        "15": 172,
+        "16": 174,
+        "17": 223,
+        "18": 260,
+        "19": 239,
+        "20": 225,
+        "21": 197,
+        "22": 167,
+        "23": 121
+      },
+      "Echo, OR": {
+        "0": 243,
+        "1": 234,
+        "2": 220,
+        "3": 210,
+        "4": 219,
+        "5": 191,
+        "6": 201,
+        "7": 180,
+        "8": 165,
+        "9": 180,
+        "10": 233,
+        "11": 202,
+        "12": 191,
+        "13": 181,
+        "14": 208,
+        "15": 180,
+        "16": 190,
+        "17": 223,
+        "18": 206,
+        "19": 235,
+        "20": 233,
+        "21": 246,
+        "22": 224,
+        "23": 261
+      },
+      "Eugene, OR": {
+        "0": 519,
+        "1": 263,
+        "2": 225,
+        "3": 414,
+        "4": 652,
+        "5": 485,
+        "6": 472,
+        "7": 374,
+        "8": 276,
+        "9": 221,
+        "10": 181,
+        "11": 187,
+        "12": 194,
+        "13": 196,
+        "14": 580,
+        "15": 407,
+        "16": 254,
+        "17": 271,
+        "18": 229,
+        "19": 306,
+        "20": 476,
+        "21": 433,
+        "22": 342,
+        "23": 527
+      },
+      "Haig, OR": {
+        "0": 236,
+        "1": 465,
+        "2": 452,
+        "3": 359,
+        "4": 315,
+        "5": 305,
+        "6": 239,
+        "7": 258,
+        "8": 221,
+        "9": 158,
+        "10": 162,
+        "11": 255,
+        "12": 312,
+        "13": 303,
+        "14": 306,
+        "15": 254,
+        "16": 213,
+        "17": 384,
+        "18": 527,
+        "19": 452,
+        "20": 330,
+        "21": 339,
+        "22": 384,
+        "23": 278
+      },
+      "Irving, OR": {
+        "0": 351,
+        "1": 261,
+        "2": 217,
+        "3": 320,
+        "4": 359,
+        "5": 374,
+        "6": 336,
+        "7": 282,
+        "8": 170,
+        "9": 199,
+        "10": 204,
+        "11": 188,
+        "12": 177,
+        "13": 168,
+        "14": 287,
+        "15": 208,
+        "16": 106,
+        "17": 86,
+        "18": 124,
+        "19": 248,
+        "20": 424,
+        "21": 322,
+        "22": 186,
+        "23": 246
+      },
+      "Jefferson, OR": {
+        "0": 379,
+        "1": 275,
+        "2": 255,
+        "3": 287,
+        "4": 290,
+        "5": 279,
+        "6": 205,
+        "7": 210,
+        "8": 247,
+        "9": 198,
+        "10": 164,
+        "11": 134,
+        "12": 151,
+        "13": 106,
+        "14": 104,
+        "15": 281,
+        "16": 211,
+        "17": 151,
+        "18": 175,
+        "19": 194,
+        "20": 290,
+        "21": 288,
+        "22": 218,
+        "23": 330
+      },
+      "Modoc Point, OR": {
+        "0": 191,
+        "1": 171,
+        "2": 123,
+        "3": 153,
+        "4": 258,
+        "5": 265,
+        "6": 197,
+        "7": 191,
+        "8": 177,
+        "9": 199,
+        "10": 199,
+        "11": 193,
+        "12": 241,
+        "13": 254,
+        "14": 215,
+        "15": 285,
+        "16": 263,
+        "17": 170,
+        "18": 171,
+        "19": 130,
+        "20": 194,
+        "21": 192,
+        "22": 206,
+        "23": 180
+      },
+      "N. Portland E, OR": {
+        "0": 1071,
+        "1": 1091,
+        "2": 971,
+        "3": 749,
+        "4": 695,
+        "5": 680,
+        "6": 752,
+        "7": 683,
+        "8": 610,
+        "9": 566,
+        "10": 540,
+        "11": 524,
+        "12": 725,
+        "13": 704,
+        "14": 684,
+        "15": 717,
+        "16": 637,
+        "17": 755,
+        "18": 873,
+        "19": 679,
+        "20": 743,
+        "21": 776,
+        "22": 715,
+        "23": 777
+      },
+      "N. Portland W, OR": {
+        "0": 1080,
+        "1": 1058,
+        "2": 911,
+        "3": 743,
+        "4": 696,
+        "5": 715,
+        "6": 768,
+        "7": 704,
+        "8": 600,
+        "9": 553,
+        "10": 534,
+        "11": 537,
+        "12": 694,
+        "13": 678,
+        "14": 623,
+        "15": 638,
+        "16": 580,
+        "17": 760,
+        "18": 842,
+        "19": 665,
+        "20": 713,
+        "21": 741,
+        "22": 666,
+        "23": 757
+      },
+      "Ontario, OR": {
+        "0": 266,
+        "1": 317,
+        "2": 329,
+        "3": 317,
+        "4": 261,
+        "5": 237,
+        "6": 229,
+        "7": 185,
+        "8": 178,
+        "9": 216,
+        "10": 262,
+        "11": 249,
+        "12": 229,
+        "13": 241,
+        "14": 234,
+        "15": 213,
+        "16": 227,
+        "17": 194,
+        "18": 150,
+        "19": 193,
+        "20": 186,
+        "21": 170,
+        "22": 184,
+        "23": 202
+      },
+      "Salem, OR": {
+        "0": 317,
+        "1": 339,
+        "2": 355,
+        "3": 293,
+        "4": 252,
+        "5": 234,
+        "6": 187,
+        "7": 135,
+        "8": 140,
+        "9": 147,
+        "10": 137,
+        "11": 93,
+        "12": 94,
+        "13": 130,
+        "14": 109,
+        "15": 91,
+        "16": 349,
+        "17": 344,
+        "18": 226,
+        "19": 353,
+        "20": 243,
+        "21": 285,
+        "22": 448,
+        "23": 381
+      },
+      "Springfield Jct, OR": {
+        "0": 319,
+        "1": 237,
+        "2": 116,
+        "3": 135,
+        "4": 151,
+        "5": 186,
+        "6": 267,
+        "7": 265,
+        "8": 163,
+        "9": 179,
+        "10": 170,
+        "11": 155,
+        "12": 177,
+        "13": 174,
+        "14": 155,
+        "15": 164,
+        "16": 231,
+        "17": 242,
+        "18": 177,
+        "19": 258,
+        "20": 274,
+        "21": 179,
+        "22": 192,
+        "23": 191
+      },
+      "Troutdale, OR": {
+        "0": 330,
+        "1": 279,
+        "2": 250,
+        "3": 259,
+        "4": 250,
+        "5": 249,
+        "6": 243,
+        "7": 257,
+        "8": 283,
+        "9": 265,
+        "10": 324,
+        "11": 328,
+        "12": 370,
+        "13": 366,
+        "14": 311,
+        "15": 263,
+        "16": 254,
+        "17": 275,
+        "18": 270,
+        "19": 259,
+        "20": 273,
+        "21": 307,
+        "22": 262,
+        "23": 344
+      },
+      "Worden, OR": {
+        "0": 72,
+        "1": 59,
+        "2": 68,
+        "3": 78,
+        "4": 119,
+        "5": 299,
+        "6": 302,
+        "7": 207,
+        "8": 185,
+        "9": 209,
+        "10": 177,
+        "11": 117,
+        "12": 163,
+        "13": 162,
+        "14": 309,
+        "15": 255,
+        "16": 126,
+        "17": 138,
+        "18": 150,
+        "19": 121,
+        "20": 107,
+        "21": 101,
+        "22": 73,
+        "23": 91
+      }
+    }
+  },
+  "peak_hours": [
+    0,
+    1,
+    20,
+    23,
+    4,
+    2
+  ],
+  "weekday_weekend": {
+    "weekday_total": 75526,
+    "weekend_total": 28504,
+    "weekday_avg_per_day": 289.4,
+    "weekend_avg_per_day": 274.1,
+    "by_day": {
+      "Mon": 14507,
+      "Tue": 15062,
+      "Wed": 15514,
+      "Thu": 15244,
+      "Fri": 15199,
+      "Sat": 14668,
+      "Sun": 13836
+    }
+  },
+  "directional": {
+    "by_corridor": {
+      "BNSF Oregon Trunk Sub": {
+        "Southbound": 947,
+        "Northbound": 973
+      },
+      "UP La Grande Sub": {
+        "Westbound": 4259,
+        "Eastbound": 4337
+      },
+      "UP Brooklyn Sub": {
+        "Southbound": 18946,
+        "Northbound": 18749
+      },
+      "UP Cascade Sub": {
+        "Southbound": 4397,
+        "Northbound": 4109
+      },
+      "BNSF Fallbridge Sub": {
+        "Eastbound": 17301,
+        "Westbound": 17672
+      },
+      "UP Nampa Sub": {
+        "Westbound": 2728,
+        "Eastbound": 2741
+      },
+      "UP Graham Line": {
+        "Westbound": 3445,
+        "Eastbound": 3426
+      }
+    },
+    "by_sensor": {
+      "Bend, OR": {
+        "Southbound": 947,
+        "Northbound": 973
+      },
+      "Cold Springs, OR": {
+        "Westbound": 1758,
+        "Eastbound": 1782
+      },
+      "Echo, OR": {
+        "Westbound": 2501,
+        "Eastbound": 2555
+      },
+      "Eugene, OR": {
+        "Southbound": 4100,
+        "Northbound": 4384
+      },
+      "Haig, OR": {
+        "Southbound": 3802,
+        "Northbound": 3705
+      },
+      "Irving, OR": {
+        "Northbound": 2912,
+        "Southbound": 2931
+      },
+      "Jefferson, OR": {
+        "Southbound": 2738,
+        "Northbound": 2684
+      },
+      "Modoc Point, OR": {
+        "Southbound": 2494,
+        "Northbound": 2324
+      },
+      "N. Portland E, OR": {
+        "Eastbound": 8806,
+        "Westbound": 8911
+      },
+      "N. Portland W, OR": {
+        "Eastbound": 8495,
+        "Westbound": 8761
+      },
+      "Ontario, OR": {
+        "Westbound": 2728,
+        "Eastbound": 2741
+      },
+      "Salem, OR": {
+        "Northbound": 2786,
+        "Southbound": 2896
+      },
+      "Springfield Jct, OR": {
+        "Southbound": 2479,
+        "Northbound": 2278
+      },
+      "Troutdale, OR": {
+        "Westbound": 3445,
+        "Eastbound": 3426
+      },
+      "Worden, OR": {
+        "Southbound": 1903,
+        "Northbound": 1785
+      }
+    }
+  },
+  "monthly_trends": {
+    "labels": [
+      "Jan '25",
+      "Feb '25",
+      "Mar '25",
+      "Apr '25",
+      "May '25",
+      "Jun '25",
+      "Jul '25",
+      "Aug '25",
+      "Sep '25",
+      "Oct '25",
+      "Nov '25",
+      "Dec '25"
+    ],
+    "months": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12"
+    ],
+    "total": [
+      9035,
+      7782,
+      8657,
+      8620,
+      8965,
+      8389,
+      8465,
+      8853,
+      8499,
+      9207,
+      8753,
+      8805
+    ],
+    "by_type": {
+      "Manifest": [
+        3769,
+        3271,
+        3668,
+        3789,
+        3912,
+        3620,
+        3662,
+        3719,
+        3584,
+        3802,
+        3642,
+        3454
+      ],
+      "Intermodal": [
+        1724,
+        1496,
+        1637,
+        1626,
+        1687,
+        1607,
+        1652,
+        1717,
+        1694,
+        1782,
+        1655,
+        1722
+      ],
+      "Passenger": [
+        1697,
+        1470,
+        1294,
+        1171,
+        1312,
+        1353,
+        1443,
+        1462,
+        1459,
+        1593,
+        1622,
+        1869
+      ],
+      "Grain Unit": [
+        846,
+        762,
+        938,
+        1043,
+        898,
+        771,
+        695,
+        904,
+        950,
+        1037,
+        1022,
+        1040
+      ],
+      "Light Locomotives": [
+        398,
+        320,
+        439,
+        339,
+        434,
+        355,
+        368,
+        355,
+        286,
+        404,
+        323,
+        317
+      ],
+      "Automotive": [
+        329,
+        205,
+        311,
+        234,
+        269,
+        290,
+        265,
+        256,
+        199,
+        216,
+        214,
+        201
+      ]
+    }
+  }
+}
