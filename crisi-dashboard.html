@@ -481,14 +481,14 @@
   <button class="tab-btn" data-tab="hazmat" onclick="switchTab('hazmat')">
     <span class="tab-dot"></span> Hazardous Material Flows
   </button>
-  <button class="tab-btn" data-tab="planning" onclick="switchTab('planning')">
-    <span class="tab-dot"></span> State Rail Planning
+  <button class="tab-btn" data-tab="corridor" onclick="switchTab('corridor')">
+    <span class="tab-dot"></span> Corridor Analysis
   </button>
   <button class="tab-btn" data-tab="trainlength" onclick="switchTab('trainlength')">
     <span class="tab-dot"></span> Train Length Analysis
   </button>
-  <button class="tab-btn" data-tab="corridor" onclick="switchTab('corridor')">
-    <span class="tab-dot"></span> Corridor Analysis
+  <button class="tab-btn" data-tab="planning" onclick="switchTab('planning')">
+    <span class="tab-dot"></span> State Rail Planning
   </button>
 </div>
 
@@ -549,27 +549,27 @@
       <div style="padding:36px 40px;">
         <div class="chart-section-title" style="margin-bottom:6px;font-size:22px;">About the CRISI Project</div>
         <div style="font-size:15px;color:var(--text);line-height:1.95;max-width:960px;margin-bottom:24px;">
-          The <strong>Consolidated Rail Infrastructure and Safety Improvements (CRISI)</strong> program provides federal funding to support rail safety, infrastructure improvement, and research initiatives. This dashboard is part of a CRISI-funded project focused on <strong style="color:var(--rs);">State Rail Safety Research and Planning</strong> — using RailState's independent sensor data to give state agencies real-time visibility into hazardous material flows, rail network utilization, and infrastructure planning priorities.
+          The CRISI Hazmat project, led by the University of Delaware and RailState, LLC, will deploy a network of sensors along rail lines in six participating states to collect near-real-time data on hazardous materials traffic — including specific UN numbers on every tank car. This detailed information will greatly expand on the limited data communities currently rely on, providing first responders and state agencies with a more complete and actionable picture of exactly what is moving through their jurisdictions.
         </div>
         <div style="font-size:14px;color:var(--text-muted);line-height:1.8;max-width:960px;margin-bottom:28px;">
-          State rail plans and safety assessments have historically relied on delayed, aggregated federal data or railroad-provided reports. This project demonstrates how independent, car-level sensor data can fill critical information gaps — enabling states to make more informed decisions about grade crossing safety, emergency response planning, hazmat routing, and infrastructure investment.
+          Each participating State DOT and emergency management agency will work with the University of Delaware to deliver this data to local first responders, supported by training programs and a mapping tool that overlays hazmat flow against population density and environmentally sensitive areas. States will also have access to all RailState data for their state, extending its value beyond hazmat and safety planning. Data access, support, and training will continue throughout the three-year grant period.
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;">
           <div class="overview-nav-card" onclick="switchTab('hazmat')" style="cursor:pointer;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:border-color 0.2s;">
             <div style="font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--heading);margin-bottom:4px;">Hazardous Material Flows</div>
             <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Real-time hazmat car volumes by UN class, corridor, and railroad — enabling emergency response planning and risk assessment at the state and local level.</div>
           </div>
-          <div class="overview-nav-card" onclick="switchTab('planning')" style="cursor:pointer;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:border-color 0.2s;">
-            <div style="font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--heading);margin-bottom:4px;">State Rail Planning</div>
-            <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Rail traffic volumes, commodity mix, and infrastructure utilization data to support state rail plan development and investment prioritization.</div>
+          <div class="overview-nav-card" onclick="switchTab('corridor')" style="cursor:pointer;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:border-color 0.2s;">
+            <div style="font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--heading);margin-bottom:4px;">Corridor Analysis</div>
+            <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Detailed breakdown of the UP Brooklyn Subdivision through Oregon's Willamette Valley — traffic patterns, hazmat flows, train spacing, and operational characteristics.</div>
           </div>
           <div class="overview-nav-card" onclick="switchTab('trainlength')" style="cursor:pointer;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:border-color 0.2s;">
             <div style="font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--heading);margin-bottom:4px;">Train Length Analysis</div>
-            <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Distribution of train lengths by type, trends over time, and implications for grade crossing blockage and infrastructure planning.</div>
+            <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Distribution of estimated train lengths in feet by type, with implications for grade crossing blockage duration and infrastructure planning.</div>
           </div>
-          <div class="overview-nav-card" onclick="switchTab('corridor')" style="cursor:pointer;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:border-color 0.2s;">
-            <div style="font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--heading);margin-bottom:4px;">Corridor Analysis</div>
-            <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Detailed breakdown of a single Oregon corridor — traffic patterns, hazmat flows, train spacing, and operational characteristics.</div>
+          <div class="overview-nav-card" onclick="switchTab('planning')" style="cursor:pointer;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:18px 22px;transition:border-color 0.2s;">
+            <div style="font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--heading);margin-bottom:4px;">State Rail Planning</div>
+            <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Rail traffic volumes, train type mix, travel times, headway analysis, and temporal patterns to support state rail plan development.</div>
           </div>
         </div>
       </div>
