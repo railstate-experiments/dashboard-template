@@ -766,6 +766,8 @@
         </div>
 
         <!-- (Commodity coverage tab removed) -->
+      </div>
+    </div>
 
     <!-- Sensor Network Stats + Map -->
     <div class="chart-section">
@@ -1581,7 +1583,7 @@ function addRailNetworkLayer(map) {
         'line-opacity':['match',['get','rr'],'other',0.35,0.65]
       }
     });
-  }).catch(err=>console.warn('Rail network not loaded:',err));
+  }).catch(err=>console.error('Rail network not loaded:',err));
 }
 
 function addSensorDots(map, sensorData) {
@@ -1652,7 +1654,7 @@ initCharts.overview = () => {
         addSensorDots(map, data.sensors);
       });
     });
-  }).catch(err=>console.warn('Sensor overview not loaded:',err));
+  }).catch(err=>console.error('Sensor overview not loaded:',err));
 };
 
 /* ── Hazmat tab ── */
@@ -1747,7 +1749,7 @@ initCharts.hazmat = () => {
       </tr>`;
     });
 
-  }).catch(err=>console.warn('Hazmat analysis not loaded:',err));
+  }).catch(err=>console.error('Hazmat analysis not loaded:',err));
 };
 
 /* ── State Rail Planning tab ── */
@@ -1886,7 +1888,7 @@ initCharts.planning = () => {
           });
         });
       });
-    }).catch(err=>console.warn('Corridor map not loaded:',err));
+    }).catch(err=>console.error('Corridor map not loaded:',err));
 
     // ── Monthly train volume by type (stacked bar) ──
     const topTypes=Object.entries(pl.train_type_counts).sort((a,b)=>b[1]-a[1]).slice(0,6).map(e=>e[0]);
@@ -1984,7 +1986,7 @@ initCharts.planning = () => {
         scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(0,0,0,0.06)'},ticks:{callback:v=>v.toLocaleString()}}}}
     });
 
-  }).catch(err=>console.warn('Planning analysis not loaded:',err));
+  }).catch(err=>console.error('Planning analysis not loaded:',err));
 };
 
 /* ── Network Overview tab ── */
@@ -2063,7 +2065,7 @@ initCharts.trainlength = () => {
     const stb=document.getElementById('tl-sensor-tbody');
     pl.sensor_lengths.forEach(sl=>{stb.innerHTML+=`<tr><td style="font-weight:600;">${sl.sensor}</td><td style="font-size:12px;">${sl.subdivision}</td><td>${sl.sample_count.toLocaleString()}</td><td class="val-rs">${sl.median_cars}</td><td>${sl.mean_cars}</td><td>${sl.percentiles.p90||'—'}</td></tr>`;});
 
-  }).catch(err=>console.warn('Train length data not loaded:',err));
+  }).catch(err=>console.error('Train length data not loaded:',err));
 };
 
 /* ── Corridor Analysis tab (UP Brooklyn Sub) ── */
@@ -2166,7 +2168,7 @@ initCharts.corridor = () => {
       options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'top',labels:{font:{size:12}}},tooltip:{...ttOpts(),mode:'index',intersect:false}},
         scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(0,0,0,0.06)'},ticks:{callback:v=>v.toLocaleString()}}}}});
 
-  }).catch(err=>console.warn('Corridor data not loaded:',err));
+  }).catch(err=>console.error('Corridor data not loaded:',err));
 };
 
 
